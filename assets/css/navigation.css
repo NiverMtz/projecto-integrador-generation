@@ -1,0 +1,8 @@
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    color: var(--white);
+}

@@ -1,0 +1,32 @@
+.header-menu{
+  height: 50px;
+  /* width: 100%; */
+  /* margin: var(--no-margin); */
+  background-color: var(--rosa);
+}
+/* banner seccion */
+section.dashboard__img{
+  height: 291px;
+  width: 390;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/banner-demo.jpg);
+}
+/* botones caja seccion */
+.dashboard__btn{
+  width: 138px;
+  height: 105px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(242, 128, 182, 0.67);
+}
+img.dashboard__btn-img{
+  position: relative;
+  bottom: -10px;
+}
+.dashboard__btn-p{
+  position: relative;
+  bottom: -17px;
+}
+
+

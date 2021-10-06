@@ -34,7 +34,7 @@
 }
 
 .section__datos {
-    background-color: var(--rosa);
+    background-color: var(--rosaOpaco);
     height: 50px;
 }
 

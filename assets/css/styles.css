@@ -7,7 +7,8 @@
 :root {
 
     /* Colors */
-    --rosa: #F280B6;
+    --rosa: #f280b6;
+    --rosaOpaco: rgba(242, 128, 181, 0.5);
     --azulClaro: #0597F2;
     --azul: #8dd1fc;
     --colorPiel: #D9A796;

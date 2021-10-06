@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    font-family: var(--fuenteParrafos);
+    font-family: var(--textFont);
     font-size: 1.6rem;
     line-height: 2;
     background-color: var(--negro);
@@ -48,7 +48,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-    font-family: var(--fuenteHeading);
+    font-family: var(--titlesFont);
     line-height: 1.2;
 }
 

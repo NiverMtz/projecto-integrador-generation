@@ -8,9 +8,11 @@
 section.dashboard__img{
   height: 291px;
   width: 390;
+  background-image: url(../img/banner-demo.jpg);
   background-size: cover;
   background-position: center;
-  background-image: url(../img/banner-demo.jpg);
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 /* botones caja seccion */
 .dashboard__btn{
@@ -18,15 +20,13 @@ section.dashboard__img{
   height: 105px;
   border-radius: 20px;
   border: none;
-  background-color: rgba(242, 128, 182, 0.67);
+  background-color: rgba(242, 128, 181, 0.734);
 }
-img.dashboard__btn-img{
-  position: relative;
-  bottom: -10px;
+.dashboard__btn > p{
+  font-family: var(--titlesFont);
+  color: var(--white);
+  font-weight: 700;
 }
-.dashboard__btn-p{
-  position: relative;
-  bottom: -17px;
-}
+
 
 

@@ -8,7 +8,6 @@
       transform: translateX(calc(-250px * 7));
     }
   }
-  
   @keyframes scroll {
     0% {
       transform: translateX(0);

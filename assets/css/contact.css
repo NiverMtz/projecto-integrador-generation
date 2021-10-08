@@ -1,0 +1,15 @@
+@import url(styles.css);
+
+.iconos-redes-sociales {
+    width: 20px;
+    display: flex;
+
+}
+
+.container{
+    display: flex;
+    background-color: #0597F2;
+    width: 50px;
+
+}
+

@@ -1,6 +1,7 @@
 @import url(./mystyle.css);
 @import url(./header.css);
 @import url(./navigation.css);
+@import url(./create_review-namh.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
@@ -30,10 +31,11 @@ html {
 }
 
 body {
-    font-family: var(--fuenteParrafos);
+    font-family: var(--textFont);
     font-size: 1.6rem;
     line-height: 2;
     background-color: var(--negro);
+    color: (--white);
 }
 
 /* Globales */
@@ -51,6 +53,7 @@ a {
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.2;
+    color: var(--white);
 }
 
 h1 {
@@ -67,6 +70,10 @@ h3 {
 
 h4 {
     font-size: 2.8rem;
+}
+
+p {
+    color: var(--white);
 }
 
 img {

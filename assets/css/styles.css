@@ -2,12 +2,13 @@
 @import url(./header.css);
 @import url(./navigation.css);
 @import url(./conocenos.css);
+@import url(./acerca-paax.css);
+@import url(./footer.css);
 @import url(./create_review-namh.css);
 @import url(./carousel.css);
 @import url(./lista-albumes.css);
 @import url(./lista-categoria.css);
 @import url(./top.css);
-
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
 :root {

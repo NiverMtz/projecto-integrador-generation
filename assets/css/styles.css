@@ -9,6 +9,7 @@
 @import url(./lista-albumes.css);
 @import url(./lista-categoria.css);
 @import url(./top.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
 :root {
@@ -43,6 +44,10 @@ body {
     line-height: 2;
     background-color: var(--negro);
     color: (--white);
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--negro);
 }
 
 /* Globales */
@@ -61,6 +66,8 @@ h1, h2, h3, h4 {
     font-family: var(--titlesFont);
     line-height: 1.2;
     color: var(--white);
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1 {

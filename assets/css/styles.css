@@ -2,13 +2,19 @@
 @import url(./header.css);
 @import url(./navigation.css);
 @import url(./conocenos.css);
+@import url(./create_review-namh.css);
+@import url(./carousel.css);
+@import url(./lista-albumes.css);
+@import url(./lista-categoria.css);
+@import url(./top.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
 :root {
 
     /* Colors */
-    --rosa: #F280B6;
+    --rosa: #f280b6;
+    --rosaOpaco: rgba(242, 128, 181, 0.5);
     --azulClaro: #0597F2;
     --azul: #8dd1fc;
     --colorPiel: #D9A796;
@@ -31,10 +37,11 @@ html {
 }
 
 body {
-    font-family: var(--fuenteParrafos);
+    font-family: var(--textFont);
     font-size: 1.6rem;
     line-height: 2;
     background-color: var(--negro);
+    color: (--white);
 }
 
 /* Globales */
@@ -50,8 +57,9 @@ a {
 }
 
 h1, h2, h3, h4 {
-    font-family: var(--fuenteHeading);
+    font-family: var(--titlesFont);
     line-height: 1.2;
+    color: var(--white);
 }
 
 h1 {
@@ -69,6 +77,12 @@ h3 {
 h4 {
     font-size: 2.8rem;
 }
+
+
+p {
+    color: var(--white);
+}
+
 
 img {
     max-width: 100%;

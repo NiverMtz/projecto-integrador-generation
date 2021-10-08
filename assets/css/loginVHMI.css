@@ -1,3 +1,11 @@
-.wall{
-  background-image: url();
+.banner-img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-mascara{
+  background-color: var(--rosaOpaco);
+}
+.accesar-btn{
+  font-size: var(--titleFont)
 }

@@ -1,17 +1,14 @@
 @import url(./mystyle.css);
 @import url(./header.css);
 @import url(./navigation.css);
-<<<<<<< HEAD
+@import url(./conocenos.css);
 @import url(./acerca-paax.css);
 @import url(./footer.css);
-=======
 @import url(./create_review-namh.css);
 @import url(./carousel.css);
 @import url(./lista-albumes.css);
 @import url(./lista-categoria.css);
 @import url(./top.css);
->>>>>>> 46cff53ffe198430f469ae3a2a16c0d700914d81
-
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
 :root {
@@ -24,6 +21,7 @@
     --colorPiel: #D9A796;
     --negro: #0D0D0D;
     --white: white;
+    --rosatrans: #f280b580;
 
     /* Fonts */
     --textFont: 'Mukta', sans-serif;

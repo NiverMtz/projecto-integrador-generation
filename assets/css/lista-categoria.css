@@ -1,0 +1,59 @@
+.lista-generos{
+    
+    width: 100%;
+    /* border:2px solid orchid; */
+    justify-content: center;
+}
+
+
+.btnuno{
+    background-image: url('https://64.media.tumblr.com/1b5939978a50ac6d3784a81f580ef46f/40778b2ebced87f6-f2/s540x810/846e46cf1936daae6fc31652a47e4618d07e6e9d.gifv') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    margin-top: 2px;
+    border-radius: 20px;
+}
+.btndos{
+    background-image: url('https://i.pinimg.com/originals/27/f2/9e/27f29e994210844b520314a0416ee8f6.gif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+.btntres{
+    background-image: url('https://i.pinimg.com/originals/92/b5/9e/92b59e5d8366949d30ddaa297b44a736.gif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+.btncuatro{
+    background-image: url('https://pa1.narvii.com/6651/9465bf6c8e01faf180ec15527604e18c40ee19f2_hq.gif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+   height: 150px;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+.btncinco{
+    background-image: url('http://data.whicdn.com/images/9288062/original.gif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+.titulo{
+    font-family: var(--titlesFont);
+    color: white;
+    /* text-align: center;
+    justify-content: center; */
+}

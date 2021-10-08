@@ -14,41 +14,55 @@
 <body>
 <!-- HEADER -->
 <header class=""></header>
-<section class="container-fluid d-flex flex-column justify-content-center">
-  <!-- logo -->
-  <div class="login-img">
-    <img src="./assets/img/logo_sin.gif" alt="logo de paax">
-  </div>
-  <!-- CORREO ELECTRÓNICO -->
-  <div class="login-email d-flex flex-column">
-    <label class="text-white" for="">Correo electrónico</label>
-    <input type="email" placeholder="tu@correo.com">
-  </div>
-  <!-- CONTRASEÑA -->
-  <div class="login-pass d-flex flex-column">
-    <label class="text-white" for="">Contraseña</label>
-    <input type="password" placeholder="*********">
-  </div>
-  <!-- RECORDAR Y RECUPERAR CONTRASEÑA -->
-  <div class="cta d-flex justify-content-between">
-    <div class="cta-recordar">
-      <input type="checkbox" name="recordar" value="1">
-      <label class="text-white" for="">Recuérdame</label>
-    </div>
-    <div class="cta-recuperar">
-      <a class="text-white" href="#">Olvidé mi contraseña</a>
-    </div>
-  </div>
-  <div class="entrar justify-content-center">
-    <button class="btn btn-block text-white bg-primary">Entrar</button>
-  </div>
-  <div class="cta-crear d-flex justify-content-between">
-    <p class="text-white">¿No tienes una cuenta?</p>
-    <a href="#">Crear una</a>
+
+<div class="row m-0">
+  <!-- columna izquierda -->
+  <div class="wall col d-none d-lg-block"></div> <!-- img -->
+  
+  <!-- columna derecha -->
+  <div class="col"> <!-- img -->
+    <section class="forma-login container-fluid d-flex flex-column justify-content-center">
+      <!-- logo -->
+      <div class="login-img text-center">
+        <img src="./assets/img/logo_sin.gif" alt="logo de paax">
+      </div>
+      <!-- CORREO ELECTRÓNICO -->
+      <div class="login-email d-flex flex-column mb-5">
+        <label class="text-white" for="">Correo electrónico</label>
+        <input type="email" placeholder="tu@correo.com">
+      </div>
+      <!-- CONTRASEÑA -->
+      <div class="login-pass d-flex flex-column mb-5">
+        <label class="text-white" for="">Contraseña</label>
+        <input type="password" placeholder="*********">
+      </div>
+      <!-- RECORDAR  CONTRASEÑA -->
+      <div class="cta d-flex justify-content-between vh-2 mb-3">
+        <div class="cta-recordar">
+          <input type="checkbox" name="recordar" value="1">
+          <label class="text-white" for="">Recuérdame</label>
+        </div>
+        <!-- RECUPERAR  CONTRASEÑA -->
+        <div class="cta-recuperar">
+          <a class="text-white" href="#">Olvidé mi contraseña</a>
+        </div>
+      </div>
+      <!-- boton iniciar sesión -->
+      <div class="justify-content-center mb-3">sp
+        <button class="btn btn-block btn-primary text-white">Iniciar sesión</button>
+      </div>
+      <!--  -->
+      <div class="cta-crear d-flex justify-content-between mb-3 vh-2 align-items-center">
+        <p class="text-white">¿No tienes una cuenta?</p>
+        <a href="#">Crear cuenta</a>
+      </div>
+    </section>
   </div>
 
+<!-- div row -->
+</div>
+<!-- div row -->
 
-</section>
 <!-- BOTON -->
 <!-- CREAR CUENTA -->
 <!-- footer -->

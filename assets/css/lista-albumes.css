@@ -13,10 +13,12 @@ h1{
 
 
 .rwd-table {
-  margin: 1em 0;
+  
   min-width: 300px;
   align-items: center;
   left: 50%;
+  display: flex;
+  justify-content: center;
 }
 .rwd-table tr {
   border-top: 1px solid #ddd;
@@ -38,7 +40,7 @@ h1{
   content: attr(data-th) ": ";
   font-weight: bold;
   width: 6.5em;
-  display: inline-block;
+
 }
 @media (min-width: 480px) {
   .rwd-table td:before {
@@ -51,7 +53,7 @@ h1{
 @media (min-width: 480px) {
   .rwd-table th, .rwd-table td {
     display: table-cell;
-    padding: .25em .5em;
+   
   }
   .rwd-table th:first-child, .rwd-table td:first-child {
     padding-left: 0;
@@ -74,11 +76,13 @@ h1{
   border-color: #46637f;
 }
 .rwd-table th, .rwd-table td {
-  margin: .5em 1em;
+  display: flex;
+ justify-content: center;
 }
 @media (min-width: 480px) {
   .rwd-table th, .rwd-table td {
-    padding: 1em !important;
+    display: flex;
+ justify-content: center;
   }
 }
 .rwd-table th, .rwd-table td:before {

@@ -24,9 +24,8 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 1200px;
-    
-    
+    width: 1300px;
+
   }
   .slider::before, .slider::after {
     

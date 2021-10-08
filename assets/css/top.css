@@ -2,7 +2,10 @@
   /* CARRUSEL TOP ARTISTAS */
   .top-ti{
       text-align: center;
-      
+      justify-content: center;
+      display: flex;
+      position: static;
+      margin-top: 2px;
   }
   .carousel {
     padding: 30px;
@@ -19,7 +22,7 @@
   }
   
   .carousel--item {
-    display: inline-block;
+    display: flex;
     position: relative;
     margin: 10px 8px;
     width: 200px;

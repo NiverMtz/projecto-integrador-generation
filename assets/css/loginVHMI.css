@@ -1,11 +1,23 @@
+/* ajuste img banner */
 .banner-img{
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* 
+https://giphy.com/embed/J5WxSrLAlcbS2afF8i
+*/
 .banner-mascara{
   background-color: var(--rosaOpaco);
 }
+/* estilos de inputs */
+.login-input{
+  border-radius: 20px;
+}
+
+/* boton accesar */
 .accesar-btn{
-  font-size: var(--titleFont)
+  font-size: var(--titleFont);
+  border-radius: 20px;
 }

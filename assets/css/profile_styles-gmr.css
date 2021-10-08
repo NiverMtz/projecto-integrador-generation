@@ -63,6 +63,7 @@
     .section__datos--username {
         font-size: 1.3rem;
     }
+
 }
 
 .section__datos--boton {
@@ -71,7 +72,7 @@
     font-size: 1.6rem;
     font-family: var(--textFont);
     border-radius: 20px;
-    width: 75px;
+    width: 100px !important; 
     height: 20px;
     text-align: center;
     border: none;
@@ -136,6 +137,17 @@
     margin: 20px 0;
     width: 90%;
     height: 90%;
+}
+
+@media screen and (max-width: 320px) {
+
+    .post__contenido {
+        font-size: 1.2rem;
+    }
+
+    .section__info {
+        font-size: 1.2rem;
+    }
 }
 
 .post__titulo {

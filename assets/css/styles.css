@@ -9,6 +9,7 @@
 @import url(./lista-albumes.css);
 @import url(./lista-categoria.css);
 @import url(./top.css);
+@import url(./followers-profile.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
@@ -27,6 +28,8 @@
     /* Fonts */
     --textFont: 'Mukta', sans-serif;
     --titlesFont: 'Nunito', sans-serif;
+
+    --borderRadius: 20px; 
 }
 
 html {
@@ -66,7 +69,7 @@ h1, h2, h3, h4 {
     font-family: var(--titlesFont);
     line-height: 1.2;
     color: var(--white);
-    font-family: var(--fuenteHeading);
+    /* font-family: var(--fuenteHeading); */
     line-height: 1.2;
 }
 

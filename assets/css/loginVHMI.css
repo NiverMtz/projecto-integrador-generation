@@ -1,22 +1,20 @@
-/* ajuste img banner */
+/* BANNER IMAGE */
 .banner-img{
-  background-image: url();
+  background-image: url(/assets/img/wall.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* 
-https://giphy.com/embed/J5WxSrLAlcbS2afF8i
-*/
+
 .banner-mascara{
   background-color: var(--rosaOpaco);
 }
-/* estilos de inputs */
+/* LOGIN */
 .login-input{
   border-radius: 20px;
 }
 
-/* boton accesar */
+/* BOTON ACCESARr */
 .accesar-btn{
   font-size: var(--titleFont);
   border-radius: 20px;

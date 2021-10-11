@@ -3,6 +3,7 @@
        
 }
 
+/* Posible bug */
 .acerca-paax, span, p, img {
     text-align: center;
     font-size: 10rem;
@@ -11,6 +12,8 @@
     align-items: center;
     text-align: center;
 }
+
+/* Posible bug */
 .gif, img {
     align-items: center;
 }
@@ -30,14 +33,17 @@ span {
     border-radius: 90px;
 }
 
+/* Posible bug */
 .text-conocenos, h3 {
     font-family: var(--titlesFont);
 }
 
+/* Posible bug */
 .text-conocenos, p {
     font-size: var(--textFont);
 }
 
+/* Posible bug */
 .cart-tittle, h5{
     font-family: var(--titlesFont);
     color: var(--negro);
@@ -46,6 +52,8 @@ span {
     font-size: medium;
     background-color: rgb(255, 255, 255);
 }
+
+/* Posible bug */
 .cart-text, p {
     font-family: var(--textFont);
     text-align: left;
@@ -62,6 +70,7 @@ span {
     align-items: center;
 }
 
+/* Posible bug */
 .links, img {
     margin-right: 10px;
     cursor: pointer;
@@ -72,6 +81,112 @@ span {
     color: var(--rosatrans);
     font-size: large;
 }
+/* -- MISIÓN -- */
+.cont-padre-mision{
+    display: flex;
+}
+.circulo-mision{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--rosa);
+    width: 150px;
+    height: 150px;
+    font: var(--titlesFont);
+    color: var(--white);   
+}
+.cont-txt-mision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px var(--rosa);
+    width: 100%;  
+    border-radius: 75px;
+    height: 150px; 
+}
+.cont-txt-mision p{
+    font: var(--textFont);
+    color:var(--white);
+    padding-left: 160px;
+    padding-right: 20px;
+}
+/*  -- VISIÓN -- */ 
+.cont-padre-vision{
+    margin-top: 20px;
+    display: flex;
+}
+.circulo-vision{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--rosa);
+    width: 165px;
+    height: 165px;
+    font: var(--titlesFont);
+    color: var(--white);
+}
+.cont-txt-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px var(--rosa);
+    width: 100%;  
+    border-radius: 82px;
+    height: 165px; 
+}
+.cont-txt-vision p{
+    font: var(--textFont);
+    color: var(--white);
+    padding-left: 160px;
+    padding-right: 20px;
+}
+/* -- RESPONSIVE MISION Y VISION -- */
+ @media screen and (max-width: 600px){
+
+.cont-padre-mision{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.circulo-mision{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
+    
+}
+.cont-txt-mision{
+    margin-top: -50px;
+    width: 90%;  
+    border-radius: 20px; 
+    
+}
+.cont-txt-mision p{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+   
+}
+
+}
+
+
+
+/*--------------------------------------------*/
+/* DANIEL */
 /* -- MISIÓN -- */
 .cont-padre-mision{
     display: flex;
@@ -222,6 +337,7 @@ span {
 }
 .circulos{
     margin: auto;
+    margin-top: -20px;
     margin-bottom: 20px;
     text-align: center;
     width: 270px;

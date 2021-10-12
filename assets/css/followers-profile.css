@@ -86,7 +86,6 @@ button:hover {
     border-radius: inherit;
     margin-right: 0;
     opacity: 0.4;
-    object-position: center;
     object-fit: cover;
 }
 
@@ -104,11 +103,7 @@ button:hover {
 
 .card__overtext-superior {
     display: flex;
-}
-
-.card__content-post p {
-    height: 200px;
-    overflow: hidden;
+    height: 100%;
 }
 
 .card__info {
@@ -142,6 +137,8 @@ button:hover {
 .card__content-post {
     display: flex;
     flex-direction: column;
+    height: 75.5%;
+    overflow: hidden;
 }
 
 .card__post-titulo {
@@ -187,13 +184,12 @@ button:hover {
     .card {
         margin: 50px 160px;
     }
-
 }
 
 @media screen and (min-width: 768px) {
 
     .card__elementos {
-        bottom: 100px;
+        bottom: 50px;
         right: 50px;
     }
 
@@ -201,5 +197,4 @@ button:hover {
         height: 500px;
         overflow: unset;
     }
-
 }

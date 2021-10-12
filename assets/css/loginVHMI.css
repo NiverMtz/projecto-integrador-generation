@@ -1,3 +1,21 @@
-.wall{
-  background-image: url();
+/* BANNER IMAGE */
+.banner-img{
+  background-image: url(/assets/img/wall.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-mascara{
+  background-color: var(--rosaOpaco);
+}
+/* LOGIN */
+.login-input{
+  border-radius: 20px;
+}
+
+/* BOTON ACCESARr */
+.accesar-btn{
+  font-size: var(--titleFont);
+  border-radius: 20px;
 }

@@ -1,0 +1,24 @@
+/* DASHBOARD BANNER */
+section.dashboard__img{
+  height: 291px;
+  width: 390;
+  background-image: url(../img/banner-demo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
+/* CARTAS/BOTON */
+.dashboard__radius{
+  border-radius: 20px;
+}
+.dashboard__radius:hover{
+background-color: var(--rosaOpaco)
+}
+.dashboard__btn{
+  background-color: var(--rosatrans);
+  border-radius: 20px;
+}
+
+
+

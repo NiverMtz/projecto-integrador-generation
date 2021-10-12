@@ -12,6 +12,9 @@ section.dashboard__img{
 .dashboard__radius{
   border-radius: 20px;
 }
+.dashboard__radius:hover{
+background-color: var(--rosaOpaco)
+}
 .dashboard__btn{
   background-color: var(--rosatrans);
   border-radius: 20px;

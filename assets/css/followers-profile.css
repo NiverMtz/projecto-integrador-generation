@@ -75,17 +75,40 @@ button:hover {
 }
 
 .card {
-    background-image:
-    linear-gradient(180deg, rgba(0,0,0,0.65) 65%, rgba(168,168,168,0.3) 95%),
-    url(../img/album_cover.jpg);
     margin: 50px 20px;
-    background-size: cover;
-    background-position: center;
-    gap: 10px;
-    display: flex;
     border-radius: var(--borderRadius);
-    padding: 15px 20px;
     box-shadow: 0px 0px 10px 0px var(--white);
+    display: flex;
+    position: relative;
+}
+
+.card__img-back {
+    border-radius: inherit;
+    margin-right: 0;
+    opacity: 0.4;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card__overtext {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.card__overtext-superior {
+    display: flex;
+}
+
+.card__content-post p {
+    height: 200px;
+    overflow: hidden;
 }
 
 .card__info {
@@ -132,6 +155,9 @@ button:hover {
     gap: 60px;
     margin-bottom: 25px;
     height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
 }
 
 .card__elementos-share {
@@ -161,4 +187,19 @@ button:hover {
     .card {
         margin: 50px 160px;
     }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .card__elementos {
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .card__content-post p {
+        height: 500px;
+        overflow: unset;
+    }
+
 }

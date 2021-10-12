@@ -24,6 +24,7 @@
     --negro: #0D0D0D;
     --white: white;
     --rosatrans: #f280b580;
+    --fieldbg : rgba(196, 196, 196, 0.43);
 
     /* Fonts */
     --textFont: 'Mukta', sans-serif;

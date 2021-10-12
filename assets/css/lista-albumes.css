@@ -16,7 +16,7 @@ h1{
   
   min-width: 300px;
   align-items: center;
-  left: 50%;
+  left: 40%;
   display: flex;
   justify-content: center;
 }
@@ -36,12 +36,7 @@ h1{
 .rwd-table td:last-child {
   padding-bottom: .5em;
 }
-.rwd-table td:before {
-  content: attr(data-th) ": ";
-  font-weight: bold;
-  width: 6.5em;
 
-}
 @media (min-width: 480px) {
   .rwd-table td:before {
     display: none;

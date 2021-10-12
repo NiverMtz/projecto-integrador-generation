@@ -3,6 +3,7 @@
        
 }
 
+/* Posible bug */
 .acerca-paax, span, p, img {
     text-align: center;
     font-size: 10rem;
@@ -11,6 +12,8 @@
     align-items: center;
     text-align: center;
 }
+
+/* Posible bug */
 .gif, img {
     align-items: center;
 }
@@ -30,14 +33,17 @@ span {
     border-radius: 90px;
 }
 
+/* Posible bug */
 .text-conocenos, h3 {
     font-family: var(--titlesFont);
 }
 
+/* Posible bug */
 .text-conocenos, p {
     font-size: var(--textFont);
 }
 
+/* Posible bug */
 .cart-tittle, h5{
     font-family: var(--titlesFont);
     color: var(--negro);
@@ -46,6 +52,8 @@ span {
     font-size: medium;
     background-color: rgb(255, 255, 255);
 }
+
+/* Posible bug */
 .cart-text, p {
     font-family: var(--textFont);
     text-align: left;
@@ -62,6 +70,7 @@ span {
     align-items: center;
 }
 
+/* Posible bug */
 .links, img {
     margin-right: 10px;
     cursor: pointer;

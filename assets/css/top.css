@@ -3,12 +3,12 @@
   .top-ti{
       text-align: center;
       justify-content: center;
-      display: flex;
+     
       position: static;
       margin-top: 2px;
   }
   .carousel {
-    padding: 30px;
+
     position: relative;
     overflow-x: hidden;
     align-items: center;
@@ -23,7 +23,7 @@
   
   .carousel--item {
     display: flex;
-    position: relative;
+    position: absolute;
     margin: 10px 8px;
     width: 200px;
     height: 250px;

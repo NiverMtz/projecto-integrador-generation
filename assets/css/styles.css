@@ -24,10 +24,13 @@
     --negro: #0D0D0D;
     --white: white;
     --rosatrans: #f280b580;
+    --fieldbg : rgba(196, 196, 196, 0.43);
 
     /* Fonts */
     --textFont: 'Mukta', sans-serif;
     --titlesFont: 'Nunito', sans-serif;
+
+    --borderRadius: 20px; 
 }
 
 html {
@@ -67,7 +70,7 @@ h1, h2, h3, h4 {
     font-family: var(--titlesFont);
     line-height: 1.2;
     color: var(--white);
-    font-family: var(--fuenteHeading);
+    /* font-family: var(--fuenteHeading); */
     line-height: 1.2;
 }
 

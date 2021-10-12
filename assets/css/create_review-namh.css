@@ -1,31 +1,117 @@
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FCF2F2;
+    opacity: 1; /* Firefox */
+    font-family: var(--textFont);
+  }
+  
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #FCF2F2;
+    font-family: var(--textFont);
+  }
+  
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #FCF2F2;
+    font-family: var(--textFont);
+  }
+
 .review {
-    width: 100%;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    gap: 30px;
+  padding: 48px 24px; 
 }
 
-.review__input-button {
-    width: 100%;
-    display: flex;
+.review h2 {
+  text-align: center;
+  margin-block-end: 48px;
 }
 
-.review__input-button img {
-    width: 30px;
-    z-index: 999;
+.review__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.review__input-button select {
-    width: 100%;
-    margin-left: -30px;
+.review__category {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.review__input-button--primary {
+.review__field {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--fieldbg);
+  border-radius: 48px;
+}
+
+.review__field--textarea {
+  height: unset;
+}
+
+.review__field img {
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.review__field input,
+.review__field textarea {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-radius: var(--borderRadius);
+  color: white;
+  font-size: 16px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+.review__field textarea {
+  padding-block-start: 16px;
+  resize: none;
+}
+
+.review__field input:focus,
+.review__field textarea:focus {
+  outline: none;
+}
+
+.review__button button {
     border: none;
-    background-color: rgba(196, 196, 196, 0.43);
+    height: 48px;
+    width: 100%;
+    background-color: var(--azulClaro);
     color: var(--white);
-    border-radius: 20px;
-    text-align: center;
+    border-radius: var(--borderRadius);
+    padding: 4px 16px;
+    font-size: 24px;
+}
+
+.review__button button:hover,
+.review__button button:active {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px var(--rosa);
+}
+
+@media (min-width: 768px) {
+  .review {
+    margin: auto;
+    max-inline-size: 70%;
+  }
+
+  .review__category {
+    flex-direction: row;
+  }
+
+  .review__button {
+    align-self: flex-end;
+  }
+
+  .review__button button {
+    width: 200px;
+  }
 }

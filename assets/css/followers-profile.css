@@ -175,7 +175,13 @@ button:hover {
     padding: 4px 16px;
 }
 
-@media screen and (min-width: 1024px) {
+
+/* Apartir de aquí se agregan los media queries para volver
+   responsive la página y se comienza a modificar una vez superado
+   el ancho en pixeles de una tablet */
+
+
+@media screen and (min-width: 770px) {
 
     .user-navbar {
         margin: 0 160px;
@@ -183,18 +189,99 @@ button:hover {
 
     .card {
         margin: 50px 160px;
+        position: static;
+        background-color: rgba(196, 196, 196, 0.6);
+        height: auto;
     }
-}
-
-@media screen and (min-width: 768px) {
-
+    
+    .card__img-back {
+        display: none;
+    }
+    
+    .card__overtext {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+    
+    .card__overtext-superior {
+        width: 100%;
+        height: 350px;
+        gap: 20px;
+        padding: 20px 30px;
+    }
+    
+    .card__info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* gap: 5px; */
+    }
+    
+    .card__info-content {
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .card__info-img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .card__post {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .card__content-post {
+        display: flex;
+        flex-direction: column;
+        height: 75.5%;
+        overflow: hidden;
+    }
+    
+    .card__post-titulo {
+        font-size: 1.6rem;
+    }
+    
     .card__elementos {
-        bottom: 50px;
-        right: 50px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-bottom: 25px;
+        height: 35px;
+        position: static;
     }
-
-    .card__content-post p {
-        height: 500px;
-        overflow: unset;
+    
+    .card__elementos-share {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card__elementos--boton-altura {
+        height: 25px;
+    }
+    
+    .card__elementos-boton {
+        height: 100%;
+        border: none;
+        background-color: var(--azulClaro);
+        color: var(--white);
+        border-radius: var(--borderRadius);
+        padding: 4px 16px;
     }
 }
+
+/* @media screen and (min-width: 1030px) {
+
+    .card {
+        height: 300px;
+    }
+} */

@@ -90,7 +90,7 @@ button:hover {
 }
 
 .card__overtext {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -179,6 +179,15 @@ button:hover {
 /* Apartir de aquí se agregan los media queries para volver
    responsive la página y se comienza a modificar una vez superado
    el ancho en pixeles de una tablet */
+
+   
+
+@media screen and (min-width: 427px) {
+    
+    .card__overtext {
+        padding: 40px;
+    }
+}
 
 
 @media screen and (max-width: 768px) {

@@ -176,6 +176,7 @@ button:hover {
 }
 
 
+
 /* Apartir de aquí se agregan los media queries para volver
    responsive la página y se comienza a modificar una vez superado
    el ancho en pixeles de una tablet */
@@ -206,6 +207,10 @@ button:hover {
 
     .user-navbar {
         margin: 0 160px;
+    }
+
+    .user-navbar__datos {
+        width: 250px;
     }
 
     /* La clase .card es el contenedor de todos los textos, iconos e imágenes 

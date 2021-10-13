@@ -1,0 +1,8 @@
+.registro_img{
+  width: 20vw;
+  height: 20vh;
+  color: aliceblue;
+}
+p{
+  font-size: var(--titlesFont);
+}

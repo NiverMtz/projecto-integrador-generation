@@ -25,7 +25,7 @@
     overflow: hidden;
     position: relative;
     width: 1300px;
-
+    margin-bottom: 5%;
   }
   .slider::before, .slider::after {
     

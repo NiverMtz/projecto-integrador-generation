@@ -188,7 +188,12 @@ button:hover {
     }
 }
 
+
 @media screen and (min-width: 770px) {
+
+    * {
+        position: static;
+    }
 
     .user-navbar {
         margin: 0 160px;
@@ -198,8 +203,7 @@ button:hover {
        y tiene dos contenedores hijos, que son los siguentes: */
     .card {
         margin: 50px 160px;
-        position: static;
-        background-color: rgba(196, 196, 196, 0.6);
+        background-color: rgba(196, 196, 196, 0.43);
         height: 450px;
     }
     
@@ -214,7 +218,6 @@ button:hover {
         padding: 20px;
         width: 100%;
         height: 100%;
-        position: static;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -225,17 +228,19 @@ button:hover {
     .card__overtext-superior {
         width: 100%;
         height: 300px;
-        gap: 20px;
+        gap: 40px;
         padding: 20px 30px;
     }
     
     /* Este es el primer hijo de de clase .card__overtext-superior */
     .card__info {
+        padding-right: 30px;
+        border-right: 4px solid white;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        /* gap: 5px; */
+        align-items: flex-start;
     }
     
     .card__info-content {
@@ -246,7 +251,13 @@ button:hover {
     }
 
     .card__info-media-album {
+        width: 100px;
+        height: 100px;
+    }
 
+    .card__info-media-img {
+        width: 100%;
+        height: 100%;
     }
     
     .card__info-img {
@@ -266,7 +277,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         height: 75.5%;
-        overflow: hidden;
+        overflow: auto;
     }
     
     .card__post-titulo {
@@ -275,12 +286,11 @@ button:hover {
     
     /* Este es el segundo y último contenedor hijo de la clase .card__overtext */
     .card__elementos {
-        border: 2px solid red;
-        display: inline-flex;
-        width: 100%;
+        display: flex;
         justify-content: flex-end;
-        height: 35px;
-        position: static;
+        gap: 60px;
+        width: 100%;
+        height: auto;
     }
     
     .card__elementos-share {
@@ -293,6 +303,7 @@ button:hover {
     }
     
     .card__elementos-boton {
+        margin-right: 50px;
         height: 100%;
         border: none;
         background-color: var(--azulClaro);
@@ -302,9 +313,10 @@ button:hover {
     }
 }
 
-/* @media screen and (min-width: 1030px) {
+
+@media screen and (min-width: 1030px) {
 
     .card {
-        height: 300px;
+        height: 350px;
     }
-} */
+}

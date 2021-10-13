@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-.espacio{
-  background-color: beige;
-  height: 150px;
-}
-
-body .footer {
-=======
 .footer {
->>>>>>> 53bd662aa2254f84c127e1b784f5b055a4de144c
     z-index: 1;
     --footer-background:var(--rosa);
     display: grid;
@@ -60,13 +51,8 @@ body .footer {
     gap:50px;
     
   }
-<<<<<<< HEAD
-  body .footer .content > div > div {
-    /* margin: 0.25rem 0; */
-=======
    .footer .content > div > div {
     margin: 0.25rem 0;
->>>>>>> 53bd662aa2254f84c127e1b784f5b055a4de144c
   }
    .footer .content > div > div > * {
     margin-right: 0.5rem;

@@ -1,0 +1,32 @@
+/* BANNER IMAGE */
+.banner-img{
+  background-image: url(../img/wall2.gif);
+  /* https://giphy.com/gifs/twiceofficial-kpop-twice-heart-shaker-j3zHD4OHWXfhyBZm5z */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-mascara{
+  background-color: var(--rosaOpaco);
+}
+/* INPUT REGISTRO */
+input{
+  border: none;
+  border-radius: var(--borderRadius);
+  color: var(--negro);
+  outline: none;
+  /* background-color: #C4C4C4; */
+  /* opacity: 0.43; */
+}
+input:focus{
+  background-color: var(--rosa);
+}
+/* BONTON REGISTRO */
+.registro_btn{
+  font-size: var(--titleFont);
+  border-radius: var(--borderRadius);
+}
+::placeholder{
+  color: #000;
+  opacity: 1;
+}

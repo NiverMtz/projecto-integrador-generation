@@ -9,6 +9,7 @@
 @import url(./lista-albumes.css);
 @import url(./lista-categoria.css);
 @import url(./top.css);
+@import url(./footerbuble.css);
 @import url(./followers-profile.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
@@ -24,6 +25,7 @@
     --negro: #0D0D0D;
     --white: white;
     --rosatrans: #f280b580;
+    --fieldbg : rgba(196, 196, 196, 0.43);
 
     /* Fonts */
     --textFont: 'Mukta', sans-serif;

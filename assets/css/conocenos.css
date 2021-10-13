@@ -3,6 +3,7 @@
        
 }
 
+/* Posible bug */
 .acerca-paax, span, p, img {
     text-align: center;
     font-size: 10rem;
@@ -12,6 +13,7 @@
     text-align: center;
 }
 
+/* Posible bug */
 .gif, img {
     align-items: center;
 }
@@ -31,14 +33,17 @@ span {
     border-radius: 90px;
 }
 
+/* Posible bug */
 .text-conocenos, h3 {
     font-family: var(--titlesFont);
 }
 
+/* Posible bug */
 .text-conocenos, p {
     font-size: var(--textFont);
 }
 
+/* Posible bug */
 .cart-tittle, h5{
     font-family: var(--titlesFont);
     color: var(--negro);

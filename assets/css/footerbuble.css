@@ -1,6 +1,11 @@
+.espacio{
+  background-color: beige;
+  height: 150px;
+}
+
 body .footer {
     z-index: 1;
-    --footer-background:#F280B6;
+    --footer-background:var(--rosa);
     display: grid;
     position: relative;
     grid-area: footer;
@@ -28,7 +33,7 @@ body .footer {
     z-index: 2;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 4rem;
+    grid-gap: 2rem;
     padding: 2rem;
     background: var(--footer-background);
   }
@@ -45,11 +50,13 @@ body .footer {
   }
   body .footer .content > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    gap:50px;
+    
   }
   body .footer .content > div > div {
-    margin: 0.25rem 0;
+    /* margin: 0.25rem 0; */
   }
   body .footer .content > div > div > * {
     margin-right: 0.5rem;
@@ -101,5 +108,25 @@ body .footer {
     }
   }
   .imagen{
-      width: 200px;
+      /* width: 200px; */
   }
+
+
+
+ /*  .cont.iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+  }
+.icono1{ 
+  background-color: aqua;
+  
+}
+.icono2{
+  background-color: aqua;
+}
+.icono3{
+  background-color: aqua;
+
+} */

@@ -10,10 +10,13 @@
 
     <body>
 
+        <!--Esta sección es el código que pertenece a la imagen del baner-->
         <section class="banner">
             <img src="./assets/img/background.jpg" alt="background">
         </section>
 
+        <!--Esta sección es la barra de datos del usuario, fotografía
+        y menú de opciones-->
         <div class="user-navbar">
 
             <div class="user-navbar__id">
@@ -25,6 +28,7 @@
                 <button>Follow</button>
             </div>
 
+            <!--Esta sección solo incluye el menú de opciones-->
             <nav class="user-navbar__interacciones">
                 <a class="user-navbar__link" href="#">Seguidores</a>
                 <a class="user-navbar__link" href="#">Seguidos</a>
@@ -34,12 +38,18 @@
 
         </div>
 
+        <!--Esta sección pertenece a la reseña que incluye la imagen de background
+        y todo los textos junto con iconos, botones.-->
         <main class="main">
             <article class="card">
 
                 <img class="card__img-back" src="assets/img/album_cover.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
                 <section class="card__overtext">
-
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
                     <div class="card__overtext-superior">
                         <div class="card__info">
                             <figure class="card__info-media-album">
@@ -61,7 +71,8 @@
                                 <p class="card_info-texto">Canción</p>
                             </figure>
                         </div>
-                    
+                        <!--Este bloque contiene el título del post y el contenido
+                        de la reseña-->
                         <div class="card__post">
                             <div class="card__content-post">
                                 <h2 class="card__post-titulo">Título reseña</h2>
@@ -72,7 +83,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--Este bloque de código contiene el icono de share y
+                    el botón de comentar-->
                     <div class="card__elementos">
                         <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
                         <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>

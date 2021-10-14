@@ -161,6 +161,10 @@ button:hover {
     right: 50px;
 }
 
+.card__elementos-share {
+    margin-right: 0;
+}
+
 .card__elementos-boton {
     height: 100%;
     border: none;
@@ -180,6 +184,18 @@ button:hover {
 
     .card__elementos {
         width: 204.45px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .card__info-content p {
+        font-size: 1.3rem;
+    }
+
+    .card__content-post h2, p {
+        font-size: 1.3rem;
     }
 }
 
@@ -250,6 +266,27 @@ button:hover {
         gap: 40px;
     }
 
+    .user-navbar__datos h2 {
+        font-size: 2rem;
+    }
+
+    .user-navbar__interacciones a {
+        font-size: 2rem;
+    }
+
+    .user-navbar__id button {
+        font-size: 1.5rem;
+    }
+
+    .user-navbar__id img {
+        margin: initial;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: -60px;
+    }
+
     .user-navbar__id button {
         margin-right: 50px;
     }
@@ -257,7 +294,6 @@ button:hover {
     .card {
         box-shadow: 0px 0px 20px 0px var(--white);
         margin: 50px 160px;
-        background-color: rgba(242, 128, 182, 0.7);
         height: 40vw;
     }
 
@@ -272,6 +308,7 @@ button:hover {
 
     .card__info-media-img {
         object-fit: cover;
+        margin-right: 0;
     }
 
     .card__overtext {
@@ -281,20 +318,28 @@ button:hover {
     .card__info {
         flex-basis: 200px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 10px;
         border-right: 5px solid var(--white);
     }
 
     .card__post {
         margin-left: 50px;
     }
+
+    .card__content-post h2, p {
+        font-size: 2rem;
+    }
+
+    .card__elementos-boton {
+        font-size: 1.5rem;
+    }
 }
 
 
 @media screen and (min-width: 1100px) {
+
+    .card__info {
+        justify-content: center;
+    }
 
     .user-navbar__datos {
         margin-left: 100px;
@@ -307,5 +352,9 @@ button:hover {
 
     .card {
         height: 35vw;
+    }
+
+    .card__content-post {
+        justify-content: center;
     }
 }

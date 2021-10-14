@@ -74,12 +74,19 @@ button:hover {
     color: var(--white);
 }
 
+
+/* Este es el código para crear la sección del post, que contiene
+   imágenes, iconos y textos */ 
+
+
 .card {
     margin: 50px 20px;
     border-radius: var(--borderRadius);
     box-shadow: 0px 0px 10px 0px var(--white);
     display: flex;
     position: relative;
+    height: 100vw;
+    border: 5px solid red;
 }
 
 .card__img-back {
@@ -94,25 +101,28 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    border: 1px solid yellow;
 }
 
 .card__overtext-superior {
     display: flex;
     height: 100%;
+    border: 1px solid white;
+    height: 85%;
 }
 
 .card__info {
+    border: 2px solid greenyellow;
     flex-basis: 150px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 10px;
 }
 
 .card__info-content {
@@ -128,6 +138,7 @@ button:hover {
 }
 
 .card__post {
+    border: 2px solid orange;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -135,9 +146,10 @@ button:hover {
 }
 
 .card__content-post {
+    border: 2px solid crimson;
     display: flex;
     flex-direction: column;
-    height: 75.5%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -146,7 +158,7 @@ button:hover {
 }
 
 .card__elementos {
-    margin-top: 30px;
+    border: 2px solid green;
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -155,15 +167,6 @@ button:hover {
     position: absolute;
     bottom: 0;
     right: 50px;
-}
-
-.card__elementos-share {
-    width: 40px;
-    height: 40px;
-}
-
-.card__elementos--boton-altura {
-    height: 25px;
 }
 
 .card__elementos-boton {
@@ -176,162 +179,8 @@ button:hover {
 }
 
 
-
 /* Apartir de aquí se agregan los media queries para volver
    responsive la página y se comienza a modificar una vez superado
    el ancho en pixeles de una tablet */
 
-   
 
-@media screen and (min-width: 427px) {
-    
-    .card__overtext {
-        padding: 40px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .card__info-media-album {
-        display: none;
-    }
-}
-
-
-@media screen and (min-width: 770px) {
-
-    * {
-        position: static;
-    }
-
-    .user-navbar {
-        margin: 0 160px;
-    }
-
-    .user-navbar__datos {
-        width: 250px;
-    }
-
-    /* La clase .card es el contenedor de todos los textos, iconos e imágenes 
-       y tiene dos contenedores hijos, que son los siguentes: */
-    .card {
-        margin: 50px 160px;
-        background-color: rgba(196, 196, 196, 0.43);
-        height: 450px;
-    }
-    
-    /* Este es el primer hijo de la clase .card */ 
-    .card__img-back { 
-        display: none;
-    }
-    
-    /* Este es el segundo y último hijo de la clase .card 
-       y este es también contenedor de dos elementos */ 
-    .card__overtext {
-        padding: 20px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-    /* Este es el primer hijo de la clase .card__overtext 
-       y este es también contenedor de dos elementos */ 
-    .card__overtext-superior {
-        width: 100%;
-        height: 300px;
-        gap: 40px;
-        padding: 20px 30px;
-    }
-    
-    /* Este es el primer hijo de de clase .card__overtext-superior */
-    .card__info {
-        padding-right: 30px;
-        border-right: 4px solid white;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .card__info-content {
-        height: 50px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .card__info-media-album {
-        width: 100px;
-        height: 100px;
-    }
-
-    .card__info-media-img {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .card__info-img {
-        width: 25px;
-        height: 25px;
-    }
-    
-    /* Este es el segundo y último hijo de la clase .card__overtext-superior */
-    .card__post {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .card__content-post {
-        display: flex;
-        flex-direction: column;
-        height: 75.5%;
-        overflow: auto;
-    }
-    
-    .card__post-titulo {
-        font-size: 1.6rem;
-    }
-    
-    /* Este es el segundo y último contenedor hijo de la clase .card__overtext */
-    .card__elementos {
-        display: flex;
-        justify-content: flex-end;
-        gap: 60px;
-        width: 100%;
-        height: auto;
-    }
-    
-    .card__elementos-share {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .card__elementos--boton-altura {
-        height: 25px;
-    }
-    
-    .card__elementos-boton {
-        margin-right: 50px;
-        height: 100%;
-        border: none;
-        background-color: var(--azulClaro);
-        color: var(--white);
-        border-radius: var(--borderRadius);
-        padding: 4px 16px;
-    }
-}
-
-
-@media screen and (min-width: 1030px) {
-
-    .card {
-        height: 350px;
-    }
-}

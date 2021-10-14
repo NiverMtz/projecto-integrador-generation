@@ -1,7 +1,7 @@
 .footer {
     z-index: 1;
     --footer-background:#F280B6;
-    display: grid;
+    
     position: relative;
     grid-area: footer;
     min-height: 8px;
@@ -101,10 +101,8 @@
       bottom: var(--distance, 8rem);
     }
   }
-  .imagen{
-   
-   
-  }
+  
   .texto{
     font-family: var(--textFont);
+    
   }

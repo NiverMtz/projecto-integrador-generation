@@ -30,14 +30,7 @@ background-color: var(--rosaOpaco)
   margin-block-end: 48px;
 }
 
-@media (min-width: 1024px) {
-  .dashboard__buttons-container {
-    flex-direction: row;
-    justify-content: center;
-    margin-block-start: 10rem;
-    gap: 10rem;
-  }
-}
+
 
 .dashboard__button {
   border: none;
@@ -53,11 +46,14 @@ background-color: var(--rosaOpaco)
 
 .dashboard__button--photo {
   background-color: var(--azulClaro);
-  padding: 2px;
+  padding: 0px 4px;
+  border-radius: var(--borderRadius);
   position: fixed;
-  right: 48px;
-  top: 128px;
+  right: 20px;
+  top: 12px;
 }
+
+
 
 .dashboard__icon--size {
   width: 64px;
@@ -68,7 +64,22 @@ background-color: var(--rosaOpaco)
 .dashboard__button p {
   text-align: center;
   font-family: var(--titlesFont);
-  width: 8em;
+  width: 7em;
+}
+/* RESPONSIVE */
+@media (min-width: 1024px) {
+  .dashboard__buttons-container {
+    flex-direction: row;
+    justify-content: center;
+    margin-block-start: 10rem;
+    gap: 10rem;
+  }
 }
 
+@media (max-width: 450px) {
+  .dashboard__button--photo{
+    padding: 0 4px;
+    font-size: 10px;
+  }
+}
 

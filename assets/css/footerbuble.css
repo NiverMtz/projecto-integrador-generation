@@ -1,12 +1,13 @@
-body .footer {
+.footer {
     z-index: 1;
     --footer-background:#F280B6;
-    display: grid;
+    
     position: relative;
     grid-area: footer;
     min-height: 8px;
+    /* margin-top: 20%; */
   }
-  body .footer .bubbles {
+  .footer .bubbles {
     position: absolute;
     top: 0;
     left: 0;
@@ -15,7 +16,7 @@ body .footer {
     background: var(--footer-background);
     filter: url("#blob");
   }
-  body .footer .bubbles .bubble {
+  .footer .bubbles .bubble {
     position: absolute;
     left: var(--position, 50%);
     background: var(--footer-background);
@@ -24,7 +25,7 @@ body .footer {
             animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
     transform: translate(-50%, 100%);
   }
-  body .footer .content {
+  .footer .content {
     z-index: 2;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -32,33 +33,33 @@ body .footer {
     padding: 2rem;
     background: var(--footer-background);
   }
-  body .footer .content a, body .footer .content p {
+   .footer .content a, body .footer .content p {
     color: #F5F7FA;
     text-decoration: none;
   }
-  body .footer .content b {
+   .footer .content b {
     color: white;
   }
-  body .footer .content p {
+   .footer .content p {
     margin: 0;
     font-size: 0.75rem;
   }
-  body .footer .content > div {
+   .footer .content > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
-  body .footer .content > div > div {
+   .footer .content > div > div {
     margin: 0.25rem 0;
   }
-  body .footer .content > div > div > * {
+   .footer .content > div > div > * {
     margin-right: 0.5rem;
   }
-  body .footer .content > div .image {
+   .footer .content > div .image {
     align-self: center;
     width: 4rem;
     height: 2rem;
-    margin: 0.25rem 0;
+    /* margin: 0.25rem 0; */
     background-size: cover;
     background-position: center;
   }
@@ -76,8 +77,8 @@ body .footer {
   
   @keyframes bubble-size {
     0%, 75% {
-      width: var(--size, 4rem);
-      height: var(--size, 4rem);
+      width: var(--size, 3rem);
+      height: var(--size, 3rem);
     }
     100% {
       width: 0rem;
@@ -89,7 +90,7 @@ body .footer {
       bottom: -4rem;
     }
     100% {
-      bottom: var(--distance, 10rem);
+      bottom: var(--distance, 8rem);
     }
   }
   @keyframes bubble-move {
@@ -97,9 +98,11 @@ body .footer {
       bottom: -4rem;
     }
     100% {
-      bottom: var(--distance, 10rem);
+      bottom: var(--distance, 8rem);
     }
   }
-  .imagen{
-      width: 200px;
+  
+  .texto{
+    font-family: var(--textFont);
+    
   }

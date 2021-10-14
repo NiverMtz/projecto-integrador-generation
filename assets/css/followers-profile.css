@@ -181,6 +181,13 @@ button:hover {
    el ancho en pixeles de una tablet */
 
 
+@media screen and (max-width: 768px) {
+
+    .card__info-media-album {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 770px) {
 
     .user-navbar {
@@ -236,6 +243,10 @@ button:hover {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .card__info-media-album {
+
     }
     
     .card__info-img {

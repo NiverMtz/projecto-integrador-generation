@@ -104,6 +104,7 @@
     }
   }
   .imagen{
+<<<<<<< HEAD
       /* width: 200px; */
   }
 
@@ -126,3 +127,11 @@
   background-color: aqua;
 
 } */
+=======
+   
+   
+  }
+  .texto{
+    font-family: var(--textFont);
+  }
+>>>>>>> 0bdf243769b803d1f6d533089d711c5755ea9ac2

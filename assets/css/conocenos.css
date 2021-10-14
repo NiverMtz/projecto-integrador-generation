@@ -2,12 +2,14 @@
     color: var(--white);      
 }
 /* Posible bug */
-
-.acerca-paax{
-    
+.acerca-paax, span, p, img {
+    text-align: center;
+    font-size: 10rem;
+    font-family: var(--titlesFont);
+    background-size:cover;
+    align-items: center;
+    text-align: center;
 }
-
-
 /* Posible bug */
 .gif, img {
     align-items: center;

@@ -104,34 +104,9 @@
     }
   }
   .imagen{
-<<<<<<< HEAD
-      /* width: 200px; */
-  }
-
-
-
- /*  .cont.iconos{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    
-  }
-.icono1{ 
-  background-color: aqua;
-  
-}
-.icono2{
-  background-color: aqua;
-}
-.icono3{
-  background-color: aqua;
-
-} */
-=======
    
    
   }
   .texto{
     font-family: var(--textFont);
   }
->>>>>>> 0bdf243769b803d1f6d533089d711c5755ea9ac2

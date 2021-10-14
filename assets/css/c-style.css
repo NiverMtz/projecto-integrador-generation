@@ -1,0 +1,125 @@
+body{
+    background-color: black !important;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10 px;
+    border: 2px solid black;
+}
+/* Para recovery request & sucessful */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: 20px;
+}
+.main__img{
+    display: flex;
+    justify-content: center;
+}
+.main__textinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    width: 80%;
+    font-size:20pt;
+    color: white !important;
+}
+.main__textinfo--text{
+    margin:0;
+    text-align: center;
+}
+.main__recoveryform{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.main__recoveryform--form{
+    text-align: center;
+    width: 70%;
+    font-size: 14pt;
+    color: white;
+}
+.main__recoveryform--form input {
+    margin-bottom: 30px;
+    width: 90%;
+}
+.main__recoveryform--form button {
+    margin: 30px;
+}
+.main__toptext{
+    width: 100%;
+    height: 20%;
+    margin:20px;
+    text-align: start;
+}
+.main__toptext h1{
+    margin: 0;
+    color: white;
+}
+
+.main__comment-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0;
+}
+.main__comment-line div{
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px 20px 30px;
+    border: 0 !important;
+    border-radius: 20px;
+    color : white;
+    background-color: rgba(242, 128, 181, 0.198) ;
+}
+.main__comment-line img{
+    width: 100px;
+}
+.main__comment-line tr{
+    width: 100%;
+}
+.main__comment-line--label{
+    width: 45%;
+}
+#cancion, #album, #artista{
+    width: 55%;
+}
+
+
+
+/* == ESTILOS GUIAS DE DISEÑO */
+/* 
+.main__comment-line table,.main__comment-line tr,.main__comment-line td,.main__comment-line th{
+    border: 1px solid white ;
+
+} */
+
+
+/* Estilos temporales */
+
+header , footer{
+    text-align: center;
+    width: 100%;
+    margin: 0, 0, 0, 0 !important;
+    background-color: rgb(242, 128, 181);
+    padding: 10 px;
+}
+

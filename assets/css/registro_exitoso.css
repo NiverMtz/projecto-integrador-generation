@@ -1,0 +1,20 @@
+p{
+  font-size: var(--titlesFont);
+}
+a{
+  color: var(--rosa);
+  
+}
+a:hover{
+  color: var(--rosaOpaco);
+  text-decoration: none;
+}
+.registro_check{
+  padding: 100px;
+  clip-path: circle();
+  background-color: var(--rosaOpaco); 
+}
+img{
+  width: 100px;
+}
+

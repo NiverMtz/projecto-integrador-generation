@@ -52,10 +52,10 @@
 
     <!-- MAIN -->
     <!-- CARRUSEL -->
-    <div class="container-xxl overflow-hidden p-0">
+    <div class="container-xxl overflow-hidden p-0 d-flex flex-column align-items-lg-center pb-lg-5">
         <!-- PRIMER CARRUSEL -->
 
-        <div class="slider w-100">
+        <div class="slider row w-100">
             <div class="slide-track">
                 <div class="slide">
                     <img src="./assets/img/no-easy.jpg" height="150" width="170" alt="" />
@@ -103,15 +103,14 @@
         </div>
 
         <!-- IMAGEN LOGO -->
-        <div class="text-center">
-
-            <img src="./assets/img/logo-elbueno.gif" height="150" width="300" alt="logo-paax" />
+        <div class="row my-md-5">
+            <img class="m-0" src="./assets/img/logo-elbueno.gif" height="150" width="300" alt="logo-paax" />
         </div>
 
         <!-- SEGUNDO CARRUSEL -->
 
         <div class="slider w-100">
-            <div class="slide-track">
+            <div class="slide-track-inverse">
                 <div class="slide">
                     <img src="./assets/img/demon-days.jpg" height="150" width="170" alt="" />
                 </div>
@@ -160,11 +159,11 @@
 
     <!-- Columnas  -->
    
-    <div class="container ">
-        <div class="row">
-            <div class="col">
+    <div class="container-xl pt-5 overflow-hidden">
+        <div class="row d-flex justify-content-sm-between">
+            <div class="col-7">
                 <ul class="list-group">
-                    <h2 class="titulo text-center">TOP LO + HOT</h2>
+                    <h2 class="titulo text-center py-sm-4">TOP LO + HOT</h2>
                     <li class="list-group-item active text-center" aria-current="true">A L B U M E S</li>
                     <li class="list-group-item">Lalalisa - Lalalisa <img src="https://www.lopinionista.it/wp-content/uploads/2021/09/lalisa-cover-artwork.jpg" width="60px" style="margin-left: 50%;"></li>
                     <li class="list-group-item">Planet Her - Doja Cat <img src="https://static.qobuz.com/images/covers/pb/ng/bav6na7fengpb_600.jpg" width="60px" style="margin-left: 44%;"></li>
@@ -179,23 +178,21 @@
                 
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-4">
                 <div class="lista-generos flex-column" role="group">
-                    <h2 class="titulo text-center">GÉNEROS</h2>
-
-
-                    <button type="button" class="btnuno btn-outline-light text-center">K-POP</button>
-                    <button type="button" class="btndos btn-outline-light ">ROCK</button>
-                    <button type="button" class="btntres btn-outline-light ">POP</button>
-                    <button type="button" class="btncuatro btn-outline-light ">RAP</button>
-                    <button type="button" class="btncinco btn-outline-light ">ELECTRÓNICA</button>
+                    <h2 class="titulo text-center py-sm-4">GÉNEROS</h2>
+                    <button type="button" class="btnuno btn-outline-light text-center my-md-4">K-POP</button>
+                    <button type="button" class="btndos btn-outline-light my-md-4">ROCK</button>
+                    <button type="button" class="btntres btn-outline-light my-md-4">POP</button>
+                    <button type="button" class="btncuatro btn-outline-light my-md-4">HIP HOP</button>
+                    <!-- <button type="button" class="btncinco btn-outline-light my-md-4">ELECTRÓNICA</button> -->
                 </div>
             </div>
         </div>
 
         <!-- TOP ARTISTAS     -->
         <!-- tiene bug -->
-        <div class="row ">
+        <div class="row pt-5">
             <div class="col">
                 <section class="carousel ">
                     <h2 class="top-ti">TOP ARTISTAS</h2>
@@ -272,9 +269,63 @@
         </div>
     </div>
 
-    <div class="container-xxl">
+    <!-- CARDS PARA RESEÑAS -->
+    <div class="container-xxl my-1">
+        <h2 class="titulo text-center py-sm-4">RESEÑAS</h2>
         <div class="row-cols-xxl-auto">
 
+            <article class="card-user-main">
+    
+                <img class="card__img-back" src="assets/img/album_cover.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/album_cover.jpg">
+                            </figure>
+    
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                <p class="card_info-texto">Artista</p>
+                            </figure>
+    
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                <p class="card_info-texto">Album</p>
+                            </figure>
+    
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                <p class="card_info-texto">Canción</p>
+                            </figure>
+                        </div>
+                        <!--Este bloque contiene el título del post y el contenido
+                        de la reseña-->
+                        <div class="card__post">
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">Título reseña</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene el icono de share y
+                    el botón de comentar-->
+                    <div class="card__elementos">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                    </div>
+                    
+                </section>
+                
+            </article>
             <article class="card-user-main">
     
                 <img class="card__img-back" src="assets/img/album_cover.jpg" alt="">
@@ -332,7 +383,7 @@
 
     <!-- FOOTER -->
     <footer class="container-xxl w-100 overflow-hidden">
-        <div class="row mt-4">
+        <div class="row mt-5">
             <div class="col-md-12">
             <div class="footer w-100">
               <div class="bubbles">

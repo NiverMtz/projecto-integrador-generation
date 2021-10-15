@@ -1,50 +1,21 @@
-.presentacion {
-    color: var(--white);
-       
+.cont-acerca-paax{  
+    background-color: #f280b580;
 }
-
-/* Posible bug */
-.acerca-paax, span, p, img {
-    text-align: center;
-    font-size: 10rem;
-    font-family: var(--titlesFont);
-    background-size:cover;
-    align-items: center;
-    text-align: center;
+.cont-acerca-paax p{
+    font-size: 6vw;
 }
-
-/* Posible bug */
-.gif, img {
-    align-items: center;
-}
-
-span {
-    background-color: var(--rosatrans);
-    font-family: var(--titlesFont);
-    display: flex;
-    /* margin-top: 22rem; */
-    align-items: center;
-    text-align: center;
-}
-
 .text-conocenos {
     background-color: var(--rosatrans);
     color: var(--white);
     border-radius: 90px;
 }
-
-/* Posible bug */
-.text-conocenos, h3 {
+.text-conocenos h3 {
     font-family: var(--titlesFont);
 }
-
-/* Posible bug */
-.text-conocenos, p {
+.text-conocenos p {
     font-size: var(--textFont);
 }
-
-/* Posible bug */
-.cart-tittle, h5{
+.cart-tittle h5{
     font-family: var(--titlesFont);
     color: var(--negro);
     border-radius: 10px;
@@ -52,39 +23,28 @@ span {
     font-size: medium;
     background-color: rgb(255, 255, 255);
 }
-
-/* Posible bug */
-.cart-text, p {
+.cart-text p {
     font-family: var(--textFont);
     text-align: left;
     line-height: 1.5;
     color: var(--white);
     margin-top: 15px;
 }
-
 .img-perfil {
     border-radius: 100px;
 }
-
 .perfiles {
     align-items: center;
 }
-
-/* Posible bug */
-.links, img {
+.links img {
     margin-right: 10px;
     cursor: pointer;
 }
-
 .correo {
     cursor: pointer;
     color: var(--rosatrans);
     font-size: large;
-
 }
-
-
-
 /*--------------------------------------------*/
 /* DANIEL */
 /* -- MISIÓN -- */
@@ -225,7 +185,7 @@ span {
 /* ------ VALORES ------ */
 
 .cont-padre-val h4{
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     color: var(--white);
     font: var(--textFont);
@@ -237,7 +197,7 @@ span {
 }
 .circulos{
     margin: auto;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     width: 270px;

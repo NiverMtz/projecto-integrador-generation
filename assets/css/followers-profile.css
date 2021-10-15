@@ -79,7 +79,7 @@ button:hover {
    imágenes, iconos y textos */ 
 
 
-.card {
+.card-user-main {
     margin: 50px 20px;
     border-radius: var(--borderRadius);
     box-shadow: 0px 0px 10px 0px var(--white);
@@ -228,7 +228,7 @@ button:hover {
         margin-right: 30px;
     }
 
-    .card {
+    .card-user-main {
         height: 60vw;
     }
 
@@ -291,7 +291,7 @@ button:hover {
         margin-right: 50px;
     }
 
-    .card {
+    .card-user-main {
         box-shadow: 0px 0px 20px 0px var(--white);
         margin: 50px 160px;
         height: 40vw;
@@ -350,7 +350,7 @@ button:hover {
         margin-right: 100px;
     }
 
-    .card {
+    .card-user-main {
         height: 35vw;
     }
 

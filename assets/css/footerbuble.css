@@ -101,10 +101,10 @@
       bottom: var(--distance, 8rem);
     }
   }
-  .imagen{
+  /* .imagen{
    
    
-  }
+  } */
   .texto{
     font-family: var(--textFont);
   }

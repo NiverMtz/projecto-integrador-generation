@@ -21,19 +21,22 @@
         <div class="login-img text-center my-5">
           <img src="./assets/img/logo-elbueno.gif" alt="logo de paax">
         </div>
-        <form action="" method="post">
+        <form id="form" action="" method="post">
           <!-- NOMBRE DE USUARIO -->
           <div class="registro_nombre d-flex flex-column mt-5">
+            <span id="warning_nombre"></span>
             <input class="login-input pl-3" type="email" placeholder="Nombre de perfil">
             <p class="mt-0 ml-3">Campo obligatorio</p>
           </div>
           <!-- CORREO ELECTRÓNICO -->
           <div class="regisro_email d-flex flex-column mt-5">
+            <span id="warning_email"></span>
             <input class="login-input pl-3" type="email" placeholder="Email">
             <p class="mt-0 ml-3">Campo obligatorio</p>
           </div>
           <!-- CONTRASEÑA -->
           <div class="regisro_pass d-flex flex-column mt-5">
+            <span id="warning_pass"></span>
             <input class="login-input pl-3" min="8" type="password" placeholder="Contraseña">
             <p class="mt-0 ml-3">Campo obligatorio. Mínimo ocho carácteres</p>
           </div>
@@ -43,9 +46,9 @@
             <p class="mt-0 ml-3">Campo obligatorio</p>
           </div>
       </form>
-        <!-- BOTON ACCESAR-->
+        <!-- BOTON ACCESAR: call to action-->
         <div class="justify-content-center mt-5">
-          <button class="registro_btn btn btn-block btn-primary text-white" type="submit">Registrarme</button>
+          <button id="cta" class="registro_btn btn btn-block btn-primary text-white" type="submit">Registrarme</button>
         </div>
       </section>
     </div>

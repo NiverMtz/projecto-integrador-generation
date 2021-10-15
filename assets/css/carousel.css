@@ -1,36 +1,54 @@
-
-  
   @-webkit-keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translateX(-1000px);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(10px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+    
+  @-webkit-keyframes inverse {  
+    0% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-1000px);
     }
   }
   
-  @keyframes scroll {
+  @keyframes inverse {
     0% {
-      transform: translateX(0);
+      transform: translateX(10px);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(-1000px);
     }
   }
+
+
   .slider {
     background: var(--negro);
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 150px;
+    /* height: 150px; */
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 1300px;
-    margin-bottom: 5%;
+    /* width: 1300px; */
+    /* margin-bottom: 5%; */
   }
   .slider::before, .slider::after {
     
     content: "";
-    height: 100px;
+    /* height: 100px; */
     position: absolute;
     width: 200px;
     z-index: 2;
@@ -45,12 +63,19 @@
     top: 0;
   }
   .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+            animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slider .slide-track-inverse {
+    -webkit-animation: inverse 20s linear infinite;
+            animation: inverse 20s linear infinite;
     display: flex;
     width: calc(250px * 14);
   }
   .slider .slide {
-    height: 200px;
+    /* height: 200px; */
     width: 185px;
   }

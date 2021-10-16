@@ -198,7 +198,7 @@ button:hover {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 361px) and (max-width: 375px) {
 
     .card__elementos {
         width: 204.45px;

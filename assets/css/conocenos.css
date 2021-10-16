@@ -4,7 +4,10 @@
 }
 .presentacion {
     color: var(--white);
-       
+}
+
+.cont-acerca-paax{  
+    background-color: #f280b580;
 }
 
 .albunes {
@@ -36,16 +39,28 @@
 .cont-acerca-paax p{
     font-size: 6vw;
 }
-.text-conocenos {
+
+
+.cont-acerca-paax p{
+    font-size: 6vw;
+}
+.text-conocenos h3 {
+    font-family: var(--titlesFont);
+}
+.text-conocenos p {
+    font-size: var(--textFont);
+}
+
+/* .text-conocenos {
     background-color: var(--rosatrans);
     color: var(--white);
     border-radius: 90px;
     box-shadow: 0px 0px 10px 0px var(--white);
     display: flex;
     position: relative;
-}
+} */
 
-.conocenos_text {
+/* .conocenos_text {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -55,7 +70,7 @@
     top: 0;
     left: 0;
     height: 100%;
-}
+} */
 
 .text-conocenos p {
     font-size: var(--textFont);

@@ -1,12 +1,7 @@
 .footer {
     z-index: 1;
-<<<<<<< HEAD
     --footer-background:var(--rosa);
     display: grid;
-=======
-    --footer-background:#F280B6;
-    
->>>>>>> 0fdb2b2dca57bd345455604330e4bd381ecfe6a9
     position: relative;
     grid-area: footer;
     min-height: 8px;
@@ -115,9 +110,4 @@
   
   .texto{
     font-family: var(--textFont);
-<<<<<<< HEAD
   }
-=======
-    
-  }
->>>>>>> 0fdb2b2dca57bd345455604330e4bd381ecfe6a9

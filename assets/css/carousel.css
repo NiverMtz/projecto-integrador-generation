@@ -6,7 +6,6 @@
       transform: translateX(10px);
     }
   }
-  
   @keyframes scroll {
     0% {
       transform: translateX(-1000px);

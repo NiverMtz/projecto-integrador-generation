@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .banner {
   width: 100%;
   height: 124px;
@@ -126,11 +125,18 @@ button:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 10px;
 }
 
 .card__info-img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+}
+
+.card_info-texto {
+    margin-top: 0;
+    font-size: 1.6rem;
 }
 
 .card__post {
@@ -180,10 +186,24 @@ button:hover {
    el ancho en pixeles de una tablet */
 
 
+@media screen and (max-width: 360px) {
+
+    .card__elementos {
+        width: 191.14px;
+        bottom: 10px;
+        right: 15px;
+        justify-content: space-between;
+    }
+}
+
+
 @media screen and (max-width: 375px) {
 
     .card__elementos {
-        width: 204.45px;
+        width: 191.14px;
+        bottom: 10px;
+        right: 15px;
+        justify-content: space-between;
     }
 }
 
@@ -196,15 +216,6 @@ button:hover {
 
     .card__content-post h2, p {
         font-size: 1.3rem;
-    }
-}
-
- 
-@media screen and (max-width: 375px) {
-
-    .card__elementos {
-        bottom: 10px;
-        right: 25px;
     }
 }
 
@@ -279,11 +290,8 @@ button:hover {
     }
 
     .user-navbar__id img {
-        margin: initial;
         width: 100px;
         height: 100px;
-        object-fit: cover;
-        border-radius: 50%;
         margin-top: -60px;
     }
 
@@ -332,6 +340,10 @@ button:hover {
     .card__elementos-boton {
         font-size: 1.5rem;
     }
+
+    .card__elementos {
+        bottom: 30px;
+    }
 }
 
 
@@ -356,5 +368,9 @@ button:hover {
 
     .card__content-post {
         justify-content: center;
+    }
+
+    .card__elementos {
+        bottom: 50px;
     }
 }

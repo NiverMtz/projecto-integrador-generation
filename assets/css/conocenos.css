@@ -29,6 +29,15 @@
 
 .conocenos {
     margin: 50px 20px;
+.cont-acerca-paax{  
+    background-color: #f280b580;
+}
+.cont-acerca-paax p{
+    font-size: 6vw;
+}
+.text-conocenos {
+    background-color: var(--rosatrans);
+    color: var(--white);
     border-radius: 90px;
     box-shadow: 0px 0px 10px 0px var(--white);
     display: flex;
@@ -51,6 +60,13 @@
 
 /* Posible bug */
 .cart-tittle, h5{
+.text-conocenos h3 {
+    font-family: var(--titlesFont);
+}
+.text-conocenos p {
+    font-size: var(--textFont);
+}
+.cart-tittle h5{
     font-family: var(--titlesFont);
     color: var(--negro);
     border-radius: 10px;
@@ -58,36 +74,28 @@
     font-size: medium;
     background-color: rgb(255, 255, 255);
 }
-#cart-text {
+.cart-text p {
     font-family: var(--textFont);
     text-align: left;
     line-height: 1.5;
     color: var(--white);
     margin-top: 15px;
 }
-
 .img-perfil {
     border-radius: 100px;
 }
-
 .perfiles {
     align-items: center;
 }
-
-.links {
+.links img {
     margin-right: 10px;
     cursor: pointer;
 }
-
 .correo {
     cursor: pointer;
     color: var(--rosatrans);
     font-size: large;
-
 }
-
-
-
 /*--------------------------------------------*/
 /* DANIEL */
 /* -- MISIÓN -- */
@@ -228,7 +236,7 @@
 /* ------ VALORES ------ */
 
 .cont-padre-val h4{
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     color: var(--white);
     font: var(--textFont);
@@ -240,7 +248,7 @@
 }
 .circulos{
     margin: auto;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     width: 270px;

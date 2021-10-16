@@ -8,6 +8,7 @@
 
 .cont-acerca-paax{  
     background-color: #f280b580;
+   
 }
 
 .albunes {
@@ -28,14 +29,13 @@
     position: static;
     background-color: var(--rosatrans);
     height: 150px;
+    border-radius: 150px;
 }
 
 .conocenos {
     margin: 50px 20px;
 }
-.cont-acerca-paax{  
-    background-color: #f280b580;
-}
+
 .cont-acerca-paax p{
     font-size: 6vw;
 }
@@ -75,7 +75,7 @@
 .text-conocenos p {
     font-size: var(--textFont);
 }
-.cart-tittle h5{
+.cart-tittle h5 {
     font-family: var(--titlesFont);
     color: var(--negro);
     border-radius: 10px;
@@ -90,6 +90,8 @@
     color: var(--white);
     margin-top: 15px;
 }
+
+
 .img-perfil {
     border-radius: 100px;
 }

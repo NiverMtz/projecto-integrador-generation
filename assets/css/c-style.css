@@ -92,6 +92,7 @@ body{
 }
 .main__comment-line img{
     width: 100px;
+    margin-right: 10px;
 }
 .main__comment-line tr{
     width: 100%;
@@ -103,8 +104,6 @@ body{
     width: 55%;
 }
 
-
-
 /* == ESTILOS GUIAS DE DISEÑO */
 /* 
 .main__comment-line table,.main__comment-line tr,.main__comment-line td,.main__comment-line th{
@@ -113,13 +112,5 @@ body{
 } */
 
 
-/* Estilos temporales */
 
-header , footer{
-    text-align: center;
-    width: 100%;
-    margin: 0, 0, 0, 0 !important;
-    background-color: rgb(242, 128, 181);
-    padding: 10 px;
-}
 

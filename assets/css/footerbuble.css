@@ -1,14 +1,11 @@
 .footer {
-    z-index: 1;
-<<<<<<< HEAD
-    --footer-background:var(--rosa);
-    display: grid;
-=======
+    /* z-index: 1;
+     */
+    /* display: grid; */
     --footer-background:#F280B6;
     
->>>>>>> 0fdb2b2dca57bd345455604330e4bd381ecfe6a9
     position: relative;
-    grid-area: footer;
+    /* grid-area: footer; */
     min-height: 8px;
     /* margin-top: 20%; */
   }
@@ -108,16 +105,9 @@
       bottom: var(--distance, 8rem);
     }
   }
-  /* .imagen{
-   
-   
-  } */
+
   
   .texto{
     font-family: var(--textFont);
-<<<<<<< HEAD
-  }
-=======
     
   }
->>>>>>> 0fdb2b2dca57bd345455604330e4bd381ecfe6a9

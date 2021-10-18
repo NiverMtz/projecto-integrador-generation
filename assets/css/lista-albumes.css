@@ -6,7 +6,7 @@
     /* margin-right: 200px; */
 }
 
-h1{
+h2{
     font-family: var(--titlesFont);
     color: white;
 }
@@ -81,6 +81,3 @@ h1{
  justify-content: center;
   }
 } */
-.table th, .table td:before {
-  color: var (--rosa);
-}

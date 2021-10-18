@@ -3,7 +3,7 @@
     --footer-background:var(--rosa);
     display: grid;
     position: relative;
-    grid-area: footer;
+    /* grid-area: footer; */
     min-height: 8px;
     /* margin-top: 20%; */
   }
@@ -103,10 +103,7 @@
       bottom: var(--distance, 8rem);
     }
   }
-  /* .imagen{
-   
-   
-  } */
+
   
   .texto{
     font-family: var(--textFont);

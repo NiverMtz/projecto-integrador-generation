@@ -14,13 +14,46 @@
   </head>
 
   <body>
+     <!-- HEADER -->
+    <!-- Menú superior -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
+      <a class="navbar-brand" href="#"><img src="./assets/img/logo-elbueno.gif" style="width: 90px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./followers_profile.html">Perfil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Accesar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <a class="dropdown-item" href="registro.html">Crear Cuenta</a>
+              <div class="dropdown-divider"></div>
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./create_review.html">Reseña</a></button>
+        </form>
+      </div>
+    </nav>
+
     <!-- Contenedor Principal -->
     <div class="container-fluid">
-
-      <!-- Barra De Navegación -->
-      <a class="text-decoration-none" href="index.html">
-        <span class="text-white ml-3">Home</span>
-      </a>
       <!-- Main -->
       <section class="main row justify-content-center mt-5">
         <!-- Logo PAAX -->
@@ -28,9 +61,11 @@
           <img src="./assets/img/logo-elbueno.gif"  alt="Logo PAXX">
         </div>
 
-        <!-- Imagen del avion -->
-        <div class="main__img">
-          <img src="./assets/img/src-jerry/email-sent-ok.png" width="40%" height="40%" alt="emai-enviado">
+        <!-- Email enviado -->
+        <div class="d-flex flex-column mt-5">
+          <div class="registro_check text-center">
+            <img class="m-0" src="assets/img/check-black.svg" alt="">
+          </div>
         </div>
 
         <!-- Text info -->

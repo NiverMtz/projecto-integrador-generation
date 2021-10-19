@@ -1,47 +1,9 @@
-@import url(styles.css);
+@import url(./styles.css);
 
 * {
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-/*Header´s CSS */
-.header {
-    width: 100%;
-    height: 90px;
-    padding: 0 20px;
-    font: 24px var(--textFont);
-    color: var(--white);
-    background-color: var(--rosa);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__brand-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.header__user {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-/*Body´s CSSS*/
-body {
-    font-family: var(--textFont);
-    font-size: 1.6rem;
-    line-height: 2;
-    background-color: var(--negro);
-    color: (--white);
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 2;
-    background-color: var(--negro);
 }
 
 /*Carousel´s CSS */
@@ -394,9 +356,9 @@ html{
     resize:vertical;
 }
 
-.box__comment {
+/* .box__comment {
 	
-}
+} */
 
 textarea {
     width: 100%;

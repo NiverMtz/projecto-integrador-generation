@@ -1,8 +1,10 @@
+@import url(./footerbuble.css);
+
 /* DASHBOARD BANNER */
 section.dashboard__img{
   height: 291px;
   width: 390;
-  background-image: url(../img/banner-demo.jpg);
+  background-image: url(../img/coverartblogfeature.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

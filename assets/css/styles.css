@@ -9,10 +9,7 @@
 @import url(./lista-albumes.css);
 @import url(./lista-categoria.css);
 @import url(./top.css);
-@import url(./contact.css);
-@import url(./footerbuble.css);
-@import url(./followers-profile.css);
-@import url(./followers-edit-delete-post.css);
+@import url(./contacto.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
@@ -49,9 +46,7 @@ body {
     font-family: var(--textFont);
     font-size: 1.6rem;
     line-height: 2;
-    background-color: var(--negro);
     color: (--white);
-    font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
     background-color: var(--negro);
@@ -74,7 +69,6 @@ h1, h2, h3, h4 {
     font-family: var(--titlesFont);
     line-height: 1.2;
     color: var(--white);
-    /* font-family: var(--fuenteHeading); */
     line-height: 1.2;
 }
 

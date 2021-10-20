@@ -1,3 +1,5 @@
+@import url(./styles.css);
+
 p{
   font-size: var(--titlesFont);
 }

@@ -1,3 +1,6 @@
+@import url(./styles.css);
+@import url(./footerbuble.css);
+
 /* BANNER IMAGE */
 .banner-img{
   background-image: url(../img/wall2.gif);

@@ -1,3 +1,5 @@
+@import url(./footerbuble.css);
+
 /* DASHBOARD BANNER */
 section.dashboard__img{
   height: 291px;
@@ -31,7 +33,6 @@ background-color: var(--rosaOpaco)
 }
 
 
-
 .dashboard__button {
   border: none;
   display: flex;
@@ -50,7 +51,7 @@ background-color: var(--rosaOpaco)
   border-radius: var(--borderRadius);
   position: fixed;
   right: 20px;
-  top: 12px;
+  top: 65px;
 }
 
 
@@ -80,6 +81,7 @@ background-color: var(--rosaOpaco)
   .dashboard__button--photo{
     padding: 0 4px;
     font-size: 10px;
+    
   }
 }
 

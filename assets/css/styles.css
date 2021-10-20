@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(./mystyle.css);
 @import url(./header.css);
 @import url(./navigation.css);
@@ -11,6 +12,8 @@
 @import url(./top.css);
 @import url(./contacto.css);
 
+=======
+>>>>>>> 079f716984d69d0726d1972e0dccadd29c226281
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
 :root {
@@ -46,9 +49,7 @@ body {
     font-family: var(--textFont);
     font-size: 1.6rem;
     line-height: 2;
-    background-color: var(--negro);
     color: (--white);
-    font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
     background-color: var(--negro);
@@ -71,7 +72,6 @@ h1, h2, h3, h4 {
     font-family: var(--titlesFont);
     line-height: 1.2;
     color: var(--white);
-    /* font-family: var(--fuenteHeading); */
     line-height: 1.2;
 }
 

@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-
-<html lang="es">
-
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/c-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- Pestaña -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Review</title>
     <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
-    <title>PAAX - Recuperar Contraseña</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/create_review-namh.css" />
   </head>
-
   <body>
-     <!-- HEADER -->
+    <!-- HEADER -->
     <!-- Menú superior -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
       <a class="navbar-brand" href="#"><img src="./assets/img/logo-elbueno.gif" style="width: 90px;"></a>
@@ -48,47 +44,38 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./create_review.html">Reseña</a></button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./create_review-namh.html">Reseña</a></button>
         </form>
       </div>
     </nav>
 
-    <!-- Contenedor Principal -->
-    <div class="container-fluid">
-      <!-- Main -->
-      <section class="main mt-5">
-
-        <!-- Logo PAAX -->
-        <div class="main__logo">
-          <img src="./assets/img/logo-elbueno.gif"  alt="Logo PAXX">
+    <div class="review">
+      <h2>Crear Reseña</h2>
+      <form action="" class="review__form">
+        <div class="review__category">
+          <div class="review__field" for="song">
+            <img src="./assets/img/song1.jpg" alt="" />
+            <input type="text" placeholder="Artista">
+          </div>
+          <!-- <label class="review__field" for="song">
+            <img src="./assets/img/artist1.png" alt="" />
+            <input type="text" placeholder="Canción">
+          </label> -->
+          <label class="review__field" for="song">
+            <img src="./assets/img/cover1.png" alt="" />
+            <input type="text" placeholder="Albúm">
+          </label>
         </div>
-
-        <!-- Text info -->
-        <div class="main__textinfo">
-          <p class="main__textinfo--text">Ingresa tu correo electronico para modificar tu contraseña. </p>
-        </div>
-
-        <!-- Formulario email -->
-        <div class="main__recoveryform">
-          <form class="main__recoveryform--form">
-            <label for="exampleInputEmail1">Correo electronico</label>
-            <input type="email" class="form-control rounded-pill rounded mx-auto d-block mt-3" id="emailforrecovery" aria-describedby="emailHelp" placeholder="tu@correo.com">
-              <a href="dash_recovery-successful.html">
-                <button type="button" class="btn btn-primary rounded-pill rounded mx-auto ">Restaurar Contraseña</button>
-              </a>
-          </form>
-        </div>
-
-      </section>
-
-      <!-- Seccion del Footer -->
-      
+        <label class="review__field" for="song">
+          <input type="text" placeholder="Título">
+        </label>
+        <label class=" review__field review__field--textarea" for="song">
+          <textarea name="" id="" rows="10" placeholder="Escribe tu reseña"></textarea>
+        </label>
+        <label class="review__button" for="song">
+          <button onclick="alert('Post Review')">Post</button>
+        </label>
+      </form>
     </div>
-
-    
-  
-     
-  
   </body>
-
 </html>

@@ -11,35 +11,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>conocenos</title>
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/conocenos.css ">
 </head>
 
 <body class="no-margin">
     <!-- barra de navegacion superior -->
-    <header class="header">
-        <div class="header__brand-links">
-            <img src="./assets/img/brand-paax.jpg" alt="PAAX">
-            <nav class="navigation">
-                <div class="navigation__link">
-                    <a href="">Albumes</a>
-                </div>
-                <div class="navigation__link">
-                    <a href="">Canciones</a>
-                </div>
-                <div class="navigation__link">
-                    <a href="">Quiénes somos</a>
-                </div>
-                <div class="navigation__link">
-                    <a href="">Contáctenos</a>
-                </div>
-            </nav>
+    <!-- HEADER -->
+    <!-- Menú superior -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
+        <a class="navbar-brand" href="#"><img src="./assets/img/logo-elbueno.gif" style="width: 90px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./followers_profile.html">Perfil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Accesar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Login</a>
+                <a class="dropdown-item" href="registro.html">Crear Cuenta</a>
+                <div class="dropdown-divider"></div>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./create_review-namh.html">Reseña</a></button>
+          </form>
         </div>
-        <div class="header__user">
-            <p>Hi, @Frida</p>
-            <img src="./assets/img/avatar.png" alt="Avatar">
-        </div>
-    </header>
+      </nav>
           <!-- Banner de Paax -->
           <section> 
             <div class="card text-white">

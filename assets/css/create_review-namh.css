@@ -1,3 +1,5 @@
+@import url(./styles.css);
+
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #FCF2F2;

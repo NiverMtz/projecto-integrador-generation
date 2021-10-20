@@ -16,7 +16,9 @@
 :root {
 
     /* Colors */
-    --rosa: #f280b6;
+    --rosa:#FC60A8;
+    --rosaRGBA:rgba(240, 46, 170, 1);
+    /* --rosa: #f280b6; */
     --rosaOpaco: rgba(242, 128, 181, 0.5);
     --azulClaro: #0597F2;
     --azul: #8dd1fc;
@@ -25,6 +27,7 @@
     --white: white;
     --rosatrans: #f280b580;
     --fieldbg : rgba(196, 196, 196, 0.43);
+    --bgcard: #1e1e1e;
 
     /* Fonts */
     --textFont: 'Mukta', sans-serif;

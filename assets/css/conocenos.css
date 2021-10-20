@@ -14,6 +14,9 @@
 }
 .text-conocenos p {
     font-size: var(--textFont);
+    box-sizing: border-box;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 .cart-tittle h5{
     font-family: var(--titlesFont);
@@ -183,34 +186,3 @@
 }
 
 /* ------ VALORES ------ */
-
-.cont-padre-val h4{
-    margin-top: 20px;
-    text-align: center;
-    color: var(--white);
-    font: var(--textFont);
-    font-size: 30px;
-}
-#circulos-val{
-    display: flex;
-    flex-wrap: wrap;   
-}
-.circulos{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-    border: 15px solid var(--rosa);
-    
-}
-.circulos p{
-    color: var(--white);
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    align-items: center;   
-}

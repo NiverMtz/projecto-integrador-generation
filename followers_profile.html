@@ -133,6 +133,58 @@
                 </section>
                 
             </article>
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/album_cover.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/album_cover.jpg">
+                            </figure>
+
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                <p class="card_info-texto">Artista</p>
+                            </figure>
+
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                <p class="card_info-texto">Album</p>
+                            </figure>
+
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                <p class="card_info-texto">Canción</p>
+                            </figure>
+                        </div>
+                        <!--Este bloque contiene el título del post y el contenido
+                        de la reseña-->
+                        <div class="card__post">
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">Título reseña</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene el icono de share y
+                    el botón de comentar-->
+                    <div class="card__elementos">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                    </div>
+                    
+                </section>
+                
+            </article>
         </main>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

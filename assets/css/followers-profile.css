@@ -82,7 +82,7 @@ button:hover {
 
 
 .card-user-main {
-    margin: 50px 20px;
+    margin: 85px 20px;
     border-radius: var(--borderRadius);
     box-shadow: 0px 0px 10px 0px var(--white);
     display: flex;
@@ -220,6 +220,10 @@ button:hover {
     .card__content-post h2, p {
         font-size: 1.3rem;
     }
+
+    .banner {
+        height: 125px;
+    }
 }
 
 
@@ -227,6 +231,10 @@ button:hover {
 
     .card__elementos {
         bottom: 50px;
+    }
+
+    .banner {
+        height: 160px;
     }
 }
 
@@ -271,6 +279,10 @@ button:hover {
         position: static;
     }
 
+    .banner {
+        height: 225px;
+    }
+
     .user-navbar {
         margin: 0 160px;
     }
@@ -304,8 +316,8 @@ button:hover {
 
     .card-user-main {
         box-shadow: 0px 0px 20px 0px var(--white);
-        margin: 50px 160px;
-        height: 35vw;
+        margin: 85px 160px;
+        height: 45vw;
     }
 
     .card__img-back {
@@ -324,6 +336,10 @@ button:hover {
 
     .card__overtext {
         padding: 40px;
+    }
+
+    .card__overtext-superior {
+        height: 90%;
     }
 
     .card__info {
@@ -350,7 +366,7 @@ button:hover {
 }
 
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
 
     .card__info {
         justify-content: center;
@@ -366,7 +382,7 @@ button:hover {
     }
 
     .card-user-main {
-        height: 25vw;
+        height: 35vw;
     }
 
     .card__content-post {

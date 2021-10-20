@@ -3,11 +3,46 @@
 * {
 	margin:0;
 	padding: 0;
-	box-sizing: border-box;
+}
+
+/*Header´s CSS */
+.header {
+    width: 100%;
+    height: 90px;
+    padding: 0 20px;
+    font: 24px var(--textFont);
+    color: var(--white);
+    background-color: var(--rosa);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+                                                                                                                            
+/*Body´s CSSS*/
+body {
+    font-family: var(--textFont);
+    font-size: 1.6rem;
+    line-height: 2;
+    color: (--white);
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
 /*Carousel´s CSS */
-@-webkit-keyframes scroll {
+@-webkit-keyframes scroll__contacto {
     0% {
       transform: translateX(0);
     }
@@ -16,7 +51,7 @@
     }
   }
 
-@keyframes scroll {
+@keyframes scroll__contacto {
     0% {
       transform: translateX(0);
     }
@@ -24,63 +59,78 @@
       transform: translateX(calc(-1000px * 5));
     }
   }
-
-  .container__carousel__conect {
-    background: var(--negro);
-    box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.125);
+  
+  .container__carousel__contacto {
     height: 400px;
-    padding: 0;
 	position: relative;
-    overflow: hidden;
-    width: 1350px;
+    width: 1300%;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url="../img/fondo_carousel_contacto.png";
+	background-position: cover;
+	grid-template-areas:
+	 "row__track__slide"
+	 "sidebar slide__track"
   }
 
-  .container__carousel__conect::before, .container__carousel__conect::after {
+  .box__carousel__contacto {
+	flex: 1;
+	min-width: 200px;	
+  }
+
+  .container__carousel__contacto::before, .container__carousel__contacto::after {
     content: "";
-    height: 450px;
-    width: 500px;
-	position: absolute;
-    z-index: 2;
-	
   }
 
-  .container__carousel__conect::after {
+  .container__carousel__contacto::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
   }
 
-  .container__carousel__conect::before {
+  .container__carousel__contacto::before {
     left: 0;
     top: 0;
   }
   
-  .container__carousel__conect .row__track__slide  {
-    -webkit-animation: scroll 100s linear infinite;
-            animation: scroll 100s linear infinite;
+  .container__carousel__contacto .row__track__slide  {
+    -webkit-animation: scroll__contacto 100s linear infinite;
+            animation: scroll__contacto 100s linear infinite;
     display: flex;
     width: calc(1000px * 10);
   }
+
 .container__banner__net .row__track__slide {
     height: 450px;
     width: 500px;
-	
   }
 
-#slide {
+#slide__contacto {
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 20px 20px;
 	width: 500;
 	height: 450;
 }
-
-
 
 /*Banner´s CSS */
 .container__banner__net {
 	background-color: #0597F2;
 	padding: 0;
-	margin: 0;
+	margin: 20px 0px;
+	display: flex;
+
+}
+.in-flex {
+	flex: 1;
+}
+.in-flex:fist-child {
+	flex: 2;
+	padding: 20px 0px;
+}
+.in-flex div {
+	padding: 25px;
 }
 
 .row__banner__net {
@@ -96,40 +146,31 @@
 	top: 700px;
 	bottom: -1200px;
 	text-align: center;
-
-
 }
 
 #banner__net {
 	color: white;
     padding: 0;
 	margin: 0;
-
-
 }
 
 .title__banner {
 	margin: 0;
 	padding: 50px 50px;
 	text-align: center;
-
 }
 
 .icons__net {
 	padding: 30px 30px;
-	object-fit: cover;
 	position: relative;
 	right: -50px;
 	z-index: 1;
 	left: 0px;
 	top: 0px;
-	bottom: -500px;
-}
-
-#icons__net {
-	
+	bottom: 0px;
 	width: 200px;
 	height: 200px;
+	border-radius: 20px;
 }
 
 .box__net {
@@ -145,8 +186,6 @@
 	top: 0px;
 	bottom: 100px;
 	right: 500px;
-
-
 }
 
 .row__email {
@@ -179,6 +218,7 @@
 	right: 0px;
 	width: 500px;
 	height: 300px;
+	transition: background ease-in .3s;
 }
 
 .black__letter {
@@ -186,7 +226,6 @@
 	text-align: center;
 	background-color: white;
 	border-radius: 20px;
-
 }
 
 
@@ -210,7 +249,6 @@ html{
 	height: 800;
 	width: 1300;
 	text-align: left;
-
 }
 
 
@@ -219,16 +257,13 @@ html{
 	text-align: center;
 	padding: 50px 50px;
 	background-color: black;
-	border-radius: 20px;
 	position: relative;
 	right: 0px;
-	z-index: 2;
 	left: 50px;
-	top: 1250px;
-	bottom: -1800px;
+	top: 1100px;
+	bottom: 0px;
 	width: 700px;
-	height: 700px;
-	float: left;
+	height: 500px;
 }
 
 .row__form__mailbox {
@@ -337,7 +372,6 @@ html{
 
 #email:focus{
 	background-size: 30px 30px;
-	
 	background-color: gray;
   	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -356,10 +390,13 @@ html{
     resize:vertical;
 }
 
+<<<<<<< HEAD:assets/css/contacto.css
+=======
 /* .box__comment {
 	
 } */
 
+>>>>>>> 079f716984d69d0726d1972e0dccadd29c226281:assets/css/contact.css
 textarea {
     width: 100%;
     height: 150px;
@@ -441,12 +478,46 @@ input:focus, textarea:focus {
 		width: 88%;
 		margin-left: 0;
 		padding-left: 3%;
-		padding-right: 3%;
+		padding-right: 3%;	
 	}
 }
 
+ul, ol {
+	list-style: none;
+}
 
+.nav__1 li a {
+	color: black;
+	padding :10px 5px;
+	display: block;
+	background-color: white;
+}
 
+.nav__1 li a: hover {
+	background-color: white;
+	color: black;
+}
+
+.nav__1 > li  {
+	float: left;
+} 
+
+.nav__1 li ul {
+	display: block;
+	position: absolute;
+}
+
+.icons__net {
+	width: 300px;
+	height: 100;
+	background-color: #0597F2;
+	transition: ls;
+}
+
+.icons__net:hover {
+	transform: scale (2);
+
+}
 
 
 

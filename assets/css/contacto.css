@@ -117,6 +117,7 @@ body {
 	width: 500;
 	height: 450;
 	opacity: .85;
+
 }
 
 .title__contacto {
@@ -132,10 +133,17 @@ body {
 	margin: 10px 0px;
 	position: inherit;
 	z-index: 3;
-	bottom: 200px;
-	top: 800px;
+	bottom: 0px;
+	top: 1000px;
 
 }
+
+#media (min-resolution: 120dpi) {
+	.slide__track {
+
+	}
+}
+
 .in-flex {
 	flex: 1;
 }
@@ -148,7 +156,7 @@ body {
 }
 
 .row__banner__net {
-	background-color: gray;
+	background-color: rgba(240, 46, 170, 1);
 	color: black;
 	padding: 0;
 	margin: 0;
@@ -188,9 +196,13 @@ body {
 	padding: 20px;
 }
 
+.icons__net: hover:afeter {
+	color: 
+} 
+
 .logo__contacto {
 	position: absolute;
-	background-color: black;
+	background-color: rgba(240, 46, 170, 1);
 	right: 0px;
 	z-index: 1;
 	left: 500px;
@@ -198,7 +210,7 @@ body {
 	bottom: 0px;
 	border-radius: 20px;
 	width: 400px;
-	height: 200px;
+	height: 150px;
 }
 
 
@@ -229,24 +241,24 @@ body {
 	bottom: 0px;
 	right: 0px;
 	width: 600px;
-	height: 100px;
+	height: 200px;
 	text-align: center;
 	border-radius: 20px;
 }
 
 .row__seccion {
-	background-color: gray;
+	background-color: rgba(240, 46, 170, 1);
 	font-family: 'Mukta', sans-serif;
-	color: white;
 	z-index: 3;
 	position: absolute;
-	left: 0px;
-	top: 0px;
-	bottom: 200px;
-	right: 0;
+	left: 200px;
+	top: 1250px;
+	bottom: 0px;
+	right: 0px;
 	width: 400px;
 	height: 250px;
-	padding: 20px;
+	padding: 10px;
+	border-radius: 20px;
 }
 
 .nav__seccion {
@@ -257,9 +269,10 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html{
-	background-color: white;
+	background-color: black;
   	background-size: cover;
-  	height: 100%;
+  	height: 800px;
+	
 }
 
 #feedback__page{
@@ -267,47 +280,72 @@ html{
 }
 
 .container__form__quiz {
-	background-color: white;
+	background-color: black;
 	padding: 0;
 	margin: 0;
-	height: 800;
-	width: 1300;
-	text-align: left;
-	z-index: 3;
+	z-index: 0;
 	position: absolute;
 	left: 0px;
-	top: 0px;
-	bottom: 1700px;
+	top: 1800px;
+	bottom: 700px;
 	right: 0;
-	width: 400px;
-	height: 250px;
+	width: 100%;
+	height: 1050px;
 
 }
 
+.title__banner {
+
+}
 
 /*Enlaces */
 .row__quiz {
 	text-align: center;
-	padding: 50px 50px;
+	padding: 20px
 	background-color: black;
-	position: relative;
+	position: absolute;
 	right: 0px;
-	left: 50px;
-	top: 1100px;
+	left: 150px;
+	top: 50px;
 	bottom: 0px;
-	width: 700px;
-	height: 500px;
+	width: 800px;
+	height: 800px;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.nav__1 li a {
+	color: black;
+	padding :10px 5px;
+	display: block;
+	background-color: white;
+}
+
+.nav__1 li a: hover {
+	background-color: white;
+	color: black;
+}
+
+.nav__1 > li  {
+	float: left;
+} 
+
+.nav__1 li ul {
+	display: block;
+	position: absolute;
 }
 
 .row__form__mailbox {
 	text-align: left;
 	padding: 50px 50px;
 	background-color: black;
-	position: relative;
+	position: absolute;
 	right: 0px;
 	z-index: 4;
-	left: -50px;
-	top: 1150px;
+	left: -500px;
+	top: 0px;
 	bottom: -200px;
 	width: 500px;
 	height: 700px;	
@@ -358,15 +396,15 @@ html{
 .feedback__input:focus{
 	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #0597F2;
-	color: #0597F2;
+	border: 3px solid rgba(240, 46, 170, 1);
+	color: rgba(240, 46, 170, 1);
 	outline: none;
     padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color: #0597F2;
-	border: #0597F2 solid 3px;
+	color: rgba(240, 46, 170, 1);
+	border: rgba(240, 46, 170, 1) solid 3px;
 }
 
 /* Secciones ---------------------------------- */
@@ -439,10 +477,10 @@ input:focus, textarea:focus {
 	font-family: 'Nunito', sans-serif;
 	float: right;
 	width: 30%;
-	border:#0597F2 solid 4px;
+	border:rgba(240, 46, 170, 1) solid 4px;
 	border-radius: 20px;
 	cursor:pointer;
-	background-color: #0597F2;
+	background-color: rgba(240, 46, 170, 1);
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -480,13 +518,10 @@ input:focus, textarea:focus {
 
 .submit:hover .ease{
   	width:100%;
+
   	background-color: --rosa;
 }
 
-.gray__letter {
-	
-	color: black;
-}
 
 .submit {
 	padding: 5px 5px;
@@ -508,30 +543,8 @@ input:focus, textarea:focus {
 	}
 }
 
-ul, ol {
-	list-style: none;
-}
 
-.nav__1 li a {
-	color: black;
-	padding :10px 5px;
-	display: block;
-	background-color: white;
-}
 
-.nav__1 li a: hover {
-	background-color: white;
-	color: black;
-}
-
-.nav__1 > li  {
-	float: left;
-} 
-
-.nav__1 li ul {
-	display: block;
-	position: absolute;
-}
 
 .icons__net {
 	width: 300px;

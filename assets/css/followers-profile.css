@@ -338,9 +338,10 @@ button:hover {
     }
 
     .card__info-media-album {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 10px;
+        margin-bottom: 0;
     }
 
     .card__info-media-img {

@@ -8,13 +8,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .banner-mascara{
   background-color: var(--rosaOpaco);
-}
-/* LOGIN */
-.login-input{
-  border-radius: var(--borderRadius);
 }
 /* INPUT GENERAL */
 input{
@@ -22,6 +17,7 @@ input{
   color: var(--negro);
   outline: none;
   font-size: var(--textFont);
+  border-radius: var(--borderRadius);
 }
 input:focus{
   background-color: var(--rosa);

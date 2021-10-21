@@ -16,41 +16,30 @@
   <body>
      <!-- HEADER -->
     <!-- Menú superior -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
-      <a class="navbar-brand" href="#"><img src="./assets/img/logo-elbueno.gif" style="width: 90px;"></a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1);">
+      <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span> <img src="./assets/img/list.svg" alt=""> </span>
       </button>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+            <a class="text-white nav-link" href="./feed.html">Feed<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./followers_profile.html">Perfil</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Accesar
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="login.html">Login</a>
-              <a class="dropdown-item" href="registro.html">Crear Cuenta</a>
-              <div class="dropdown-divider"></div>
-              
-            </div>
+            <a class="text-white nav-link" href="./followers_profile.html">Perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
+            <a class="text-white nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./create_review.html">Reseña</a></button>
+          <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
+          <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
         </form>
       </div>
-    </nav>
+    </nav> 
 
     <!-- Contenedor Principal -->
     <div class="container-fluid">

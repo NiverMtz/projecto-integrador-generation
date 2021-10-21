@@ -40,5 +40,5 @@ $forma.addEventListener("submit", e => {
     warningPassConfirm = "Las contraseñas no coinciden";
     $alertPassConfirm.innerHTML = warningPassConfirm;
   }
-
+  window.location.assign("/registro_exitoso.html");
 });

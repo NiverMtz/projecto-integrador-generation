@@ -1,7 +1,7 @@
 @import url(./styles.css);
 
 .cont-acerca-paax{  
-    background-color: #f280b580;
+    background-color: var(--rosatrans);
 }
 .cont-acerca-paax p{
     font-size: 6vw;
@@ -51,140 +51,198 @@
     font-size: large;
 }
 /*--------------------------------------------*/
-/* DANIEL */
-/* -- MISIÓN -- */
-.cont-padre-mision{
-    display: flex;
-}
-.circulo-mision{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color:var(--rosa);
-    width: 150px;
-    height: 150px;
-    font: var(--titlesFont);
-    color: var(--white);   
-}
-.cont-txt-mision{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 10px var(--rosa);
-    width: 100%;  
-    border-radius: 75px;
-    height: 150px; 
-}
-.cont-txt-mision p{
-    font: var(--textFont);
-    color:var(--white);
-    padding-left: 160px;
-    padding-right: 20px;
-}
-/*  -- VISIÓN -- */ 
-.cont-padre-vision{
-    margin-top: 20px;
-    display: flex;
-}
-.circulo-vision{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color:var(--rosa);
-    width: 165px;
-    height: 165px;
-    font: var(--titlesFont);
-    color: var(--white);
-}
-.cont-txt-vision{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 10px var(--rosa);
-    width: 100%;  
-    border-radius: 82px;
-    height: 165px; 
-}
-.cont-txt-vision p{
-    font: var(--textFont);
-    color: var(--white);
-    padding-left: 160px;
-    padding-right: 20px;
-}
-/* -- RESPONSIVE MISION Y VISION -- */
- @media screen and (max-width: 600px){
-
-.cont-padre-mision{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-}
-.circulo-mision{ 
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    font-size: 14px;
+.cont-mision{
+    height: 140px;
+    border-radius: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--rosatrans);
     
 }
-.cont-txt-mision{
-    margin-top: -50px;
-    width: 90%;  
-    border-radius: 20px; 
+
+.cont-mision-text{
+    font-family: var(--textFont);
+    padding-left: 150px;
     
 }
-.cont-txt-mision p{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 14px;
-   
+
+.cont-circulo-mision{
+    font-family: var(--titlesFont);
+    border-radius: 70px;
+    width: 140px;
+    height: 142px;
+    border: 7px solid var(--negro);
+    margin-left: -2px;
+    margin-top: -2px;
+    
 }
 
-.cont-padre-vision{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
+.cont-vision{
+    height: 140px;
+    border-radius: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--rosatrans);
 }
-.circulo-vision{ 
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.cont-vision-text{
+    font-family: var(--textFont);
+    padding-left: 150px;
+}
+
+.cont-circulo-vision{
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 142px;
+    border: 7px solid var(--negro);
+    margin-left: -2px;
+    margin-top: -2px;
+}
+@media screen and (max-width: 950px){
+    .cont-mision{
+        height:200px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--rosatrans); 
+       
+    }
+    
+    .cont-mision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    
+    .cont-circulo-mision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+    .cont-vision{
+        height: 250px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--rosatrans);  
+    }
+    
+    .cont-vision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    
+    .cont-circulo-vision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
 
 }
-.cont-txt-vision{
-    margin-top: -50px;
-    width: 90%;  
-    border-radius: 20px; 
-    height: 260px;
-    font-size: 14px;
+@media screen and (max-width: 600px){
+
+    .cont-mision{
+        height:200px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--rosatrans); 
+       
+    }
     
-}
-.cont-txt-vision p{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 14px;
-}
+    .cont-mision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    
+    .cont-circulo-mision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+    .cont-vision{
+        height:350px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--rosatrans); 
+       
+    }
+    
+    .cont-vision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    
+    .cont-circulo-vision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
 }
 
 /* ------ VALORES ------ */
+.titulo-valores{
+    font-family: var(--titlesFont);
+}
+.cont-gen-circulos-val{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+}
+.cont-circulo-val{
+    width: 270px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+}
+.circulo-val{
+   border: 5px solid var(--rosatrans);
+    border-radius: 50%;  
+}
+.circulo-val h5{
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: var(--titlesFont);
+}
+.circulos-val p{
+font-family: var(--textFont);
+}

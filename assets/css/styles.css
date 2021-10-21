@@ -16,7 +16,9 @@
 :root {
 
     /* Colors */
-    --rosa: #f280b6;
+    --rosa:#FC60A8;
+    --rosaRGBA:rgba(240, 46, 170, 1);
+    /* --rosa: #f280b6; */
     --rosaOpaco: rgba(242, 128, 181, 0.5);
     --azulClaro: #0597F2;
     --azul: #8dd1fc;
@@ -25,12 +27,15 @@
     --white: white;
     --rosatrans: #f280b580;
     --fieldbg : rgba(196, 196, 196, 0.43);
+    --bgcard: #1e1e1e;
 
     /* Fonts */
     --textFont: 'Mukta', sans-serif;
     --titlesFont: 'Nunito', sans-serif;
 
-    --borderRadius: 20px; 
+    /* Others */
+    --borderRadius: 20px;
+    --boxShadowCard:rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
 html {

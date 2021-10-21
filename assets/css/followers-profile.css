@@ -76,6 +76,10 @@ button:hover {
     font-family: var(--textFont);
 }
 
+a[href="#"] {
+    text-decoration: none
+}
+
 .user-navbar__interacciones a {
     color: var(--white);
 }

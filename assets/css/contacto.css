@@ -138,11 +138,6 @@ body {
 
 }
 
-#media (min-resolution: 120dpi) {
-	.slide__track {
-
-	}
-}
 
 .in-flex {
 	flex: 1;

@@ -1,8 +1,9 @@
 @import url(./styles.css);
 @import url(./footerbuble.css);
+@import url(./followers-profile.css);
 
 .cont-acerca-paax{  
-    background-color: #f280b580;
+    background-color: var(--rosatrans);
 }
 .cont-acerca-paax p{
     font-size: 6vw;
@@ -32,6 +33,9 @@
 }
 .text-conocenos p {
     font-size: var(--textFont);
+    box-sizing: border-box;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 .cart-tittle h5{
     font-family: var(--titlesFont);
@@ -65,172 +69,196 @@
     color: var(--rosatrans);
     font-size: large;
 }
-/*--------------------------------------------*/
-/* DANIEL */
-/* -- MISIÓN -- */
-.cont-padre-mision{
-    display: flex;
-}
-.circulo-mision{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color:var(--rosa);
-    width: 150px;
-    height: 150px;
-    font: var(--titlesFont);
-    color: var(--white);   
-}
-.cont-txt-mision{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 10px var(--rosa);
-    width: 100%;  
-    border-radius: 75px;
-    height: 150px; 
-}
-.cont-txt-mision p{
-    font: var(--textFont);
-    color:var(--white);
-    padding-left: 160px;
-    padding-right: 20px;
-}
-/*  -- VISIÓN -- */ 
-.cont-padre-vision{
-    margin-top: 20px;
-    display: flex;
-}
-.circulo-vision{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color:var(--rosa);
-    width: 165px;
-    height: 165px;
-    font: var(--titlesFont);
-    color: var(--white);
-}
-.cont-txt-vision{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 10px var(--rosa);
-    width: 100%;  
-    border-radius: 82px;
-    height: 165px; 
-}
-.cont-txt-vision p{
-    font: var(--textFont);
-    color: var(--white);
-    padding-left: 160px;
-    padding-right: 20px;
-}
-/* -- RESPONSIVE MISION Y VISION -- */
- @media screen and (max-width: 600px){
-
-.cont-padre-mision{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-}
-.circulo-mision{ 
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    font-size: 14px;
-    
-}
-.cont-txt-mision{
-    margin-top: -50px;
-    width: 90%;  
-    border-radius: 20px; 
-    
-}
-.cont-txt-mision p{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 14px;
-   
+/* ------ MISION ------*/
+.cont-mision{
+    height: 140px;
+    border-radius: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bgcard);
+    box-shadow: var(--boxShadowCard);
 }
 
-.cont-padre-vision{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
+.cont-mision-text{
+    font-family: var(--textFont);
+    padding-left: 150px;   
 }
-.circulo-vision{ 
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
 
-}
-.cont-txt-vision{
-    margin-top: -50px;
-    width: 90%;  
-    border-radius: 20px; 
-    height: 260px;
-    font-size: 14px;
+.cont-circulo-mision{
+    font-family: var(--titlesFont);
+    border-radius: 70px;
+    width: 140px;
+    height: 142px;
+    margin-left: -2px;
+    margin-top: -2px;
+    background-color: var(--rosaRGBA);
+    
     
 }
-.cont-txt-vision p{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 14px;
+/*------ VISION ------ */
+.cont-vision{
+    height: 140px;
+    border-radius: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--rosatrans);
+    background-color: var(--bgcard);
+    box-shadow: var(--boxShadowCard);
 }
+
+.cont-vision-text{
+    font-family: var(--textFont);
+    padding-left: 150px;
+}
+
+.cont-circulo-vision{
+    border-radius: 50%;
+    width: 140px;
+    height: 142px;
+    margin-left: -2px;
+    margin-top: -2px;
+    background-color: var(--rosaRGBA);
+}
+
+/* ------ RESPONSIVE DE MISION Y VISION ------ */
+@media screen and (max-width: 950px){
+    .cont-mision{
+        height:200px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    
+    .cont-mision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    
+    .cont-circulo-mision{
+        border-radius: unset;
+        background: none;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+    .cont-vision{
+        height: 250px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    
+    .cont-vision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    
+    .cont-circulo-vision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        background:none;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
+}
+@media screen and (max-width: 600px){
+
+    .cont-mision{
+        height:200px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;   
+    }   
+    .cont-mision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }   
+    .cont-circulo-mision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
+    .cont-vision{
+        height:350px;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    
+    .cont-vision-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: unset;
+        margin-top: 20px;   
+    }
+    .cont-circulo-vision{
+        border-radius: unset;
+        width: unset;
+        height: 20px;
+        border:unset;
+        margin-left: -2px;
+        margin-top: -2px; 
+        margin-left: auto;
+        margin-right: auto;     
+    }
 }
 
 /* ------ VALORES ------ */
-
-.cont-padre-val h4{
-    margin-top: 20px;
-    text-align: center;
-    color: var(--white);
-    font: var(--textFont);
-    font-size: 30px;
+.titulo-valores{
+    font-family: var(--titlesFont);
 }
-#circulos-val{
+.cont-gen-circulos-val{
     display: flex;
-    flex-wrap: wrap;   
+    flex-direction: row; 
+    flex-wrap: wrap; 
 }
-.circulos{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+.cont-circulo-val{
     width: 270px;
     height: 270px;
-    border-radius: 50%;
-    border: 15px solid var(--rosa);
-    
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
 }
-.circulos p{
-    color: var(--white);
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    align-items: center;   
+.circulo-val{
+   border: 5px solid var(--rosatrans);
+    border-radius: 50%; 
+    background-color: var(--bgcard);
+    box-shadow: var(--boxShadowCard);
+
+}
+.circulo-val h5{
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: var(--titlesFont);
+}
+.circulos-val p{
+font-family: var(--textFont);
 }

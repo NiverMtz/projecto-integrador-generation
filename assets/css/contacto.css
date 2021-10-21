@@ -68,27 +68,20 @@ body {
   }
   
   .container__carousel__contacto {
-    height: 400px;
-	position: relative;
+    height: 500px;
     width: 100%;
-	padding: 0px;
+	padding: 20px 20px;
 	margin: 0px;
-	display: flex;
-	flex-wrap: wrap;
-	
-	background-position: cover;
-	grid-template-areas:
-	 "row__track__slide"
-	 "sidebar slide__track";
-	
   }
 
   .box__carousel__contacto {
 	width: 100%;
-	height: 400;
+	height: 500px;
 	overflow: hidden;
-	font-size: cover;
-	background-image: url="../img/high_so_high.png";
+	background-image: url(../img/fondo_carousel_contacto.png);
+	padding: 20px;
+	border-radius: 5px;
+	
   }
 
   .container__carousel__contacto::before, .container__carousel__contacto::after {
@@ -123,14 +116,24 @@ body {
 	border-radius: 20px 20px;
 	width: 500;
 	height: 450;
+	opacity: .85;
+}
+
+.title__contacto {
+	color: white;
+	padding: 20px 20px;
+	background-color:rgb(15, 13, 13);
 }
 
 /*Banner´s CSS */
 .container__banner__net {
-	background-color: #0597F2;
+	background-color: black;
 	padding: 0;
-	margin: 20px 0px;
-	display: flex;
+	margin: 10px 0px;
+	position: inherit;
+	z-index: 3;
+	bottom: 200px;
+	top: 800px;
 
 }
 .in-flex {
@@ -145,7 +148,7 @@ body {
 }
 
 .row__banner__net {
-	background-color: #0597F2;
+	background-color: gray;
 	color: black;
 	padding: 0;
 	margin: 0;
@@ -166,26 +169,41 @@ body {
 }
 
 .title__banner {
-	margin: 0;
-	padding: 50px 50px;
+	margin: 20px;
+	padding: 40px;
 	text-align: center;
+	width: 100%;
+	
 }
 
 .icons__net {
-	padding: 30px 30px;
+	padding: 40px;
 	position: relative;
-	right: -50px;
+	right: 0;
 	z-index: 1;
 	left: 0px;
 	top: 0px;
 	bottom: 0px;
-	width: 200px;
-	height: 200px;
 	border-radius: 20px;
+	padding: 20px;
 }
 
+.logo__contacto {
+	position: absolute;
+	background-color: black;
+	right: 0px;
+	z-index: 1;
+	left: 500px;
+	top: 1000px;
+	bottom: 0px;
+	border-radius: 20px;
+	width: 400px;
+	height: 200px;
+}
+
+
 .box__net {
-	background-color: #0597F2;
+	background-color: black;
 	width: 500px;
 	line-height: 1.5en;
 	height: 500px;
@@ -201,50 +219,45 @@ body {
 
 .row__email {
 	padding: 30px 30px;
-	background-color: #0597F2;
+	background-color: black;
 	color: white;
 	font-family: 'Mukta', sans-serif;
 	z-index: 3;
 	position: absolute;
-	left: 150px;
+	left: 700px;
 	top: 1300px;
 	bottom: 0px;
 	right: 0px;
-	width: 500px;
+	width: 600px;
 	height: 100px;
 	text-align: center;
+	border-radius: 20px;
 }
 
-.row__secc {
-	padding: 30px 30px;
-	background-color: #0597F2;
+.row__seccion {
+	background-color: gray;
 	font-family: 'Mukta', sans-serif;
 	color: white;
-	border-radius: 20px;
-	z-index: 4;
+	z-index: 3;
 	position: absolute;
-	left: 800px;
-	top: 1200px;
-	bottom: 0px;
-	right: 0px;
-	width: 500px;
-	height: 300px;
-	transition: background ease-in .3s;
+	left: 0px;
+	top: 0px;
+	bottom: 200px;
+	right: 0;
+	width: 400px;
+	height: 250px;
+	padding: 20px;
 }
 
-.black__letter {
+.nav__seccion {
 	color: black;
-	text-align: center;
-	background-color: white;
-	border-radius: 20px;
 }
-
 
 /*Segunda sección*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html{
-	background-color: black;
+	background-color: white;
   	background-size: cover;
   	height: 100%;
 }
@@ -254,12 +267,21 @@ html{
 }
 
 .container__form__quiz {
-	background-color: black;
+	background-color: white;
 	padding: 0;
 	margin: 0;
 	height: 800;
 	width: 1300;
 	text-align: left;
+	z-index: 3;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 1700px;
+	right: 0;
+	width: 400px;
+	height: 250px;
+
 }
 
 
@@ -434,7 +456,7 @@ input:focus, textarea:focus {
 
 #button__send:hover{
 	background-color: rgba(0,0,0,0);
-	color: #0597F2;
+	color: --rosa;
 }
 	
 .submit:hover {
@@ -458,7 +480,7 @@ input:focus, textarea:focus {
 
 .submit:hover .ease{
   	width:100%;
-  	background-color:#0597F2(104, 20, 20, 0.377);
+  	background-color: --rosa;
 }
 
 .gray__letter {
@@ -514,7 +536,7 @@ ul, ol {
 .icons__net {
 	width: 300px;
 	height: 100;
-	background-color: #0597F2;
+	background-color: --rosa;
 	transition: ls;
 }
 

@@ -234,12 +234,3 @@
     transform: translateX(-50%) translateY(-50%);
     align-items: center;   
 }
-
-.test--hover {
-    font-weight: 900;
-}
-
-.test--hover:hover {
-    /* background-color: rgba(15, 187, 130, 0.9); */
-    color: rgb(15, 187, 130);
-}

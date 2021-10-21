@@ -40,5 +40,5 @@ $forma.addEventListener("submit", e => {
     warningPassConfirm = "Las contraseñas no coinciden";
     $alertPassConfirm.innerHTML = warningPassConfirm;
   }
-  window.location.assign("https://nivermtz.github.io/projecto-integrador-generation/registro_exitoso.html");
+  window.location.replace("https://nivermtz.github.io/projecto-integrador-generation/registro_exitoso.html");
 });

@@ -1,5 +1,6 @@
 @import url(./styles.css);
 @import url(./footerbuble.css);
+@import url(./followers-profile.css);
 
 .cont-acerca-paax{  
     background-color: var(--rosatrans);
@@ -68,21 +69,20 @@
     color: var(--rosatrans);
     font-size: large;
 }
-/*--------------------------------------------*/
+/* ------ MISION ------*/
 .cont-mision{
     height: 140px;
     border-radius: 70px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--rosatrans);
-    
+    background-color: var(--bgcard);
+    box-shadow: var(--boxShadowCard);
 }
 
 .cont-mision-text{
     font-family: var(--textFont);
-    padding-left: 150px;
-    
+    padding-left: 150px;   
 }
 
 .cont-circulo-mision{
@@ -90,12 +90,13 @@
     border-radius: 70px;
     width: 140px;
     height: 142px;
-    border: 7px solid var(--negro);
     margin-left: -2px;
     margin-top: -2px;
+    background-color: var(--rosaRGBA);
+    
     
 }
-
+/*------ VISION ------ */
 .cont-vision{
     height: 140px;
     border-radius: 70px;
@@ -103,6 +104,8 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--rosatrans);
+    background-color: var(--bgcard);
+    box-shadow: var(--boxShadowCard);
 }
 
 .cont-vision-text{
@@ -114,10 +117,12 @@
     border-radius: 50%;
     width: 140px;
     height: 142px;
-    border: 7px solid var(--negro);
     margin-left: -2px;
     margin-top: -2px;
+    background-color: var(--rosaRGBA);
 }
+
+/* ------ RESPONSIVE DE MISION Y VISION ------ */
 @media screen and (max-width: 950px){
     .cont-mision{
         height:200px;
@@ -125,7 +130,6 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        background-color: var(--rosatrans); 
        
     }
     
@@ -138,6 +142,7 @@
     
     .cont-circulo-mision{
         border-radius: unset;
+        background: none;
         width: unset;
         height: 20px;
         border:unset;
@@ -152,8 +157,7 @@
         border-radius: 20px;
         width: 90%;
         margin-left: auto;
-        margin-right: auto;
-        background-color: var(--rosatrans);  
+        margin-right: auto;  
     }
     
     .cont-vision-text{
@@ -168,12 +172,12 @@
         width: unset;
         height: 20px;
         border:unset;
+        background:none;
         margin-left: -2px;
         margin-top: -2px; 
         margin-left: auto;
         margin-right: auto;     
     }
-
 }
 @media screen and (max-width: 600px){
 
@@ -182,18 +186,14 @@
         border-radius: 20px;
         width: 90%;
         margin-left: auto;
-        margin-right: auto;
-        background-color: var(--rosatrans); 
-       
-    }
-    
+        margin-right: auto;   
+    }   
     .cont-mision-text{
         margin-left: auto;
         margin-right: auto;
         padding: unset;
         margin-top: 20px;   
-    }
-    
+    }   
     .cont-circulo-mision{
         border-radius: unset;
         width: unset;
@@ -204,15 +204,12 @@
         margin-left: auto;
         margin-right: auto;     
     }
-
     .cont-vision{
         height:350px;
         border-radius: 20px;
         width: 90%;
         margin-left: auto;
-        margin-right: auto;
-        background-color: var(--rosatrans); 
-       
+        margin-right: auto;   
     }
     
     .cont-vision-text{
@@ -221,7 +218,6 @@
         padding: unset;
         margin-top: 20px;   
     }
-    
     .cont-circulo-vision{
         border-radius: unset;
         width: unset;
@@ -232,7 +228,6 @@
         margin-left: auto;
         margin-right: auto;     
     }
-
 }
 
 /* ------ VALORES ------ */
@@ -253,7 +248,10 @@
 }
 .circulo-val{
    border: 5px solid var(--rosatrans);
-    border-radius: 50%;  
+    border-radius: 50%; 
+    background-color: var(--bgcard);
+    box-shadow: var(--boxShadowCard);
+
 }
 .circulo-val h5{
     margin-top: 45px;

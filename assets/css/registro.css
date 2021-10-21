@@ -14,22 +14,24 @@
 }
 /* INPUT REGISTRO */
 input{
+  border-radius: var(--borderRadius);
+  background-color: var(--rosa);
+}
+/* input{
   border: none;
   border-radius: var(--borderRadius);
   color: var(--negro);
   outline: none;
-  /* background-color: #C4C4C4; */
-  /* opacity: 0.43; */
 }
 input:focus{
-  background-color: var(--rosa);
-}
+  background-color: var(--rosaOpaco);
+} */
 /* BONTON REGISTRO */
 .registro_btn{
   font-size: var(--titleFont);
   border-radius: var(--borderRadius);
 }
-::placeholder{
+/* ::placeholder{
   color: #000;
   opacity: 1;
-}
+} */

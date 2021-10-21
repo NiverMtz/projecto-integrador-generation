@@ -29,17 +29,17 @@
       <div class="login-img text-center">
         <img src="./assets/img/logo_sin.gif" alt="logo de paax">
       </div>
-      <form action="" method="post">
+      <for id="forma" action="" method="post">
         <!-- CORREO ELECTRÓNICO -->
         <div class="login-pass d-flex flex-column mb-5">
           <label class="text-white ml-3" for="">Correo electrónico</label>
-          <input class="login-input pl-3" type="email" placeholder="tucorreo@ejemplo.com">
+          <input id="input_email" class="login-input pl-3" type="email" placeholder="tucorreo@ejemplo.com">
           <p class="warning-email text-danger ml-3"></p>
         </div>
         <!-- CONTRASEÑA -->
         <div class="login-pass d-flex flex-column mb-5">
           <label class="text-white ml-3" for="">Contraseña</label>
-          <input class="login-input pl-3" type="password" placeholder="ocho carácteres mínimo">
+          <input id="input_pass" class="login-input pl-3" type="password" placeholder="ocho carácteres mínimo">
           <p class="warning-pass text-danger ml-3"></p>
         </div>
     
@@ -75,7 +75,7 @@
 <!-- FOOTER -->
 
 
-
+<script src="js/validacion_login.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>

@@ -14,11 +14,12 @@
 }
 /* INPUT REGISTRO */
 input{
-  border: none;
-  outline: none;
   color: white;
   font-size: var(--textFont);
   border-radius: var(--borderRadius);
+}
+.login-input{
+  background-color: var(--rosa);
 }
 /* BONTON REGISTRO */
 .registro_btn{

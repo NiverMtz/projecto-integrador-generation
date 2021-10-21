@@ -52,13 +52,16 @@
     </nav>
 
 <!--Carousel -->
+<h1 class="title__contacto">¡Contáctanos!</h1>
+
+<p><!--space--></p>
   <div class="container__carousel__contacto">
 
-    <h1 class="title__contacto">¡Contáctanos!</h1>
+    <div class="box__carousel__contacto" >
 
-    <div class="box__carousel__contacto">
+      
     
-    <div class="row__track__slide">
+      <div class="row__track__slide" >
 
         <div class="slide__track">
           <img id="slide__contacto" src="./assets/img/album_cover_015.jpeg" style="width: 400; height: 350px;" alt="15" />
@@ -110,28 +113,29 @@
   </div>
     
 <!--Banner-->
-<div class="container__banner__net col-12">
+  <div class="container__banner__net col-12"> 
 
-  <div class="row__banner__net col-12">
+    <div class="row__banner__net col-12">
       <div class="col-12" id="banner__net">
         <h1 class="title__banner">Siguenos en nuestras redes sociales</h1>
-        <img id="icons__net" class="icons__net col-4" src="./assets/img/facebook.png" alt="Facebook">
-        <img id="icons__net" class="icons__net col-4" src="./assets/img/instagram.png" alt="Instagram">
-        <img id="icons__net" class="icons__net col-4" src="./assets/img/twiter.png" alt="Twiter">
-        <img id="icons__net" class="icons__net col-4" src="./assets/img/mail.png" alt="mail">
-        <img id="icons__net" class="icons__net col-12" src="./assets/img/logo.gif" style="width: 600px; height: 300px;" alt="gift">
-        <!--<div class="box__net" style="height: 100%; width: 100%;">
-        </div>-->
+        <img id="icons__net" class="icons__net col-3" src="./assets/img/facebook.png" style="width: 200px; height: 200px;" alt="Facebook">
+        <img id="icons__net" class="icons__net col-3" src="./assets/img/instagram.png" style="width: 200px; height: 200px;" alt="Instagram">
+        <img id="icons__net" class="icons__net col-3" src="./assets/img/twiter.png" style="width: 200px; height: 200px;" alt="Twiter">
+        <img id="icons__net" class="icons__net col-3" src="./assets/img/mail.png" style="width: 200px; height: 200px;" alt="mail">
       </div>
     </div>
 
+    <div class="logo__contacto" >
+      <img id="icons__net col-12" src="./assets/img/logo.gif" style="width: 800px; height: 300px;" alt="gift">
+    </div>
+  
+
     <div class="col-6 row__email">
-      <h2 class="black__letter" style="text-align: center;">Correo de contacto:</h2>
-      <h2>paax.music@community.mx</h2>
+      <h2><a class="title__contacto" href="">Correo de contacto:</a></h2>
+      <h2><a class="title__banner" href=""></a>paax.music@community.mx</a></h2>
     </div>
 
-    <div class="row__seccion col-6">
-      
+    <div class="row__seccion col-4">
       <ul>
         <il>
           <h3><a class="nav__seccion" href="#">Términos y condiciones</a></h3>
@@ -149,40 +153,9 @@
 <p></p>
 
   <!--form y quiz-->
-  <div class="container__form__quiz col-12">
-
-    <div class="row__form__mailbox col-8">
-      <div id="form__mailbox">
-        <form class="form">
-        <h3 class="col-8">Buzón de Sugerencias</h3>
-        <p class="user__name">
-          <p>Nombre de usuario</p>
-            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input" placeholder="EjemploUsuario" id="name" />
-        </p>
-        <p class="email">
-          <p>Correo eléctronico</p>
-          <input name="email" type="text" class="validate[required,custom[email]] feedback__input" id="email" placeholder="ejemplo@paax.com"/>
-        </p>
-        <p class="text box__comment" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input">
-          <p>Comentario</p>
-          <p class="gray__letter" name="text" id="comment" placeholder="Ecribe que es lo que piensas de Paax"></p>
-          </p>
-        </p>
-
-        <p>Estoy de acuerdo con los <a href="#">Términos y condiciones</a>
-        </p>
-        <div class="submit">
-          <input type="submit" value="Enviar" id="button__send"/>
-          <div class="ease">
-          </div>
-        </div>
-        </form>
-    </div>
-  </div>
-
   <div class="row__quiz col-4">
     <h3 class="title__banner">Preguntas frecuentes</h3>
-    
+      <div class="box__preguntas">
       <ul class="nav__1">
         <li class="nav__preguntas"><a href="">¿Cómo hacer una reseña?</a></li>
           <ul>
@@ -215,7 +188,40 @@
            </li>
           </ul>
       </ul>
+    </div>
 
+  <div class="container__form__quiz col-12">
+
+    <div class="row__form__mailbox col-8">
+      <div id="form__mailbox">
+        <form class="form">
+        <h3 class="col-8">Buzón de Sugerencias</h3>
+        <p class="user__name">
+          <p>Nombre de usuario</p>
+            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input" placeholder="EjemploUsuario" id="name" />
+        </p>
+        <p class="email">
+          <p>Correo eléctronico</p>
+          <input name="email" type="text" class="validate[required,custom[email]] feedback__input" id="email" placeholder="ejemplo@paax.com"/>
+        </p>
+        <p class="text box__comment" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input">
+          <p>Comentario</p>
+          <p class="gray__letter" name="text" id="comment" placeholder="Ecribe que es lo que piensas de Paax"></p>
+          </p>
+        </p>
+
+        <p>Estoy de acuerdo con los <a href="#">Términos y condiciones</a>
+        </p>
+        <div class="submit">
+          <input type="submit" value="Enviar" id="button__send"/>
+          <div class="ease">
+          </div>
+        </div>
+        </form>
+    </div>
+  </div>
+
+  
   </div>
 
   <footer class="foot">

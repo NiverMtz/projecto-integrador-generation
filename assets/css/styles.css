@@ -13,6 +13,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@600&display=swap');
 
+@font-face {font-family: "CashbackMediumW00-Medium"; src: url("//db.onlinewebfonts.com/t/5400cea720f06aa1da4bb1569bc77590.eot"); src: url("//db.onlinewebfonts.com/t/5400cea720f06aa1da4bb1569bc77590.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5400cea720f06aa1da4bb1569bc77590.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5400cea720f06aa1da4bb1569bc77590.woff") format("woff"), url("//db.onlinewebfonts.com/t/5400cea720f06aa1da4bb1569bc77590.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5400cea720f06aa1da4bb1569bc77590.svg#CashbackMediumW00-Medium") format("svg"); }
+
 :root {
 
     /* Colors */
@@ -32,6 +34,7 @@
     /* Fonts */
     --textFont: 'Mukta', sans-serif;
     --titlesFont: 'Nunito', sans-serif;
+    --brandFont: "CashbackMediumW00-Medium";
 
     /* Others */
     --borderRadius: 20px;
@@ -115,4 +118,45 @@ img {
 
 .centrar-texto {
     text-align: center;
+}
+
+.link--style {
+    font-size: 16px;
+    font-family: var(--titlesFont);
+}
+
+.link--style:hover {
+    color: var(--rosaRGBA);
+}
+
+
+.brand--font {
+    font-family: var(--brandFont);
+    font-weight: 900;
+    margin: 0;
+    line-height: 48px;
+}
+
+.brand--font:hover {
+    /* background-color: rgba(15, 187, 130, 0.9); */
+    color: rgb(13, 223, 83);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+.nav--font {
+    font-family: var(--titlesFont);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-white:hover {
+    color: rgb(13, 223, 83);
+}
+
+.text--pink {
+    color: var(--rosaRGBA) !important;
+    text-decoration: none !important;
 }

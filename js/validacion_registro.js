@@ -40,6 +40,7 @@ $forma.addEventListener("submit", e => {
     warningPassConfirm = "Las contraseñas no coinciden";
     $alertPassConfirm.innerHTML = warningPassConfirm;
   }
+  console.log("sdasdasd")
   window.location.replace("./registro_exitoso.html");
   console.log("Hola")
 });

@@ -51,10 +51,8 @@ background-color: var(--rosaOpaco)
   border-radius: var(--borderRadius);
   position: fixed;
   right: 20px;
-  top: 65px;
+  top: 70px;
 }
-
-
 
 .dashboard__icon--size {
   width: 64px;

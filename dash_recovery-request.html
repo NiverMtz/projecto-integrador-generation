@@ -15,43 +15,7 @@
   </head>
 
   <body>
-     <!-- HEADER -->
-    <!-- Menú superior -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
-      <a class="navbar-brand" href="#"><img src="./assets/img/logo-elbueno.gif" style="width: 90px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./followers_profile.html">Perfil</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Accesar
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="login.html">Login</a>
-              <a class="dropdown-item" href="registro.html">Crear Cuenta</a>
-              <div class="dropdown-divider"></div>
-              
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./create_review.html">Reseña</a></button>
-        </form>
-      </div>
-    </nav>
+  <a class="text-white ml-5 recovery__home" href="/">Home</a>
 
     <!-- Contenedor Principal -->
     <div class="container-fluid">
@@ -71,8 +35,7 @@
         <!-- Formulario email -->
         <div class="main__recoveryform">
           <form class="main__recoveryform--form">
-            <label for="exampleInputEmail1">Correo electronico</label>
-            <input type="email" class="form-control rounded-pill rounded mx-auto d-block mt-3" id="emailforrecovery" aria-describedby="emailHelp" placeholder="tu@correo.com">
+            <input type="email" class="rounded-pill rounded mx-auto d-block mt-3 text-white" id="emailforrecovery" aria-describedby="emailHelp" placeholder="tu@correo.com">
               <a href="dash_recovery-successful.html">
                 <button type="button" class="btn btn-primary rounded-pill rounded mx-auto ">Restaurar Contraseña</button>
               </a>

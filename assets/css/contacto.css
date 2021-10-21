@@ -1,4 +1,5 @@
 @import url(./styles.css);
+@import url(./followers-profile.css);
 
 * {
 	margin:0;
@@ -138,12 +139,6 @@ body {
 
 }
 
-#media (min-resolution: 120dpi) {
-	.slide__track {
-
-	}
-}
-
 .in-flex {
 	flex: 1;
 }
@@ -195,10 +190,6 @@ body {
 	border-radius: 20px;
 	padding: 20px;
 }
-
-.icons__net: hover:afeter {
-	color: 
-} 
 
 .logo__contacto {
 	position: absolute;
@@ -291,17 +282,12 @@ html{
 	right: 0;
 	width: 100%;
 	height: 1050px;
-
-}
-
-.title__banner {
-
 }
 
 /*Enlaces */
 .row__quiz {
 	text-align: center;
-	padding: 20px
+	padding: 20px;
 	background-color: black;
 	position: absolute;
 	right: 0px;
@@ -323,7 +309,7 @@ ul, ol {
 	background-color: white;
 }
 
-.nav__1 li a: hover {
+.nav__1 li a:hover {
 	background-color: white;
 	color: black;
 }
@@ -558,6 +544,8 @@ input:focus, textarea:focus {
 
 }
 
-
+.card {
+	display: none;
+}
 
 /*Footer */

@@ -1,6 +1,12 @@
-@import url(./styles.css);
-@import url(./footerbuble.css);
+@import url(./styles.css); /* estilos generales */
+@import url(./footerbuble.css); /* footer */
 
+/* BOTONES LOGIN Y SIGN IN REDIUS NAVBAR*/
+.card__elementos-boton{
+    border-radius: var(--borderRadius);
+    padding: 4px 16px;
+}
+/* BANNER */
 .cont-acerca-paax{  
     background-color: var(--rosatrans);
 }
@@ -18,21 +24,31 @@
     top: 0;
     bottom: 0;
 }
-.text-conocenos {
+.conocenos{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     background-color: var(--bgcard);
     color: var(--white);
-    border-radius: 90px;
+    border-radius: 80px;
     box-shadow: var(--boxShadowCard);
 }
-.text-conocenos h3 {
+.conocenos-text h4 {
     font-family: var(--titlesFont);
+    padding-top: 0.5em;
 }
-.text-conocenos p {
+.conocenos-text p {
     font-size: var(--textFont);
     box-sizing: border-box;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding: 1em 1em 1em 1em;
 }
+ /* AJUSTE DEL BORDE CONÓCENOS EN RESPONSIVE */
+@media screen and (max-width: 600px){
+    .conocenos{
+        border-radius: var(--borderRadius);
+    }
+}
+/* PERFILES */
 .cart-tittle h5{
     font-family: var(--titlesFont);
     color: var(--negro);
@@ -49,7 +65,6 @@
     margin-top: 15px;
 }
 .img-perfil{
-    /* border-radius: 100px; */
     clip-path: circle(50% at 50% 50%);
 }
 .perfiles {
@@ -103,6 +118,7 @@
     padding-left: 150px;
 }
 .cont-circulo-vision{
+    font-family: var(--titlesFont);
     border-radius: 50%;
     width: 140px;
     height: 142px;
@@ -110,137 +126,74 @@
     margin-top: -2px;
     background-color: var(--rosaRGBA);
 }
-
 /* ------ RESPONSIVE DE MISION Y VISION ------ */
 @media screen and (max-width: 950px){
     .cont-mision{
-        height:200px;
-        border-radius: 20px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-       
+        height: 150px;
+        border-radius: var(--borderRadius); 
     }
-    
     .cont-mision-text{
         margin-left: auto;
         margin-right: auto;
         padding: unset;
         margin-top: 20px;   
     }
-    
     .cont-circulo-mision{
         border-radius: unset;
         background: none;
         width: unset;
-        height: 20px;
-        border:unset;
-        margin-left: -2px;
-        margin-top: -2px; 
-        margin-left: auto;
-        margin-right: auto;     
+        margin-top: -40px;
+        border:unset;      
     }
-
     .cont-vision{
-        height: 250px;
-        border-radius: 20px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;  
+        height: 220px;
+        border-radius: var(--borderRadius); 
     }
-    
     .cont-vision-text{
         margin-left: auto;
         margin-right: auto;
         padding: unset;
         margin-top: 20px;   
-    }
-    
+    } 
     .cont-circulo-vision{
         border-radius: unset;
         width: unset;
-        height: 20px;
         border:unset;
         background:none;
-        margin-left: -2px;
-        margin-top: -2px; 
-        margin-left: auto;
-        margin-right: auto;     
+        margin-top: -40px;     
     }
 }
 @media screen and (max-width: 600px){
-
     .cont-mision{
-        height:200px;
-        border-radius: 20px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;   
+        height:250px;  
     }   
-    .cont-mision-text{
-        margin-left: auto;
-        margin-right: auto;
-        padding: unset;
-        margin-top: 20px;   
-    }   
-    .cont-circulo-mision{
-        border-radius: unset;
-        width: unset;
-        height: 20px;
-        border:unset;
-        margin-left: -2px;
-        margin-top: -2px; 
-        margin-left: auto;
-        margin-right: auto;     
-    }
     .cont-vision{
-        height:350px;
-        border-radius: 20px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;   
-    }
-    
-    .cont-vision-text{
-        margin-left: auto;
-        margin-right: auto;
-        padding: unset;
-        margin-top: 20px;   
-    }
-    .cont-circulo-vision{
-        border-radius: unset;
-        width: unset;
-        height: 20px;
-        border:unset;
-        margin-left: -2px;
-        margin-top: -2px; 
-        margin-left: auto;
-        margin-right: auto;     
+        height: 350px;  
     }
 }
-
 /* ------ VALORES ------ */
 .titulo-valores{
     font-family: var(--titlesFont);
+    margin-top: 60px;
 }
 .cont-gen-circulos-val{
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap; 
 }
-.cont-circulo-val{
+.cont-circulo-val{ 
     width: 270px;
     height: 270px;
     margin-left: auto;
     margin-right: auto;
     background: none;
+    border: unset;
 }
 .circulo-val{
    border: 5px solid var(--rosatrans);
-    border-radius: 50%; 
+   border-radius: 50%;
     background-color: var(--bgcard);
     box-shadow: var(--boxShadowCard);
-
 }
 .circulo-val h5{
     margin-top: 45px;

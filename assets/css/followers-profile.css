@@ -1,8 +1,14 @@
 @import url(./styles.css);
 
+
+/* Las dimensiones que se muestran a continuación son para
+un display por default de 425px. Después se agregarán los media queries para 
+displays mucho más grandes */ 
+
 * {
     margin: 0;
     box-sizing: border-box;
+    line-height: 25px;
 }
 
 main {
@@ -94,10 +100,15 @@ a[href="#"] {
     margin-top: 25px;
     margin-bottom: 50px;
     border-radius: var(--borderRadius);
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    box-shadow: 
+    rgba(240, 46, 170, 0.4) 0px 5px, 
+    rgba(240, 46, 170, 0.3) 0px 10px, 
+    rgba(240, 46, 170, 0.2) 0px 15px, 
+    rgba(240, 46, 170, 0.1) 0px 20px, 
+    rgba(240, 46, 170, 0.05) 0px 25px;
     display: flex;
     position: relative;
-    height: 100vw;
+    height: 440px;
 }
 
 .card__img-back {
@@ -125,20 +136,31 @@ a[href="#"] {
 }
 
 .card__info {
-    flex-basis: 150px;
     height: 100%;
+    width: 140px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
 }
 
 .card__info-content {
     height: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__info-content {
+    margin-bottom: 0;
+}
+
+.card__info-aside {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 .card__info-img {
@@ -159,11 +181,41 @@ a[href="#"] {
     justify-content: space-between;
 }
 
+.card__info-user-post {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+}
+
+.card__figure-user-post {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.card__img-user-post {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card__data-user-post {
+    height: 35px;
+}
+
+.card__data-user-post h3, p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
 .card__content-post {
     display: flex;
     flex-direction: column;
     height: 100%;
     overflow: hidden;
+    margin-top: 30px;
 }
 
 .card__post-titulo {
@@ -176,7 +228,7 @@ a[href="#"] {
     gap: 60px;
     height: 35px;
     position: absolute;
-    bottom: 25px;
+    bottom: 30px;
     right: 50px;
 }
 
@@ -195,28 +247,33 @@ a[href="#"] {
 
 
 /* Apartir de aquí se agregan los media queries para volver
-   responsive la página y se comienza a modificar una vez superado
-   el ancho en pixeles de una tablet */
+   responsive la página en distintos tamaños de display */
 
 
 @media screen and (max-width: 360px) {
 
+    .card-user-main {
+        height: 490px;
+    }
+
     .card__elementos {
-        width: 191.14px;
-        bottom: 10px;
+        width: 195.58px;
+        bottom: 30px;
         right: 15px;
-        justify-content: space-between;
     }
 }
 
 
 @media screen and (min-width: 361px) and (max-width: 375px) {
 
+    .card-user-main {
+        height: 490px;
+    }
+
     .card__elementos {
-        width: 204.45px;
-        bottom: 10px;
+        width: 209.05px;
+        bottom: 30px;
         right: 15px;
-        justify-content: space-between;
     }
 }
 
@@ -248,6 +305,7 @@ a[href="#"] {
     }
 
     .card-user-main {
+        height: 400px;
         margin: 20px;
         margin-top: 40px;
         margin-bottom: 60px;
@@ -264,10 +322,6 @@ a[href="#"] {
 
     .user-navbar__id button {
         margin-right: 30px;
-    }
-
-    .card-user-main {
-        height: 60vw;
     }
 
     .card__img-back {
@@ -293,6 +347,13 @@ a[href="#"] {
 
     * {
         position: static;
+        line-height: 30px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .banner {
@@ -331,9 +392,14 @@ a[href="#"] {
     }
 
     .card-user-main {
-        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-        margin: 85px 160px;
-        height: 45vw;
+        box-shadow: 
+        rgba(240, 46, 170, 0.4) -5px 5px,
+        rgba(240, 46, 170, 0.3) -10px 10px, 
+        rgba(240, 46, 170, 0.2) -15px 15px, 
+        rgba(240, 46, 170, 0.1) -20px 20px, 
+        rgba(240, 46, 170, 0.05) -25px 25px;
+        height: 850px;
+        width: 600px;
         background-color: var(--bgcard);
     }
 
@@ -342,38 +408,95 @@ a[href="#"] {
     }
 
     .card__info-media-album {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
         border-radius: 10px;
-        margin-bottom: 0;
+        margin-bottom: 0px;
+        margin-right: 0px;
     }
 
     .card__info-media-img {
         object-fit: cover;
         margin-right: 0;
-        border-radius: 10px;
+        border-radius: inherit;
     }
 
     .card__overtext {
         padding: 40px;
+        height: 100%;
     }
 
     .card__overtext-superior {
-        height: 90%;
+        height: 100%;
+        flex-direction: column;
     }
 
     .card__info {
-        flex-basis: 300px;
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .card__info-content {
+        height: auto;
+        width: auto;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__info-aside {
+        border-left: 5px solid var(--rosa);
+        margin-left: 20px;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-grow: 1;
         height: 100%;
-        border-right: 5px solid var(--rosaRGBA);
     }
 
     .card__post {
-        margin-left: 50px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .card__info-user-post {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .card__figure-user-post {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-bottom: 0;
+    }
+
+    .card__img-user-post {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+
+    .card__data-user-post {
+        height: auto;
+    }
+
+    .card__data-user-post h3, p {
+        font-size: 2rem;
+    }
+
+    .card__content-post {
+        margin-top: 30px;
     }
 
     .card__content-post h2, p {
         font-size: 2rem;
+        margin-bottom: 0;
     }
 
     .card__elementos-boton {
@@ -402,7 +525,8 @@ a[href="#"] {
     }
 
     .card-user-main {
-        height: 35vw;
+        height: 850px;
+        width: 600px;
     }
 
     .card__content-post {

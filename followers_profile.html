@@ -13,31 +13,34 @@
 
     <body>
         <!-- HEADER -->
-    <!-- Menú superior -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1);">
-        <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span> <img src="./assets/img/list.svg" alt=""> </span>
-        </button>
-      
-        <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="text-white nav-link" href="./feed.html">Feed<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="text-white nav-link" href="./followers_profile.html">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="text-white nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
-            <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
-          </form>
-        </div>
-      </nav>
+        <!-- Menú superior -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1);">
+
+            <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./assets/img/list.svg" alt=""></span>
+            </button>
+        
+            <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
+                    <li class="nav-item active">
+                    <a class="text-white nav-link" href="./feed.html">Feed<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-white nav-link" href="./followers_profile.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-white nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
+                    <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
+                </form>
+            </div>
+
+        </nav>
 
         <!--Esta sección es el código que pertenece a la imagen del baner-->
         <section class="banner">
@@ -76,6 +79,7 @@
                 sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
                 <img> como background y poder modificarla con javascript-->
                 <section class="card__overtext">
+
                     <!--Este bloque contiene solo los textos de contenido de reseña
                     título de post, datos del artista e iconos.-->
                     <div class="card__overtext-superior">
@@ -83,25 +87,37 @@
                             <figure class="card__info-media-album">
                                 <img class="card__info-media-img" src="assets/img/album_cover.jpg">
                             </figure>
-
-                            <figure class="card__info-content">
-                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                <p class="card_info-texto">Artista</p>
-                            </figure>
-
-                            <figure class="card__info-content">
-                                <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                <p class="card_info-texto">Album</p>
-                            </figure>
-
-                            <figure class="card__info-content">
-                                <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                <p class="card_info-texto">Canción</p>
-                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Artista</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">Álbum</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Canción</p>
+                                </figure>
+                            </aside>
                         </div>
-                        <!--Este bloque contiene el título del post y el contenido
-                        de la reseña-->
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
                         <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                    <p class="card__date-user-post">Yesterday at 19:47</p>
+                                </div>
+                            </div>
+
                             <div class="card__content-post">
                                 <h2 class="card__post-titulo">Título reseña</h2>
                                 <p>
@@ -109,6 +125,7 @@
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
                                 </p>
                             </div>
+
                         </div>
                     </div>
                     <!--Este bloque de código contiene el icono de share y
@@ -117,10 +134,11 @@
                         <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
                         <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
                     </div>
-                    
                 </section>
                 
             </article>
+
+
             <article class="card-user-main">
 
                 <img class="card__img-back" src="assets/img/album_cover.jpg" alt="">
@@ -128,6 +146,7 @@
                 sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
                 <img> como background y poder modificarla con javascript-->
                 <section class="card__overtext">
+
                     <!--Este bloque contiene solo los textos de contenido de reseña
                     título de post, datos del artista e iconos.-->
                     <div class="card__overtext-superior">
@@ -135,25 +154,37 @@
                             <figure class="card__info-media-album">
                                 <img class="card__info-media-img" src="assets/img/album_cover.jpg">
                             </figure>
-
-                            <figure class="card__info-content">
-                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                <p class="card_info-texto">Artista</p>
-                            </figure>
-
-                            <figure class="card__info-content">
-                                <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                <p class="card_info-texto">Album</p>
-                            </figure>
-
-                            <figure class="card__info-content">
-                                <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                <p class="card_info-texto">Canción</p>
-                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Artista</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">Álbum</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Canción</p>
+                                </figure>
+                            </aside>
                         </div>
-                        <!--Este bloque contiene el título del post y el contenido
-                        de la reseña-->
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
                         <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/daniela.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Daniela Domínguez</h3>
+                                    <p class="card__date-user-post">Today at 10:22</p>
+                                </div>
+                            </div>
+
                             <div class="card__content-post">
                                 <h2 class="card__post-titulo">Título reseña</h2>
                                 <p>
@@ -161,6 +192,7 @@
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
                                 </p>
                             </div>
+
                         </div>
                     </div>
                     <!--Este bloque de código contiene el icono de share y
@@ -169,11 +201,11 @@
                         <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
                         <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
                     </div>
-                    
                 </section>
                 
             </article>
         </main>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>

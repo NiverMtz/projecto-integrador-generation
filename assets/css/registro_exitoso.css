@@ -14,7 +14,7 @@ a:hover{
 .registro_check{
   padding: 100px;
   clip-path: circle();
-  background-color: var(--rosaOpaco); 
+  background-color: var(--rosaRGBA); 
 }
 img{
   width: 100px;

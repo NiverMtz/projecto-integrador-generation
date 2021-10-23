@@ -40,11 +40,12 @@ body{
     text-align: center;
     margin: 20px;
     width: 80%;
-    font-size:20pt;
+    font-size:var(--textFont);
     color: white !important;
 }
 .main__textinfo--text{
     margin:0;
+    font-size: var(--textFont);
     text-align: center;
 }
 .main__recoveryform{
@@ -93,7 +94,7 @@ body{
     border: 0 !important;
     border-radius: 20px;
     color : white;
-    background-color: rgba(242, 128, 181, 0.198) ;
+    background-color: var(--rosaRGBA);
 }
 .main__comment-line img{
     width: 100px;

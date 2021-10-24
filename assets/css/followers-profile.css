@@ -261,6 +261,14 @@ a[href="#"] {
         bottom: 30px;
         right: 15px;
     }
+
+    .card__info-user-post {
+        gap: 10px;
+    }
+
+    .card__content-post {
+        margin-top: 20px;
+    }
 }
 
 
@@ -408,14 +416,16 @@ a[href="#"] {
     }
 
     .card__info-media-album {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
         border-radius: 10px;
         margin-bottom: 0px;
         margin-right: 0px;
     }
 
     .card__info-media-img {
+        height: 100%;
+        width: 100%;
         object-fit: cover;
         margin-right: 0;
         border-radius: inherit;
@@ -432,9 +442,10 @@ a[href="#"] {
     }
 
     .card__info {
-        height: auto;
+        height: 300px;
         flex-direction: row;
         width: 100%;
+        align-items: center;
     }
 
     .card__info-content {
@@ -447,8 +458,7 @@ a[href="#"] {
 
     .card__info-aside {
         border-left: 5px solid var(--rosa);
-        margin-left: 20px;
-        padding-left: 15px;
+        margin-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

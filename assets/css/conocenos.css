@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.presentacion {
+    color: var(--white);
+}
+
+.cont-acerca-paax{  
+    background-color: #f280b580;
+   
+}
+
+.albunes {
+    width: 100%;
+    height: 900px;
+}
+
+.albunes img {
+    margin-right: 0;
+    width: 100%;
+    height: 70%;
+    /* object-fit: cover; */
+    display: flex;
+}
+
+.conocenos {
+    margin: 50px 160px;
+    position: static;
+    background-color: var(--rosatrans);
+    height: 150px;
+    border-radius: 150px;
+}
+
+.conocenos {
+    margin: 50px 20px;
+}
+
+.cont-acerca-paax p{
+    font-size: 6vw;
+}
+
+
+.cont-acerca-paax p{
+    font-size: 6vw;
+}
+.text-conocenos h3 {
+    font-family: var(--titlesFont);
+}
+.text-conocenos p {
+    font-size: var(--textFont);
+}
+
+/* .text-conocenos {
+    background-color: var(--rosatrans);
+    color: var(--white);
+    border-radius: 90px;
+    box-shadow: 0px 0px 10px 0px var(--white);
+    display: flex;
+    position: relative;
+} */
+
+/* .conocenos_text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+} */
+
+.text-conocenos p {
+    font-size: var(--textFont);
+}
+.cart-tittle h5 {
+    font-family: var(--titlesFont);
+    color: var(--negro);
+    border-radius: 10px;
+    text-align: center;
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
+}
+.cart-text p {
+    font-family: var(--textFont);
+    text-align: left;
+    line-height: 1.5;
+    color: var(--white);
+    margin-top: 15px;
+}
+
+
+.img-perfil {
+    border-radius: 100px;
+}
+.perfiles {
+    align-items: center;
+}
+.links img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.correo {
+    cursor: pointer;
+    color: var(--rosatrans);
+    font-size: large;
+}
+/*--------------------------------------------*/
+/* DANIEL */
+/* -- MISIÓN -- */
+.cont-padre-mision{
+    display: flex;
+}
+.circulo-mision{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--rosa);
+    width: 150px;
+    height: 150px;
+    font: var(--titlesFont);
+    color: var(--white);   
+}
+.cont-txt-mision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px var(--rosa);
+    width: 100%;  
+    border-radius: 75px;
+    height: 150px; 
+}
+.cont-txt-mision p{
+    font: var(--textFont);
+    color:var(--white);
+    padding-left: 160px;
+    padding-right: 20px;
+}
+/*  -- VISIÓN -- */ 
+.cont-padre-vision{
+    margin-top: 20px;
+    display: flex;
+}
+.circulo-vision{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--rosa);
+    width: 165px;
+    height: 165px;
+    font: var(--titlesFont);
+    color: var(--white);
+}
+.cont-txt-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px var(--rosa);
+    width: 100%;  
+    border-radius: 82px;
+    height: 165px; 
+}
+.cont-txt-vision p{
+    font: var(--textFont);
+    color: var(--white);
+    padding-left: 160px;
+    padding-right: 20px;
+}
+/* -- RESPONSIVE MISION Y VISION -- */
+ @media screen and (max-width: 600px){
+
+.cont-padre-mision{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.circulo-mision{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
+    
+}
+.cont-txt-mision{
+    margin-top: -50px;
+    width: 90%;  
+    border-radius: 20px; 
+    
+}
+.cont-txt-mision p{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+   
+}
+
+.cont-padre-vision{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.circulo-vision{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+}
+.cont-txt-vision{
+    margin-top: -50px;
+    width: 90%;  
+    border-radius: 20px; 
+    height: 260px;
+    font-size: 14px;
+    
+}
+.cont-txt-vision p{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+}
+
+/* ------ VALORES ------ */
+
+.cont-padre-val h4{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+    font: var(--textFont);
+    font-size: 30px;
+}
+#circulos-val{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.circulos{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 15px solid var(--rosa);
+    
+}
+.circulos p{
+    color: var(--white);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    align-items: center;   
+}

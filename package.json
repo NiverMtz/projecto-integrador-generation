@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-integrador-generation",
+  "version": "1.0.0",
+  "description": "En PAAX definimos una plataforma musical enfocada a reseñar temas, recomendar tus tracks favoritos y crear un punto de encuentro para los amantes de la música.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiverMtz/projecto-integrador-generation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiverMtz/projecto-integrador-generation/issues"
+  },
+  "homepage": "https://github.com/NiverMtz/projecto-integrador-generation#readme"
+}

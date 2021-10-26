@@ -206,7 +206,6 @@ body {
 	}
 }
 
-<<<<<<< HEAD:assets/css/contacto.css
 @media (min-width: 360px) {
 	.icons__banner {
 		position: absolute;
@@ -244,8 +243,6 @@ body {
 	}
 }
 
-=======
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css
 .logo__contacto {
 	position: absolute;
 	border-radius: 20px;

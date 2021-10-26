@@ -143,10 +143,7 @@ body {
 	text-align: center;
 }
 
-<<<<<<< HEAD:assets/css/contacto.css
 /*
-=======
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css
 .in-flex {
 	flex: 1;
 }
@@ -206,7 +203,6 @@ body {
 	}
 }
 
-<<<<<<< HEAD:assets/css/contacto.css
 @media (min-width: 360px) {
 	.icons__banner {
 		position: absolute;
@@ -244,8 +240,6 @@ body {
 	}
 }
 
-=======
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css
 .logo__contacto {
 	position: absolute;
 	border-radius: 20px;
@@ -500,7 +494,6 @@ body {
 	bottom: 0px;
 	right: 0;
 	width: 100%;
-<<<<<<< HEAD:assets/css/contacto.css
 	height: 800px;
 }
 
@@ -558,9 +551,6 @@ body {
 		left: 100px;
 		align-items: center;
 	}
-=======
-	height: 1050px;
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css
 }
 
 .title__preguntas {
@@ -575,7 +565,6 @@ body {
 	top: 0px;
 	left: 0px;
 	text-align: center;
-<<<<<<< HEAD:assets/css/contacto.css
 	align-items: center;
 }
 
@@ -619,11 +608,6 @@ body {
 
 .box__preguntas {
 	margin: 10px;
-=======
-	padding: 20px;
-	background-color: black;
-	position: absolute;
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css
 	right: 0px;
 	left: 0px;
 	top: 0px;
@@ -659,7 +643,6 @@ body {
 	}
 }
 
-<<<<<<< HEAD:assets/css/contacto.css
 @media (min-width: 1200px) {
 	.box__preguntas {
 		background-color: black;
@@ -671,11 +654,6 @@ body {
 		padding: 20px;
 		left: 0px;
 	}
-=======
-.nav__1 li a:hover {
-	background-color: white;
-	color: black;
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css
 }
 
 .tarjetas {
@@ -1054,37 +1032,3 @@ input:focus, textarea:focus {
 	padding: 5px 5px;
 }
 
-<<<<<<< HEAD:assets/css/contacto.css
-=======
-@media only screen and (max-width: 580px) {
-	#form{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;	
-	}
-}
-
-
-
-
-.icons__net {
-	width: 300px;
-	height: 100;
-	background-color: --rosa;
-	transition: ls;
-}
-
-.icons__net:hover {
-	transform: scale (2);
-
-}
-
-.card {
-	display: none;
-}
-
-/*Footer */
->>>>>>> 0cd8d9b526de164af48986e6d5123d9c788f01f5:src/assets/css/contacto.css

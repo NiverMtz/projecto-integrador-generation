@@ -15,7 +15,7 @@
 /* INPUT REGISTRO */
 input{
   font-family: var(--titlesFont);
-  color: white;
+  color: var(--white);
   background-color: var(--rosaRGBA);
   border-radius: var(--borderRadius);
 }
@@ -31,4 +31,5 @@ input{
   font-size: var(--titleFont);
   border-radius: var(--borderRadius);
 }
+
 

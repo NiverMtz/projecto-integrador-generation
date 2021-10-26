@@ -1,12 +1,12 @@
 @import url(./styles.css); /* estilos generales */
 @import url(./footerbuble.css); /* footer */
 
-/* BOTONES LOGIN Y SIGN IN REDIUS NAVBAR*/
+/* ------ BOTONES LOGIN Y SIGN IN REDIUS NAVBAR ------ */
 .card__elementos-boton{
     border-radius: var(--borderRadius);
     padding: 4px 16px;
 }
-/* BANNER */
+/* ------ BANNER ------ */
 .cont-acerca-paax{  
     background-color: var(--rosatrans);
 }
@@ -24,6 +24,7 @@
     top: 0;
     bottom: 0;
 }
+/* ------ CONÓCENOS ------ */
 .conocenos{
     margin-left: auto;
     margin-right: auto;
@@ -42,13 +43,13 @@
     box-sizing: border-box;
     padding: 1em 1em 1em 1em;
 }
- /* AJUSTE DEL BORDE CONÓCENOS EN RESPONSIVE */
+ /* ------ AJUSTE DEL BORDE CONÓCENOS EN RESPONSIVE ------ */
 @media screen and (max-width: 600px){
     .conocenos{
         border-radius: var(--borderRadius);
     }
 }
-/* PERFILES */
+/*------ PERFILES ------ */
 .cart-tittle h5{
     font-family: var(--titlesFont);
     color: var(--negro);
@@ -127,6 +128,7 @@
     background-color: var(--rosaRGBA);
 }
 /* ------ RESPONSIVE DE MISION Y VISION ------ */
+/* ------ PANTALLA 600PX A 950PX ------ */
 @media screen and (max-width: 950px){
     .cont-mision{
         height: 150px;
@@ -163,6 +165,7 @@
         margin-top: -40px;     
     }
 }
+/* ------ PANTALLA  600PX > ------ */
 @media screen and (max-width: 600px){
     .cont-mision{
         height:250px;  

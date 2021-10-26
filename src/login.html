@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paax - Login</title>
+  <!-- CDN bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- custom properties -->
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- MAIN -->
+  <div class="row m-0 vh-100">
+    <!-- columna izquierda -->
+      <!-- BANNER IMAGEN -->
+    <div class="banner-img col d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+      <div class="banner-mascara card-img-overlay"></div>
+    </div> 
+  
+  <!-- columna derecha -->
+  <div class="col"> <!-- img -->
+    <section class="forma-login container-fluid d-flex flex-column justify-content-center">
+      <!-- LOGO -->
+      <div class="login-img text-center">
+        <img src="./assets/img/logo-elbueno.gif" alt="logo de paax">
+      </div>
+      <for id="forma" action="" method="post">
+        <!-- CORREO ELECTRÓNICO -->
+        <div class="login-pass d-flex flex-column mb-5">
+          <label class="text-white ml-3" for="">Correo electrónico</label>
+          <input id="input_email" class="login-input pl-3" type="email" placeholder="tucorreo@ejemplo.com">
+          <p class="warning-email text-danger ml-3"></p>
+        </div>
+        <!-- CONTRASEÑA -->
+        <div class="login-pass d-flex flex-column mb-5">
+          <label class="text-white ml-3" for="">Contraseña</label>
+          <input id="input_pass" class="login-input pl-3" type="password" placeholder="ocho carácteres mínimo">
+          <p class="warning-pass text-danger ml-3"></p>
+        </div>
+    
+      <!--  MANTENER SESION -->
+      <div class="cta d-flex justify-content-between vh-2 mb-2">
+        <div class="cta-recordar">
+          <input type="checkbox" name="recordar" value="1">
+          <label class="text-white" for="">Recuérdame</label>
+        </div>
+        <!-- RECUPERAR  CONTRASEÑA -->
+        <div class="cta-recuperar">
+          <a class="text-white" href="pass_recovery-request.html">Olvidé mi contraseña</a>
+        </div>
+      </div>
+      <!-- BOTON ACCESAR-->
+      <div class="justify-content-center mb-0">
+        <a href="index.html">
+          <button class="accesar-btn btn btn-block btn-primary text-white">Entrar</button>
+        </a>
+        </form>
+      </div>
+      <!-- CREAR CUENTA -->
+      <div class="cta-crear d-flex justify-content-between">
+        <p class="text-white mt-5">¿No tienes una cuenta?</p>
+        <a class="mt-5" href="./registro.html">Crear cuenta</a>
+      </div>
+    </section>
+  </div>
+
+<!-- div row -->
+</div>
+<!-- div row -->
+<!-- FOOTER -->
+
+
+<script src="js/validacion_login.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

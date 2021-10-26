@@ -14,9 +14,14 @@
 }
 /* INPUT REGISTRO */
 input{
-  color: white;
-  font-size: var(--textFont);
+  font-family: var(--titlesFont);
+  color: var(--white);
+  background-color: var(--rosaRGBA);
   border-radius: var(--borderRadius);
+}
+::placeholder{
+  color: var(--white);
+  font-family: var(--textFont);
 }
 .login-input{
   background-color: var(--rosa);
@@ -26,4 +31,5 @@ input{
   font-size: var(--titleFont);
   border-radius: var(--borderRadius);
 }
+
 

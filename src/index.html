@@ -300,115 +300,141 @@
         </div>
     
         <!-- CARDS PARA RESEÑAS -->
-        <div class="container-xxl my-1">
-            <h2 class="titulo text-center py-sm-4">RESEÑAS</h2>
-            <div class="row-col-xxl-auto">
+
+     <!--Esta sección pertenece a la reseña que incluye la imagen de background
+        y todo los textos junto con iconos, botones.-->
+        <main class="main">
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/stray.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/stray.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Stray Kids</p>
+                                </figure>
     
-                <article class="card-user-main">
-        
-                    <img class="card__img-back" src="assets/img/adele-30.jpg" alt="">
-                    <!--Esta parte es un contenedor que está en posicion absoluta
-                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                    <img> como background y poder modificarla con javascript-->
-                    <section class="card__overtext">
-                        <!--Este bloque contiene solo los textos de contenido de reseña
-                        título de post, datos del artista e iconos.-->
-                        <div class="card__overtext-superior">
-                            <div class="card__info">
-                                <figure class="card__info-media-album">
-                                    <img class="card__info-media-img" src="assets/img/adele-30.jpg">
-                                </figure>
-        
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">ADELE</p>
-                                </figure>
-        
                                 <figure class="card__info-content">
                                     <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">30</p>
+                                    <p class="card_info-texto">IN生</p>
                                 </figure>
-        
+    
                                 <figure class="card__info-content">
                                     <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">EASY ON ME</p>
+                                    <p class="card_info-texto">Any (아니)</p>
                                 </figure>
-                            </div>
-                            <!--Este bloque contiene el título del post y el contenido
-                            de la reseña-->
-                            <div class="card__post">
-                                <div class="card__content-post">
-                                    <h2 class="card__post-titulo">"NECESITO DIVORCIARME"</h2>
-                                    <p>
-                                        Este disco me ha hecho llorar y llorar por un divorcio que ni siquiera es mio pero con las letras siento que esta contanto mi historia. El regreso de Adele ha sido de los mas esperados de los 5 años y no ha desepcionado nada es justamente lo que esparabamos y necesitabamos.
-                                    </p>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                    <p class="card__date-user-post">Yesterday at 19:47</p>
                                 </div>
                             </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Mi disco favorito"</h2>
+                                <p>
+                                    Stray Kids compone y escribe, por lo que le dan su toque personal a todo aquello que producen. De lo que hemos escuchado a día de hoy podemos adelantar que tienen un estilo serio e intenso, con bases electrónicas machaconas muy predominantes y unas coreografías potentes y coordinadas. Por otra parte, en su corta trayectoria han experimentado con varios estilos: desde la adorabilidad de School Life, al sonido más pesado y rockero de Yayaya, y temas más suaves como 4419.
+                                </p>
+                            </div>
+
                         </div>
-                        <!--Este bloque de código contiene el icono de share y
-                        el botón de comentar-->
-                        <div class="card__elementos">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
-                        </div>
-                        
-                    </section>
-                    
-                </article>
-                <article class="card-user-main">
-        
-                    <img class="card__img-back" src="assets/img/plastic-hearts.jpg" alt="">
-                    <!--Esta parte es un contenedor que está en posicion absoluta
-                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                    <img> como background y poder modificarla con javascript-->
-                    <section class="card__overtext">
-                        <!--Este bloque contiene solo los textos de contenido de reseña
-                        título de post, datos del artista e iconos.-->
-                        <div class="card__overtext-superior">
-                            <div class="card__info">
-                                <figure class="card__info-media-album">
-                                    <img class="card__info-media-img" src="assets/img/plastic-hearts.jpg">
-                                </figure>
-        
+                    </div>
+                    <!--Este bloque de código contiene el icono de share y
+                    el botón de comentar-->
+                    <div class="card__elementos">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                    </div>
+                </section>
+                
+            </article>
+
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/rolling.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/rolling.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
                                 <figure class="card__info-content">
                                     <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">MILEY CYRUS</p>
+                                    <p class="card_info-texto">Rolling Stones</p>
                                 </figure>
-        
+    
                                 <figure class="card__info-content">
                                     <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">PLASTIC HEARTS</p>
+                                    <p class="card_info-texto">Voodoo Lounge</p>
                                 </figure>
-        
+    
                                 <figure class="card__info-content">
                                     <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">MIDNIGHT SKY</p>
+                                    <p class="card_info-texto">Love is Strong</p>
                                 </figure>
-                            </div>
-                            <!--Este bloque contiene el título del post y el contenido
-                            de la reseña-->
-                            <div class="card__post">
-                                <div class="card__content-post">
-                                    <h2 class="card__post-titulo">"LA MEJOR ERA DE MILEY"</h2>
-                                    <p>
-                                       Uno de los mejores discos que he escuchado en la última decada, trayendo de vuelta sonidos de los años 80's e incoporandolos a esta nueva era. Soy fan de esta era y puedo arrisgarme a decir que es su mejor época.
-                                    </p>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/daniela.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Daniela Domínguez</h3>
+                                    <p class="card__date-user-post">Today at 10:22</p>
                                 </div>
                             </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Hard rock, blues, boogie, baladas…"</h2>
+                                <p>
+                                    Un disco que hizo callar a los más escépticos, no sólo por sus records de ventas, sino también por el hermoso puñado de 15 canciones genuinas que navegaron y dignificaron el nuevo sonido que el blues rock de la década desplegaba. El estilo y las características musicales del grupo daban con esta producción más frescura y limpieza a su sonido. Era hora de encontrarse con un sonido Stone más actualizado, más vivificante.
+                                </p>
+                            </div>
+
                         </div>
-                        <!--Este bloque de código contiene el icono de share y
-                        el botón de comentar-->
-                        <div class="card__elementos">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
-                        </div>
-                        
-                    </section>
-                    
-                </article>
-            </div>
-        </div>
-    </main>
+                    </div>
+                    <!--Este bloque de código contiene el icono de share y
+                    el botón de comentar-->
+                    <div class="card__elementos">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                    </div>
+                </section>
+                
+            </article>
+        </main>
 
     <!-- FOOTER -->
     <footer class="container-xxl w-100 overflow-hidden">

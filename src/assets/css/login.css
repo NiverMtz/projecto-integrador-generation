@@ -1,0 +1,34 @@
+@import url(./styles.css);
+@import url(./footerbuble.css);
+
+/* BANNER IMAGE */
+.banner-img{
+  background-image: url(../img/wall.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-mascara{
+  background-color: var(--rosaOpaco);
+}
+/* logo */
+img{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+/* email y contraseña */
+input{
+  font-family: var(--titlesFont);
+  color: var(--white);
+  background-color: var(--rosaRGBA);
+  border-radius: var(--borderRadius);
+}
+::placeholder{
+  color: var(--white);
+  font-family: var(--textFont);
+}
+/* BOTON ACCESARr */
+.accesar-btn{
+  font-size: var(--titleFont);
+  border-radius: var(--borderRadius)
+}

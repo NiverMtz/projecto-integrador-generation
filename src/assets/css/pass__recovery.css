@@ -1,0 +1,22 @@
+a{
+  color: var(--rosaRGBA);
+  font-family: var(--textFont);
+}
+a:hover{
+  text-decoration: none;
+}
+input{
+  font-family: var(--titlesFont);
+  color: var(--white);
+  background-color: var(--rosaRGBA);
+}
+::placeholder{
+  color: var(--white);
+  font-family: var(--textFont);
+}
+.cta{
+  font-size: 1.3rem;
+  font-family: var(--textFont);
+  border-radius: var(--borderRadius);
+  background-color: var(--rosaRGBA);
+}

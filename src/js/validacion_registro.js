@@ -47,8 +47,8 @@ $forma.addEventListener("submit", e => {
     $alertPassConfirm.innerHTML = warningPassConfirm;
     invalido = true;
   }
-  if(invalido = true){
-    window.location.href = "registro_exitoso.html";
+  if(invalido = false){
+    location.href = "../registro_exitoso.html";
   }
   
 });

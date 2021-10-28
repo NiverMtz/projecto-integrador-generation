@@ -40,12 +40,12 @@ body{
     text-align: center;
     margin: 20px;
     width: 80%;
-    font-size:var(--textFont);
+    font-size: 1.2rem;
     color: white !important;
 }
 .main__textinfo--text{
     margin:0;
-    font-size: var(--textFont);
+    font-size: 1.2rem;
     text-align: center;
 }
 .main__recoveryform{
@@ -113,6 +113,9 @@ body{
 img{
     width: unset;  
 }
+
+
+
 /* == ESTILOS GUIAS DE DISEÑO */
 /* 
 .main__comment-line table,.main__comment-line tr,.main__comment-line td,.main__comment-line th{

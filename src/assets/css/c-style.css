@@ -97,8 +97,9 @@ body{
     background-color: var(--rosaRGBA);
 }
 .main__comment-line img{
-    width: 100px;
+    width: 10px;
     margin-right: 10px;
+
 }
 .main__comment-line tr{
     width: 100%;
@@ -109,7 +110,9 @@ body{
 #cancion, #album, #artista{
     width: 55%;
 }
-
+img{
+    width: unset;  
+}
 /* == ESTILOS GUIAS DE DISEÑO */
 /* 
 .main__comment-line table,.main__comment-line tr,.main__comment-line td,.main__comment-line th{

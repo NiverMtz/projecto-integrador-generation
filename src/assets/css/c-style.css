@@ -40,12 +40,12 @@ body{
     text-align: center;
     margin: 20px;
     width: 80%;
-    font-size:var(--textFont);
+    font-size: 1.2rem;
     color: white !important;
 }
 .main__textinfo--text{
     margin:0;
-    font-size: var(--textFont);
+    font-size: 1.2rem;
     text-align: center;
 }
 .main__recoveryform{
@@ -97,8 +97,9 @@ body{
     background-color: var(--rosaRGBA);
 }
 .main__comment-line img{
-    width: 100px;
+    width: 10px;
     margin-right: 10px;
+
 }
 .main__comment-line tr{
     width: 100%;
@@ -109,6 +110,11 @@ body{
 #cancion, #album, #artista{
     width: 55%;
 }
+img{
+    width: unset;  
+}
+
+
 
 /* == ESTILOS GUIAS DE DISEÑO */
 /* 

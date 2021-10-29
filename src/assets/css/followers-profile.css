@@ -429,7 +429,15 @@ a[href="#"] {
 
     .card__elementos {
         justify-content: flex-end;
-        gap: 70px;
+        gap: 40px;
+    }
+
+    .card__elementos-iconos {
+        gap: 40px;
+    }
+    
+    .card__elementos-boton {
+        gap: 40px;
     }
 
     .card__elementos-edit {
@@ -588,7 +596,7 @@ a[href="#"] {
     }
 
     .card__info-aside {
-        border-left: 5px solid var(--rosa);
+        border-left: 2px solid var(--rosa);
         margin-left: 30px;
         display: flex;
         flex-direction: column;

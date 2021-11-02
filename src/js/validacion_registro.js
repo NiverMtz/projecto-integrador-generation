@@ -19,7 +19,7 @@ $forma.addEventListener("submit", e => {
   let warningEmail = "";
   let warningPass = "";
   let warningPassConfirm = "";
-  let invalido = false
+  //let invalido = false;
   /* expresión regular para validar email */
   let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
   /* validaciones */
@@ -27,28 +27,28 @@ $forma.addEventListener("submit", e => {
   if($name.value.length < 4){
     warningName += "Nombre inválido";
     $alertName.innerHTML = warningName;
-    invalido = true;
+    //invalido = true;
     
   }
   /* evalua que el email sea valido */
   if(!regexEmail.test($email.value)){
     warningEmail += "Email inválido";
     $alertEmail.innerHTML = warningEmail;
-    invalido = true;
+    //invalido = true;
   }
   /* evalua la longitud de la contraseña */
   if($pass.value.length < 8){
     warningPass = "Contraseña inválida";
     $alertPass.innerHTML = warningPass;
-    invalido = true;
+    //invalido = true;
   }
   if($pass.value != $pass_confirm.value){
     warningPassConfirm = "Las contraseñas no coinciden";
     $alertPassConfirm.innerHTML = warningPassConfirm;
-    invalido = true;
+    //invalido = true;
   }
-  if(invalido = false){
-    location.href = "../registro_exitoso.html";
-  }
+  /* if(invalido = false){
+    location.href = "../registro_exitoso";
+  } */
   
 });

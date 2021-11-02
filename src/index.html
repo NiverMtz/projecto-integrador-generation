@@ -353,7 +353,7 @@
                             <div class="card__content-post">
                                 <h2 class="card__post-titulo">"Mi disco favorito"</h2>
                                 <p>
-                                    Stray Kids compone y escribe, por lo que le dan su toque personal a todo aquello que producen. De lo que hemos escuchado a día de hoy podemos adelantar que tienen un estilo serio e intenso, con bases electrónicas machaconas muy predominantes y unas coreografías potentes y coordinadas. Por otra parte, en su corta trayectoria han experimentado con varios estilos: desde la adorabilidad de School Life, al sonido más pesado y rockero de Yayaya, y temas más suaves como 4419.
+                                    Stray Kids compone y escribe, por lo que le dan su toque personal a todo aquello que producen. De lo que hemos escuchado a día de hoy podemos adelantar que tienen un estilo serio e intenso, con bases electrónicas machaconas muy predominantes y unas coreografías potentes y coordinadas. Por otra parte, en su corta trayectoria han experimentado con varios estilos: desde la adorabilidad de School Life, al sonido más pesado y rockero de Yayaya, y temas más suaves como 4419.z
                                 </p>
                             </div>
 
@@ -362,8 +362,15 @@
                     <!--Este bloque de código contiene el icono de share y
                     el botón de comentar-->
                     <div class="card__elementos">
-                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
                     </div>
                 </section>
                 
@@ -425,11 +432,164 @@
 
                         </div>
                     </div>
-                    <!--Este bloque de código contiene el icono de share y
-                    el botón de comentar-->
+                    <!--Este bloque de código contiene los iconos de edit, delete
+                    share and comment-->
                     <div class="card__elementos">
-                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
+                    </div>
+                </section>
+                
+            </article>
+
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/fearless.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/fearless.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Taylor Swift</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto text-center">Fearless (Taylor's Version)</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Love Story</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/daniel.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Daniel Alvarez</h3>
+                                    <p class="card__date-user-post">Today at 18:20</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Taylor lo hizo de nuevo"</h2>
+                                <p>
+                                    Fearless fue un álbum lleno de magia y curiosidad, la dicha y la devastación de la juventud. Era el diario de las aventuras y exploraciones de una adolescente que estaba aprendiendo pequeñas lecciones con cada nueva grieta en la fachada del final de cuento de hadas que le habían mostrado en las películas.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene los iconos de edit, delete
+                    share and comment-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
+                    </div>
+                </section>
+                
+            </article>
+
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/ghost.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/ghost.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Ghost</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">Opus Eponymous</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Ritual</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/victor.jfif">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Víctor Magdaleno</h3>
+                                    <p class="card__date-user-post">Today at 13:00</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Una obra de arte"</h2>
+                                <p>
+                                    En definitiva, una enorme sorpresa, que no por poco original deja de ser una agradabilísima bocanada de aire fresco dadas las circunstancias de cómo está el patio hoy día. No existe un solo apartado donde el trabajo flaqueé o muestre un solo punto débil. Todo, y con esto quiero decir TODO (instrumentación, arreglos, voz, producción, diseño), alcanza con suficiencia el notable más alto hasta casi el excelente, y es que discos como éste surgen lamentablemente muy pocos. No se lo piensen ustedes dos veces y échenle ya la zarpa a éste ‘Opus Eponymous’. No se van a arrepentir.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene los iconos de edit, delete
+                    share and comment-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
                     </div>
                 </section>
                 

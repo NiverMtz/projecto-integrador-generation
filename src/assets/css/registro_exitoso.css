@@ -11,11 +11,11 @@ a:hover{
   color: var(--rosaOpaco);
   text-decoration: none;
 }
-/* .registro_check{
+.registro_check{
   padding: 100px;
   clip-path: circle();
   background-color: var(--rosaRGBA); 
-} */
+}
 .main__img{
   margin-top: 5%;
 }

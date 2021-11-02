@@ -1,0 +1,308 @@
+@import url(./styles.css);
+
+
+/* Las dimensiones que se muestran a continuación son para
+un display por default de 425px. Después se agregarán las media queries para 
+displays más grandes */ 
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+
+main {
+    padding-bottom: 0.1px;
+}
+
+.banner {
+    width: 100%;
+    height: 124px;
+}
+
+.banner img {
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-navbar {
+    margin: 0 20px;
+}
+
+.user-navbar__id {
+    background-color: var(--bgcard);
+    padding: 12px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-navbar__datos {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.user-navbar__id img {
+    margin: initial;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+
+.user-navbar__id h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.user-navbar__botones {
+    width: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.user-navbar__id button {
+    border: none;
+    background-color: var(--rosaRGBA);
+    color: var(--white);
+    border-radius: var(--borderRadius);
+    width: 80px;
+    height: 30px;
+    opacity: 0.5;
+    transition: 650ms;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px var(--rosa);
+    opacity: 1;
+}
+
+.user-navbar__interacciones {
+    height: 50px;
+    width: 100%;
+    background-color: var(--rosaRGBA);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--textFont);
+}
+
+a[href="#"] {
+    text-decoration: none
+}
+
+.user-navbar__interacciones a {
+    color: var(--white);
+}
+
+/*Esta sección incluye los elementos de los usuarios
+como fotografía, nombre e iconoce de compartir*/
+
+.section {
+    background-color: var(--fieldbg);
+    margin: 30px 20px;
+    height: auto;
+    padding: 0.1px;
+    border-radius: var(--borderRadius);
+}
+
+.section--clr__figure {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgcard);
+    color: var(--white);
+    margin: 30px 28px;
+    border-radius: 45px 20px 20px 45px;
+}
+
+.section--clr__photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.section--clr__nombre {
+    text-align: left;
+    line-height: 35px;
+}
+
+#container-nombre {
+    position: relative;
+    right: 20px;
+    align-self: center;
+    width: 180px;
+    height: 35px;
+    border-right: 1px solid white;
+}
+
+.section--clr__icono {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    position: relative;
+    right: 26px;
+}
+
+/* MEDIA QUERIES 
+
+   Apartir de aquí se agregan los media queries para volver
+   responsive la página en distintos tamaños de display
+   
+*/
+
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
+
+    .user-navbar__id h2 {
+        font-size: 1.3rem;
+    }
+
+    .user-navbar__interacciones a {
+        font-size: 1.3rem;
+    }
+
+    .user-navbar__id button {
+        width: 65px;
+        height: 25px;
+    }
+
+    .section--clr__nombre {
+        text-align: left;
+        line-height: 35px;
+        font-size: 1.3rem;
+    }
+
+    #container-nombre {
+        right: 15px;
+        width: 140px;
+    }
+
+    .section--clr__icono {
+        width: 30px;
+        height: 30px;
+        align-self: center;
+        position: relative;
+        right: 20px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+
+    .banner {
+        height: 160px;
+    }
+
+    .user-navbar__botones {
+        margin-right: 30px;
+        gap: 30px;
+    }
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        padding: 30px 30px;
+    }
+
+    .section--clr__figure {
+        width: 300px;
+        margin: 0;
+    }
+
+    .section--clr__nombre {
+        text-align: left;
+        line-height: 35px;
+    }
+    
+    #container-nombre {
+        right: 10px;
+        width: 170px;
+    }
+    
+    .section--clr__icono {
+        right: 18px;
+    }
+}
+
+
+@media screen and (min-width: 430px) and (max-width: 900px) {
+
+    .user-navbar__datos {
+        margin-left: 30px;
+        gap: 30px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        padding: 30px 30px;
+        margin: 30px 160px;
+    }
+
+    .section--clr__figure {
+        margin: 0;
+        width: 300px;
+    }
+
+    #container-nombre {
+        right: 15px;
+        width: 165px;
+    }
+    
+    .section--clr__icono {
+        right: 18px;
+    }
+
+    .banner {
+        height: 225px;
+    }
+
+    .user-navbar {
+        margin: 0 160px;
+    }
+    
+    .user-navbar__datos {
+        margin-left: 50px;
+        gap: 40px;
+    }
+
+    .user-navbar__botones {
+        gap: 50px;
+    }
+
+    .user-navbar__datos h2 {
+        font-size: 2rem;
+    }
+
+    .user-navbar__interacciones a {
+        font-size: 2rem;
+    }
+
+    .user-navbar__id button {
+        font-size: 2rem;
+        width: 100px;
+        height: 35px;
+    }
+
+    .user-navbar__id img {
+        width: 100px;
+        height: 100px;
+        margin-top: -60px;
+    }
+}

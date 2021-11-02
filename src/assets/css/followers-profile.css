@@ -2,8 +2,8 @@
 
 
 /* Las dimensiones que se muestran a continuación son para
-un display por default de 425px. Después se agregarán los media queries para 
-displays mucho más grandes */ 
+un display por default de 425px. Después se agregarán las media queries para 
+displays más grandes */ 
 
 * {
     margin: 0;
@@ -16,8 +16,8 @@ main {
 }
 
 .banner {
-  width: 100%;
-  height: 124px;
+    width: 100%;
+    height: 124px;
 }
 
 .banner img {
@@ -37,11 +37,12 @@ main {
     height: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .user-navbar__datos {
     display: flex;
-    gap: 20px;
+    gap: 12px;
     align-items: center;
 }
 
@@ -56,6 +57,13 @@ main {
 
 .user-navbar__id h2 {
     font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.user-navbar__botones {
+    width: auto;
+    display: flex;
+    gap: 10px;
 }
 
 .user-navbar__id button {
@@ -63,12 +71,16 @@ main {
     background-color: var(--rosaRGBA);
     color: var(--white);
     border-radius: var(--borderRadius);
-    padding: 4px 16px;
+    width: 80px;
+    height: 30px;
+    opacity: 0.5;
+    transition: 650ms;
 }
 
 button:hover {
     cursor: pointer;
     box-shadow: 0px 0px 10px 1px var(--rosa);
+    opacity: 1;
 }
 
 .user-navbar__interacciones {
@@ -108,7 +120,7 @@ a[href="#"] {
     rgba(240, 46, 170, 0.05) 0px 25px;
     display: flex;
     position: relative;
-    height: 440px;
+    height: 460px;
 }
 
 .card__img-back {
@@ -122,6 +134,7 @@ a[href="#"] {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -224,42 +237,77 @@ a[href="#"] {
 
 .card__elementos {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+
+.card__elementos-iconos {
+    display: flex;
+    margin-bottom: 0;
+    gap: 30px;
+}
+
+.card__elementos-edit {
     height: 35px;
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.card__elementos-delete {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.card__elementos-boton {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 30px;
 }
 
 .card__elementos-share {
     margin-right: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
 
-.card__elementos-boton {
+.card__elementos-btn {
     height: 100%;
     border: none;
     background-color: var(--rosaRGBA);
     color: var(--white);
     border-radius: var(--borderRadius);
-    padding: 4px 16px;
+    width: 100px;
+    height: 35px;
+    transition: 650ms;
 }
 
+/* MEDIA QUERIES 
 
-/* Apartir de aquí se agregan los media queries para volver
+   Apartir de aquí se agregan los media queries para volver
    responsive la página en distintos tamaños de display */
 
 
 @media screen and (max-width: 360px) {
 
-    .card-user-main {
-        height: 490px;
+    .user-navbar__id h2 {
+        font-size: 1.3rem;
     }
 
-    .card__elementos {
-        width: 195.58px;
-        bottom: 30px;
-        right: 15px;
+    .user-navbar__interacciones a {
+        font-size: 1.3rem;
+    }
+
+    .user-navbar__id button {
+        width: 65px;
+        height: 25px;
+    }
+
+    .card-user-main {
+        height: 490px;
     }
 
     .card__info-user-post {
@@ -268,6 +316,26 @@ a[href="#"] {
 
     .card__content-post {
         margin-top: 20px;
+    }
+    
+    .card__elementos-edit {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .card__elementos-delete {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .card__elementos-share {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .card__elementos-btn {
+        width: 85px;
+        height: 30px;
     }
 }
 
@@ -278,10 +346,49 @@ a[href="#"] {
         height: 490px;
     }
 
-    .card__elementos {
-        width: 209.05px;
-        bottom: 30px;
-        right: 15px;
+    .user-navbar__id h2 {
+        font-size: 1.3rem;
+    }
+
+    .user-navbar__interacciones a {
+        font-size: 1.3rem;
+    }
+
+    .user-navbar__id button {
+        width: 65px;
+        height: 25px;
+    }
+
+    .card-user-main {
+        height: 490px;
+    }
+
+    .card__info-user-post {
+        gap: 10px;
+    }
+
+    .card__content-post {
+        margin-top: 20px;
+    }
+    
+    .card__elementos-edit {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .card__elementos-delete {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .card__elementos-share {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .card__elementos-btn {
+        width: 90px;
+        height: 30px;
     }
 }
 
@@ -304,10 +411,6 @@ a[href="#"] {
 
 @media screen and (min-width: 650px) {
 
-    .card__elementos {
-        bottom: 50px;
-    }
-
     .banner {
         height: 160px;
     }
@@ -318,6 +421,44 @@ a[href="#"] {
         margin-top: 40px;
         margin-bottom: 60px;
     }
+
+    .user-navbar__botones {
+        margin-right: 30px;
+        gap: 30px;
+    }
+
+    .card__elementos {
+        justify-content: flex-end;
+        gap: 40px;
+    }
+
+    .card__elementos-iconos {
+        gap: 40px;
+    }
+    
+    .card__elementos-boton {
+        gap: 40px;
+    }
+
+    .card__elementos-edit {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .card__elementos-delete {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .card__elementos-share {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .card__elementos-btn {
+        width: 110px;
+        height: 35px;
+    }
 }
 
 
@@ -326,10 +467,6 @@ a[href="#"] {
     .user-navbar__datos {
         margin-left: 30px;
         gap: 30px;
-    }
-
-    .user-navbar__id button {
-        margin-right: 30px;
     }
 
     .card__img-back {
@@ -377,6 +514,10 @@ a[href="#"] {
         gap: 40px;
     }
 
+    .user-navbar__botones {
+        gap: 50px;
+    }
+
     .user-navbar__datos h2 {
         font-size: 2rem;
     }
@@ -386,7 +527,9 @@ a[href="#"] {
     }
 
     .user-navbar__id button {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        width: 110px;
+        height: 35px;
     }
 
     .user-navbar__id img {
@@ -395,19 +538,17 @@ a[href="#"] {
         margin-top: -60px;
     }
 
-    .user-navbar__id button {
-        margin-right: 50px;
-    }
-
     .card-user-main {
+        margin-left: 0;
+        margin-right: 0;
         box-shadow: 
         rgba(240, 46, 170, 0.4) -5px 5px,
         rgba(240, 46, 170, 0.3) -10px 10px, 
         rgba(240, 46, 170, 0.2) -15px 15px, 
         rgba(240, 46, 170, 0.1) -20px 20px, 
         rgba(240, 46, 170, 0.05) -25px 25px;
-        height: 850px;
-        width: 600px;
+        height: 900px;
+        width: 550px;
         background-color: var(--bgcard);
     }
 
@@ -457,7 +598,7 @@ a[href="#"] {
     }
 
     .card__info-aside {
-        border-left: 5px solid var(--rosa);
+        border-left: 2px solid var(--rosa);
         margin-left: 30px;
         display: flex;
         flex-direction: column;
@@ -509,12 +650,10 @@ a[href="#"] {
         margin-bottom: 0;
     }
 
-    .card__elementos-boton {
-        font-size: 1.5rem;
-    }
-
-    .card__elementos {
-        bottom: 30px;
+    .card__elementos-btn {
+        width: 130px;
+        height: 40px;
+        font-size: 2rem;
     }
 }
 
@@ -530,20 +669,20 @@ a[href="#"] {
         gap: 60px;
     }
 
-    .user-navbar__id button {
-        margin-right: 100px;
+    .user-navbar__botones {
+        gap: 50px;
     }
 
     .card-user-main {
-        height: 850px;
-        width: 600px;
+        height: 900px;
+        width: 550px;
     }
 
     .card__content-post {
         justify-content: center;
     }
 
-    .card__elementos {
-        bottom: 50px;
+    .card__elementos-btn {
+        font-size: 2rem;
     }
 }

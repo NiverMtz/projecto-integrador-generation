@@ -195,7 +195,7 @@ como fotografía, nombre e iconoce de compartir*/
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) and (max-width: 899px) {
 
     .banner {
         height: 160px;
@@ -210,10 +210,13 @@ como fotografía, nombre e iconoce de compartir*/
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        gap: 25px;
+        padding: 30px 30px;
     }
 
     .section--clr__figure {
         width: 300px;
+        margin: 0;
     }
 
     .section--clr__nombre {
@@ -244,16 +247,22 @@ como fotografía, nombre e iconoce de compartir*/
 @media screen and (min-width: 900px) {
 
     .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        padding: 30px 30px;
         margin: 30px 160px;
     }
 
-    #container-nombre {
-        right: 10px;
-        width: 140px;
+    .section--clr__figure {
+        margin: 0;
+        width: 300px;
     }
 
-    .section--clr__figure {
-        width: 265px;
+    #container-nombre {
+        right: 15px;
+        width: 165px;
     }
     
     .section--clr__icono {
@@ -287,7 +296,7 @@ como fotografía, nombre e iconoce de compartir*/
 
     .user-navbar__id button {
         font-size: 2rem;
-        width: 110px;
+        width: 100px;
         height: 35px;
     }
 

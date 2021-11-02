@@ -1,5 +1,9 @@
 -- Crear base de datos
 CREATE DATABASE paax;
+
+-- USE
+USE paax;
+
 -- Crear tabla de usuarios
 CREATE TABLE usuarios(
     id_usuarios     INT AUTO_INCREMENT NOT NULL ,

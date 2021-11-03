@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/followers-styles.css">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <!-- Menú superior -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1);">
+
+            <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./assets/img/list.svg" alt=""></span>
+            </button>
+        
+            <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
+                    <li class="nav-item active">
+                    <a class="text-white nav-link" href="./feed.html">Feed<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-white nav-link" href="./followers_profile.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-white nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
+                    <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
+                </form>
+            </div>
+
+        </nav>
+
+        <!--Esta sección es el código que pertenece a la imagen del baner-->
+        <section class="banner">
+            <img src="./assets/img/cover_profile.jpg" alt="background">
+        </section>
+
+        <!--Esta sección es la barra de datos del usuario, fotografía
+        y menú de opciones-->
+        <div class="user-navbar">
+
+            <div class="user-navbar__id">
+                <div class="user-navbar__datos">
+                    <img src="./assets/img/frida.jpg" alt="">
+                    <h2>Frida Rodríguez</h2>
+                </div>
+                <div class="user-navbar__botones">
+                    <button>Review</button>
+                    <button>Follow</button>
+                </div>
+            </div>
+
+            <!--Esta sección solo incluye el menú de opciones-->
+            <nav class="user-navbar__interacciones">
+                <a class="user-navbar__link" href="#">Seguidores</a>
+                <a class="user-navbar__link" href="#">Seguidos</a>
+                <a class="user-navbar__link" href="#">Publicaciones</a>
+                <a class="user-navbar__link" href="#">Playlist</a>
+            </nav>
+
+        </div>
+
+        <!--Esta sección pertenece a la reseña que incluye la imagen de background
+        y todo los textos junto con iconos, botones.-->
+        <main class="main">
+            <section class="section">
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/victor.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Víctor Izquierdo</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/gerardo.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Gerardo Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/niver.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Niver Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniela.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniela Domínguez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/zarate.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Ricardo Zárate</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniel Alvarez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+                
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/victor.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Víctor Izquierdo</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/gerardo.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Gerardo Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/niver.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Niver Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniela.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniela Domínguez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/zarate.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Ricardo Zárate</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniel Alvarez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/victor.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Víctor Izquierdo</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/gerardo.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Gerardo Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/niver.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Niver Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniela.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniela Domínguez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/zarate.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Ricardo Zárate</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniel Alvarez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -56,13 +56,16 @@
                     <img src="./assets/img/sour.jpg" alt="">
                     <h2>Light Yagami</h2>
                 </div>
-                <button>Follow</button>
+                <div class="user-navbar__botones">
+                    <button>Review</button>
+                    <button>Follow</button>
+                </div>
             </div>
 
             <!--Esta sección solo incluye el menú de opciones-->
             <nav class="user-navbar__interacciones">
                 <a class="user-navbar__link" href="#">Seguidores</a>
-                <a class="user-navbar__link" href="#">Seguidos</a>
+                <a class="user-navbar__link" href="followers.html">Seguidos</a>
                 <a class="user-navbar__link" href="#">Publicaciones</a>
                 <a class="user-navbar__link" href="#">Playlist</a>
             </nav>
@@ -131,8 +134,15 @@
                     <!--Este bloque de código contiene el icono de share y
                     el botón de comentar-->
                     <div class="card__elementos">
-                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
                     </div>
                 </section>
                 
@@ -195,11 +205,92 @@
 
                         </div>
                     </div>
-                    <!--Este bloque de código contiene el icono de share y
-                    el botón de comentar-->
+                    <!--Este bloque de código contiene los iconos de edit, delete
+                    share and comment-->
                     <div class="card__elementos">
-                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                        <button class="card__elementos-boton" onclick="alert('Create Review')">Comment</button>
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
+                    </div>
+                </section>
+                
+            </article>
+
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/adele-30.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+                    título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/adele-30.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Artista</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">Álbum</p>
+                                </figure>
+    
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Canción</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/daniel.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Daniel Alvarez</h3>
+                                    <p class="card__date-user-post">Today at 18:20</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">Título reseña</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene los iconos de edit, delete
+                    share and comment-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comment</button>
+                        </figure>
                     </div>
                 </section>
                 

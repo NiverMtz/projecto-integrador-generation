@@ -102,6 +102,9 @@ a[href="#"] {
     color: var(--white);
 }
 
+.user-navbar__interacciones a:hover {
+    text-decoration: none;
+}
 
 /* Este es el código para crear la sección del post, que contiene
    imágenes, iconos y textos */ 
@@ -466,7 +469,7 @@ a[href="#"] {
 
     .user-navbar__datos {
         margin-left: 30px;
-        gap: 30px;
+        gap: 15px;
     }
 
     .card__img-back {

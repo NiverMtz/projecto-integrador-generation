@@ -24,7 +24,7 @@ $forma.addEventListener("submit", e => {
   let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
   /* validaciones */
   /* se  evalua la longitud del nombre */
-  if($name.value.length < 4){
+  if($name.value.length.trim() < 4){
     warningName += "Nombre inválido";
     $alertName.innerHTML = warningName;
     //invalido = true;

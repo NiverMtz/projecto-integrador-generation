@@ -19,3 +19,7 @@ input{
   font-family: var(--textFont);
   border-radius: var(--borderRadius);
 }
+/* responsive */
+@media(max-width: 450px){
+
+}

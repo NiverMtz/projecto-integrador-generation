@@ -49,61 +49,57 @@
         </div>
 
         <!-- FORM -->
-        <form id="forma" class="w-75 mx-auto" novalidate action="#" method="post">
+        <form id="forma" class="w-75 mx-auto" action="#" method="post">
           <!-- NOMBRE DE PERFIL USUARIO -->
           <div class="registro_nombre form-group d-flex flex-column mt-5">
-            <p class="valid-feedback">Nombre válido</p>
-            <p class="invalid-feedback">Nombre inválido</p>
-            <input id="profile-name" class="login-input pl-3" required type="text" placeholder="Nombre de perfil">
-            <p class="mt-0 ml-3">* Mínimo cuatro carácteres</p>
+            <p id="warning_profile-name" class="text-danger ml-3"></p>
+            <input id="profile-name" class="login-input pl-3" type="text" placeholder="Nombre de perfil">
           </div>
           <!-- NOMBRE DE USUARIO -->
-          <div class="registro_nombre d-flex flex-column mt-1">
+          <div class="registro_nombre d-flex flex-column mt-5">
             <p id="warning_name" class="text-danger ml-3"></p>
-            <p class="valid-feedback">Nombre válido</p>
-            <input id="first-name" class="login-input pl-3" required type="text" placeholder="Nombre del usuario">
-            <p class="mt-0 ml-3">Campo obligatorio.</p>
+            <input id="first-name" class="login-input pl-3" type="text" placeholder="Nombre del usuario">
           </div>
           <!-- APELLIDO PATERNO DE USUARIO -->
-          <div class="registro_nombre d-flex flex-column mt-1">
-            <p id="warning_name" class="text-danger ml-3"></p>
-            <input id="father-name" class="login-input pl-3" required type="text" placeholder="Apellido paterno">
-            <p class="mt-0 ml-3">Campo obligatorio.</p>
+          <div class="registro_nombre d-flex flex-column mt-5">
+            <p id="warning_father-name" class="text-danger ml-3"></p>
+            <input id="father-name" class="login-input pl-3" type="text" placeholder="Apellido paterno">
           </div>
           <!-- APELLIDO MATERNO DE USUARIO -->
-          <div class="registro_nombre d-flex flex-column mt-1">
-            <p id="warning_name" class="text-danger ml-3"></p>
-            <input id="mother-name" class="login-input pl-3" required type="text" placeholder="Apellido materno">
-            <p class="mt-0 ml-3">Campo obligatorio.</p>
+          <div class="registro_nombre d-flex flex-column mt-5">
+            <p id="warning_mother-name" class="text-danger ml-3"></p>
+            <input id="mother-name" class="login-input pl-3" type="text" placeholder="Apellido materno">
           </div>
           <!-- CORREO ELECTRÓNICO -->
-          <div class="regisro_email d-flex flex-column mt-1">
+          <div class="regisro_email d-flex flex-column mt-5">
             <p id="warning_email" class="text-danger ml-3"></p>
-            <input id="email" class="login-input pl-3" required type="email" placeholder="Email">
-            <p class="mt-0 ml-3">Campo obligatorio</p>
+            <input id="email" class="login-input pl-3" type="email" placeholder="Email">
           </div>
           <!-- CONTRASEÑA -->
-          <div class="regisro_pass d-flex flex-column mt-1">
+          <div class="regisro_pass d-flex flex-column mt-5">
             <p id="warning_pass" class="text-danger ml-3"></p>
-            <input id="pass" class="login-input pl-3" required min="8" type="password" placeholder="Contraseña">
-            <p class="mt-0 ml-3">* Mínimo ocho carácteres</p>
+            <input id="pass" class="login-input pl-3" min="8" type="password" placeholder="Contraseña">
           </div>
           <!-- REPETIR CONTRASEÑA -->
-          <div class="regisro_pass d-flex flex-column mt-1">
+          <div class="regisro_pass d-flex flex-column mt-5">
             <p id="warning_pass_confirm" class="text-danger ml-3"></p>
-            <input id="pass_confirm" class="login-input pl-3" required min="8" type="password" placeholder="Repetir contraseña">
-            <p class="mt-0 ml-3">Campo obligatorio</p>
+            <input id="pass_confirm" class="login-input pl-3" min="8" type="password" placeholder="Repetir contraseña">
+            <p class="mb-0 ml-3 mt"></p>
+          </div>
+          <div class="adult-check mt-3 ml-3">
+            <input type="checkbox">
+            <label class="text-white ml-1 mr-2" for="">Soy mayor de edad</label>
           </div>
         <!-- BOTON ACCESAR: call to action-->
-        <div class="justify-content-center mx-auto justify-content-lg-center row mt-0">
-          <button id="cta" class="registro_btn btn btn-block btn-primary mb-5 w-50" type="button">
+        <div class="justify-content-center mx-auto justify-content-lg-center row mt-5">
+          <button id="cta" class="registro_btn btn btn-block btn-primary mb-5 w-50" type="submit">
             Registrarme
           </button>  
         </div>
+        
         </form>
       </section>
     </div>
-
     <!-- columna derecha -->
     <!-- BANNER IMAGEN -->
     <div class="banner-img col d-none d-lg-block col-md-5 col-lg-5 col-xl-6">

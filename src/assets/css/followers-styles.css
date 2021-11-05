@@ -127,6 +127,7 @@ como fotografía, nombre e iconoce de compartir*/
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .section--clr__nombre {
@@ -143,12 +144,20 @@ como fotografía, nombre e iconoce de compartir*/
     border-right: 1px solid white;
 }
 
+#container-nombre:hover {
+    cursor: pointer;
+}
+
 .section--clr__icono {
     width: 30px;
     height: 30px;
     align-self: center;
     position: relative;
     right: 26px;
+}
+
+.section--clr__icono:hover {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES 
@@ -239,7 +248,7 @@ como fotografía, nombre e iconoce de compartir*/
 
     .user-navbar__datos {
         margin-left: 30px;
-        gap: 30px;
+        gap: 15px;
     }
 }
 

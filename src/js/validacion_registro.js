@@ -1,6 +1,10 @@
+
 /* recuperación de elementos input */
 const $forma = document.querySelector("#forma");
-const $name = document.querySelector("#name");
+const $profileName = document.querySelector("#profile-name");
+const $firstName = document.querySelector("#first-name");
+const $fatherName = document.querySelector("#father-name");
+const $motherName = document.querySelector("#mother-name");
 const $email = document.querySelector("#email");
 const $pass = document.querySelector("#pass");
 const $pass_confirm = document.querySelector("#pass_confirm");
@@ -24,9 +28,9 @@ $forma.addEventListener("submit", e => {
   let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
   /* validaciones */
   /* se  evalua la longitud del nombre */
-  if($name.value.length.trim() < 4){
+  if($name.value.length()< 4){
     warningName += "Nombre inválido";
-    $alertName.innerHTML = warningName;
+    $alertName.innerHTML = namewarningName;
     //invalido = true;
     
   }
@@ -42,7 +46,7 @@ $forma.addEventListener("submit", e => {
     $alertPass.innerHTML = warningPass;
     //invalido = true;
   }
-  if($pass.value != $pass_confirm.value){
+  if($pass.value !== $pass_confirm.value){
     warningPassConfirm = "Las contraseñas no coinciden";
     $alertPassConfirm.innerHTML = warningPassConfirm;
     //invalido = true;

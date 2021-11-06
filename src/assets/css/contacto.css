@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+.card__elementos-boton{
+    border-radius: var(--borderRadius);
+    padding: 4px 16px;
+}
 body {
     font-family: var(--textFont);
     font-size: 1.6rem;

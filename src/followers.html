@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Perfil usuario</title>
+        <title>Seguidores</title>
         <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/css/followers-profile.css">
+        <link rel="stylesheet" href="./assets/css/followers-styles.css">
         <link rel="stylesheet" href="./assets/css/home.css">
     </head>
 
@@ -65,7 +65,7 @@
 
             <!--Esta sección solo incluye el menú de opciones-->
             <nav class="user-navbar__interacciones">
-                <a class="user-navbar__link" href="followers.html">Seguidores</a>
+                <a class="user-navbar__link" href="#">Seguidores</a>
                 <a class="user-navbar__link" href="#">Seguidos</a>
                 <a class="user-navbar__link" href="followers_profile.html">Publicaciones</a>
                 <a class="user-navbar__link" href="#">Playlist</a>
@@ -76,448 +76,203 @@
         <!--Esta sección pertenece a la reseña que incluye la imagen de background
         y todo los textos junto con iconos, botones.-->
         <main class="main">
-            <article class="card-user-main">
+            <section class="section">
 
-                <img class="card__img-back" src="assets/img/hppier-than-ever.jpg" alt="">
-                <!--Esta parte es un contenedor que está en posicion absoluta
-                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                <img> como background y poder modificarla con javascript-->
-                <section class="card__overtext">
-
-                    <!--Este bloque contiene solo los textos de contenido de reseña
-                    título de post, datos del artista e iconos.-->
-                    <div class="card__overtext-superior">
-                        <div class="card__info">
-                            <figure class="card__info-media-album">
-                                <img class="card__info-media-img" src="assets/img/hppier-than-ever.jpg">
-                            </figure>
-                            <aside class="card__info-aside">
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">Artista</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">Álbum</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">Canción</p>
-                                </figure>
-                            </aside>
-                        </div>
-
-                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                        <div class="card__post">
-
-                            <div class="card__info-user-post">
-                                <figure class="card__figure-user-post">
-                                    <img class="card__img-user-post" src="assets/img/niver.png">
-                                </figure>
-                                <div class="card__data-user-post">
-                                    <h3 class="card__name-user-post">Niver Martínez.</h3>
-                                    <p class="card__date-user-post">Ayer 19:47</p>
-                                </div>
-                            </div>
-
-                            <div class="card__content-post">
-                                <h2 class="card__post-titulo">Título reseña</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
-                                </p>
-                            </div>
-
-                        </div>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Magali.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Magali Vega</figcaption>
                     </div>
-                    <!--Este bloque de código contiene el icono de share y
-                    el botón de comentar-->
-                    <div class="card__elementos">
-                        <figure class="card__elementos-iconos">
-                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                        </figure>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-                        <figure class="card__elementos-boton">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                        </figure>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Samuel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Samuel Badillo</figcaption>
                     </div>
-                </section>
-                
-            </article>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-
-            <article class="card-user-main">
-
-                <img class="card__img-back" src="assets/img/album_cover.jpg" alt="">
-                <!--Esta parte es un contenedor que está en posicion absoluta
-                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                <img> como background y poder modificarla con javascript-->
-                <section class="card__overtext">
-
-                    <!--Este bloque contiene solo los textos de contenido de reseña
-                    título de post, datos del artista e iconos.-->
-                    <div class="card__overtext-superior">
-                        <div class="card__info">
-                            <figure class="card__info-media-album">
-                                <img class="card__info-media-img" src="assets/img/album_cover.jpg">
-                            </figure>
-                            <aside class="card__info-aside">
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">Artista</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">Álbum</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">Canción</p>
-                                </figure>
-                            </aside>
-                        </div>
-
-                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                        <div class="card__post">
-
-                            <div class="card__info-user-post">
-                                <figure class="card__figure-user-post">
-                                    <img class="card__img-user-post" src="assets/img/daniela.jpg">
-                                </figure>
-                                <div class="card__data-user-post">
-                                    <h3 class="card__name-user-post">Daniela Domínguez.</h3>
-                                    <p class="card__date-user-post">Hoy 10:22</p>
-                                </div>
-                            </div>
-
-                            <div class="card__content-post">
-                                <h2 class="card__post-titulo">Título reseña</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
-                                </p>
-                            </div>
-
-                        </div>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Mercedes.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Mercedes de la Maza</figcaption>
                     </div>
-                    <!--Este bloque de código contiene los iconos de edit, delete
-                    share and Comentar-->
-                    <div class="card__elementos">
-                        <figure class="card__elementos-iconos">
-                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                        </figure>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-                        <figure class="card__elementos-boton">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                        </figure>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Enrique.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Enrique Cano</figcaption>
                     </div>
-                </section>
-                
-            </article>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-
-            <article class="card-user-main">
-
-                <img class="card__img-back" src="assets/img/adele-30.jpg" alt="">
-                <!--Esta parte es un contenedor que está en posicion absoluta
-                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                <img> como background y poder modificarla con javascript-->
-                <section class="card__overtext">
-
-                    <!--Este bloque contiene solo los textos de contenido de reseña
-                    título de post, datos del artista e iconos.-->
-                    <div class="card__overtext-superior">
-                        <div class="card__info">
-                            <figure class="card__info-media-album">
-                                <img class="card__info-media-img" src="assets/img/adele-30.jpg">
-                            </figure>
-                            <aside class="card__info-aside">
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">Artista</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">Álbum</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">Canción</p>
-                                </figure>
-                            </aside>
-                        </div>
-
-                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                        <div class="card__post">
-
-                            <div class="card__info-user-post">
-                                <figure class="card__figure-user-post">
-                                    <img class="card__img-user-post" src="assets/img/daniel.jpg">
-                                </figure>
-                                <div class="card__data-user-post">
-                                    <h3 class="card__name-user-post">Daniel Alvarez.</h3>
-                                    <p class="card__date-user-post">Hoy 18:20</p>
-                                </div>
-                            </div>
-
-                            <div class="card__content-post">
-                                <h2 class="card__post-titulo">Título reseña</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
-                                </p>
-                            </div>
-
-                        </div>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Marina.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Marina Pardo</figcaption>
                     </div>
-                    <!--Este bloque de código contiene los iconos de edit, delete
-                    share and Comentar-->
-                    <div class="card__elementos">
-                        <figure class="card__elementos-iconos">
-                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                        </figure>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-                        <figure class="card__elementos-boton">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                        </figure>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Carlos_Eduardo.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Carlos Eduardo</figcaption>
                     </div>
-                </section>
-                
-            </article>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-
-            <article class="card-user-main">
-
-                <img class="card__img-back" src="assets/img/album_cover_001.jpg" alt="">
-                <!--Esta parte es un contenedor que está en posicion absoluta
-                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                <img> como background y poder modificarla con javascript-->
-                <section class="card__overtext">
-
-                    <!--Este bloque contiene solo los textos de contenido de reseña
-                    título de post, datos del artista e iconos.-->
-                    <div class="card__overtext-superior">
-                        <div class="card__info">
-                            <figure class="card__info-media-album">
-                                <img class="card__info-media-img" src="assets/img/album_cover_001.jpg">
-                            </figure>
-                            <aside class="card__info-aside">
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">Artista</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">Álbum</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">Canción</p>
-                                </figure>
-                            </aside>
-                        </div>
-
-                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                        <div class="card__post">
-
-                            <div class="card__info-user-post">
-                                <figure class="card__figure-user-post">
-                                    <img class="card__img-user-post" src="assets/img/zarate.jpg">
-                                </figure>
-                                <div class="card__data-user-post">
-                                    <h3 class="card__name-user-post">Ricardo Zárate.</h3>
-                                    <p class="card__date-user-post">Ayer 19:47</p>
-                                </div>
-                            </div>
-
-                            <div class="card__content-post">
-                                <h2 class="card__post-titulo">Título reseña</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
-                                </p>
-                            </div>
-
-                        </div>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Rodrigo_Leyva.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Rodrigo Leyva</figcaption>
                     </div>
-                    <!--Este bloque de código contiene el icono de share y
-                    el botón de comentar-->
-                    <div class="card__elementos">
-                        <figure class="card__elementos-iconos">
-                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                        </figure>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-                        <figure class="card__elementos-boton">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                        </figure>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Laura.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Laura Andrés</figcaption>
                     </div>
-                </section>
-                
-            </article>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-            <article class="card-user-main">
-
-                <img class="card__img-back" src="assets/img/midnight-memories.jpg" alt="">
-                <!--Esta parte es un contenedor que está en posicion absoluta
-                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                <img> como background y poder modificarla con javascript-->
-                <section class="card__overtext">
-
-                    <!--Este bloque contiene solo los textos de contenido de reseña
-                    título de post, datos del artista e iconos.-->
-                    <div class="card__overtext-superior">
-                        <div class="card__info">
-                            <figure class="card__info-media-album">
-                                <img class="card__info-media-img" src="assets/img/midnight-memories.jpg">
-                            </figure>
-                            <aside class="card__info-aside">
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">Artista</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">Álbum</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">Canción</p>
-                                </figure>
-                            </aside>
-                        </div>
-
-                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                        <div class="card__post">
-
-                            <div class="card__info-user-post">
-                                <figure class="card__figure-user-post">
-                                    <img class="card__img-user-post" src="assets/img/victor.png">
-                                </figure>
-                                <div class="card__data-user-post">
-                                    <h3 class="card__name-user-post">Víctor Izquierdo.</h3>
-                                    <p class="card__date-user-post">Lunes 01, Nov 10:02</p>
-                                </div>
-                            </div>
-
-                            <div class="card__content-post">
-                                <h2 class="card__post-titulo">Título reseña</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
-                                </p>
-                            </div>
-
-                        </div>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Leo.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Leonardo Guzmán</figcaption>
                     </div>
-                    <!--Este bloque de código contiene el icono de share y
-                    el botón de comentar-->
-                    <div class="card__elementos">
-                        <figure class="card__elementos-iconos">
-                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                        </figure>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-                        <figure class="card__elementos-boton">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                        </figure>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Hector.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Hector Almaguer</figcaption>
                     </div>
-                </section>
-                
-            </article>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-
-            <article class="card-user-main">
-
-                <img class="card__img-back" src="assets/img/album_cover_018.jpeg">
-                <!--Esta parte es un contenedor que está en posicion absoluta
-                sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-                <img> como background y poder modificarla con javascript-->
-                <section class="card__overtext">
-
-                    <!--Este bloque contiene solo los textos de contenido de reseña
-                    título de post, datos del artista e iconos.-->
-                    <div class="card__overtext-superior">
-                        <div class="card__info">
-                            <figure class="card__info-media-album">
-                                <img class="card__info-media-img" src="assets/img/album_cover_018.jpeg">
-                            </figure>
-                            <aside class="card__info-aside">
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                                    <p class="card_info-texto">Artista</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
-                                    <p class="card_info-texto">Álbum</p>
-                                </figure>
-    
-                                <figure class="card__info-content">
-                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
-                                    <p class="card_info-texto">Canción</p>
-                                </figure>
-                            </aside>
-                        </div>
-
-                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                        <div class="card__post">
-
-                            <div class="card__info-user-post">
-                                <figure class="card__figure-user-post">
-                                    <img class="card__img-user-post" src="assets/img/gerardo.jpg">
-                                </figure>
-                                <div class="card__data-user-post">
-                                    <h3 class="card__name-user-post">Gerardo Martínez.</h3>
-                                    <p class="card__date-user-post">Viernes 29, Oct 00:26</p>
-                                </div>
-                            </div>
-
-                            <div class="card__content-post">
-                                <h2 class="card__post-titulo">Título reseña</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta quas ipsum mollitia hic doloribus eum dolorem voluptate minima itaque.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia atque qui necessitatibus possimus perferendis porro beatae iusto magnam quasi ipsam veniam dolores modi, unde laudantium ipsa hic fugit at?
-                                </p>
-                            </div>
-
-                        </div>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Manuel.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Manuel Domínguez</figcaption>
                     </div>
-                    <!--Este bloque de código contiene el icono de share y
-                    el botón de comentar-->
-                    <div class="card__elementos">
-                        <figure class="card__elementos-iconos">
-                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                        </figure>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
-                        <figure class="card__elementos-boton">
-                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                        </figure>
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Emmanuel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Emmanuel Gomez</figcaption>
                     </div>
-                </section>
-                
-            </article>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
 
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Denisse.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Denisse González</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Armando.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Armando Linares</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Fernanda.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Fernanda Flores</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Giovanni.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Giovanni Calleja</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Victor_Manuel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Víctor Manuel</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Jesus.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Jesús Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/victor.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Víctor Izquierdo</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/Sheila.jpeg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Sheila Sánchez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/niver.png">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Niver Martínez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniela.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniela Domínguez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/zarate.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Ricardo Zárate</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+                <figure class="section--clr__figure">
+                    <img class="section--clr__photo" src="assets/img/daniel.jpg">
+                    <div id="container-nombre">
+                        <figcaption class="section--clr__nombre">Daniel Alvarez</figcaption>
+                    </div>
+                    <img class="section--clr__icono" src="assets/img/follow_icon.png" alt="">
+                </figure>
+
+            </section>
+
+            
             <!-- FOOTER -->
             <footer class="container-xxl w-100 overflow-hidden">
                 <div class="row mt-5">
@@ -806,6 +561,5 @@
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
     </body>
 </html>

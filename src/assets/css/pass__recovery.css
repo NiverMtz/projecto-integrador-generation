@@ -18,5 +18,8 @@ input{
   font-size: 1.3rem;
   font-family: var(--textFont);
   border-radius: var(--borderRadius);
-  background-color: var(--rosaRGBA);
+}
+/* responsive */
+@media(max-width: 450px){
+
 }

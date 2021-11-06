@@ -41,6 +41,101 @@
     </div>
   </nav>
 
+ <!--Feed main-->
+
+<main class="main">
+  <aside class="sidebar">
+    <nav class="nav">
+      <ul>
+        <li class="active"><a href="#">Welcome</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Get In Touch</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="twitter">
+    <div class="container">
+      <a target="_blank" href="https://twitter.com/ReisnerShawn">
+        <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+      </a>
+      <p>Follow me</p>
+      <p>on Twitter!</p>
+    </div>
+  </section>
+</main>
+
+
+ <!--
+<section class="container_feed">
+
+  <main class="carousel_sliders">
+
+    <div class="menu_topics">
+
+      <a>Playlist</a>
+      <input type="radio" name="radio_btn" id="radio1">
+
+      <a>Trending</a>
+      <input type="radio" name="radio_btn" id="radio2">
+
+      <a>Tarjetas</a>
+      <input type="radio" name="radio_btn" id="radio3">
+
+      <a>News</a>
+      <input type="radio" name="radio_btn" id="radio4"> 
+
+    </div>
+
+    <div class="box_slides">
+
+    <div class="slide first" id="tab-es6">
+      <h1>Playlist</h1>
+      <img src="assets/img/album_cover_001.jpg" alt="">
+    </div>
+
+    <div class="slide" id="tab-flexbox">
+      <h1>Trending</h1>
+      <img src="assets/img/album_cover_004.jpg" alt="">
+    </div>
+
+    <div class="slide" id="tab-react">
+      <h1>Tarjetas</h1>
+      <img src="assets/img/album_cover_005.jpg" alt="">
+    </div>
+
+    <div class="slide" id="tab-angular">
+      <h1>News</h1>
+      <img src="assets/img/album_cover_008.png" alt="">
+    </div>
+
+    </div> 
+   
+  </main>
+
+
+comentario Navegación del carrusel
+
+| <div class="navegacion_auto">
+  <div class="auto_btn1"></div>
+  <div class="auto_btn2"></div>
+  <div class="auto_btn3"></div>
+  <div class="auto_btn4"></div>
+  |</div>
+
+  |<div class="navegacion_manu">
+  <label for="radio1" class="manu_btn"></label>
+  <label for="radio2" class="manu_btn"></label>
+  <label for="radio3" class="manu_btn"></label>
+  <label for="radio4" class="manu_btn"></label>
+  |</div>
+   
+
+
+</section>
+-->
+
 <!-- Footer -->
 <footer class="container-xxl w-100 overflow-hidden">
     <div class="row mt-5">
@@ -133,7 +228,7 @@
           <div class="content">
               <!-- Contenedor que incluye los links hacia las paginas de acerca de nosotros,la api de spotify y el contacto -->
             <div >
-              <div class="mr-3 mt-3 text-center col-md d-block"><img src="./assets/img/archivo-de-musica.png" width="50px"><br><a href="./contact.html" class="texto">Contactanos</a></div>
+              <div class="mr-3 mt-3 text-center col-md d-block"><img src="./assets/img/archivo-de-musica.png" width="50px"><br><a href="./contacto.html" class="texto">Contactanos</a></div>
               <div class="mr-3 mt-3 text-center col-md d-block"><img src="./assets/img/disco.png" width="50px"><br><a href="./conocenos.html">Quiénes Somos</a></div>
               <div class="mt-3 text-center col-md d-block"><img src="./assets/img/spotify.png" width="50px"><br><a href="https://developer.spotify.com/">Developers</a></div>
                 <!-- imagen logo -->
@@ -163,7 +258,16 @@
 
 
 
-
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter). checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

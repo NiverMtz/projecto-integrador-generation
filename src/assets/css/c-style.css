@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 .main__logo{
     display: flex;
@@ -113,6 +114,13 @@ body{
 }
 img{
     width: unset;  
+}
+
+@media screen and (max-width: 500px) {
+
+    .main {
+        width: 70%;
+    }
 }
 
 

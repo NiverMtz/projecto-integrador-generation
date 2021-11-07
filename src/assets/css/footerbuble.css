@@ -28,7 +28,6 @@
   .footer .content {
     z-index: 2;
     display: grid;
-    grid-template-columns: 1fr auto;
     grid-gap: 2rem;
     padding: 2rem;
     background: var(--rosaRGBA);
@@ -47,9 +46,9 @@
    .footer .content > div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* gap:50px;   */
+    justify-content: center; 
   }
+
    .footer .content > div > div {
     margin: 0.25rem 0;
   }

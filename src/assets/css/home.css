@@ -5,3 +5,8 @@
 @import url(./footerbuble.css);
 @import url(./followers-profile.css);
 @import url(./styles.css);
+
+.card__elementos-boton{
+    border-radius: var(--borderRadius);
+    padding: 4px 16px;
+}

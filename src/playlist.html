@@ -1,430 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-    <!--  -->
-
-<head>
-    <meta charset="UTF-8" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Playlist</title>
+        <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/followers-styles.css">
+        <link rel="stylesheet" href="./assets/css/home.css">
+    </head>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>conocenos</title>
+    <body>
+        <!-- HEADER -->
+        <!-- Menú superior -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1);">
 
-    <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/conocenos.css ">
-    <!-- <link rel="stylesheet" href="./assets/css/puebadetarjetas.css"> -->
-    <!-- links pruebas de nuevos perfiles -->
-    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body class="no-margin">
-    <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1);">
-        <a class="navbar-brand m-0" href="./index.html">
-            <h1 class="brand--font">PAAX</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span> <img src="./assets/img/list.svg" alt=""> </span>
-        </button>
-
-        <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
-                <li class="nav-item active">
+            <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./assets/img/list.svg" alt=""></span>
+            </button>
+        
+            <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
+                    <li class="nav-item active">
                     <a class="text-white nav-link" href="./feed.html">Feed<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                     <a class="text-white nav-link" href="./followers_profile.html">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-white nav-link " href="./dashboard.html" tabindex="-1"
-                        aria-disabled="false">Dashboard</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="card__elementos-boton bg-white border border-light"><a class="text--pink"
-                        href="./login.html">Login</a></button>
-                <button class="card__elementos-boton bg-transparent border border-light mx-3"><a
-                        class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
-            </form>
-        </div>
-    </nav>
-    <!-- Banner de Paax -->
-    <section>
-        <div class="card text-white border-0">
-            <div class="mix-darken bg-dark">
-                <img src="./assets/img/discos.png" class="card-img">
-                <div class="bg-img"></div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-white nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
+                    <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
+                </form>
             </div>
-            <div class="card-img-overlay row text-center align-items-center m-0">
-                <div class="cont-acerca-paax card-title col-12">
-                    <p><span>ACERCA DE </span><img src="./assets/img/logo-elbueno.gif" width="25%"></p>
+
+        </nav>
+
+        <!--Esta sección es el código que pertenece a la imagen del baner-->
+        <section class="banner">
+            <img src="./assets/img/cat-banner.jpg" alt="background">
+        </section>
+
+        <!--Esta sección es la barra de datos del usuario, fotografía
+        y menú de opciones-->
+        <div class="user-navbar">
+
+            <div class="user-navbar__id">
+                <div class="user-navbar__datos">
+                    <img src="./assets/img/frida.jpg" alt="">
+                    <h2>Frida Rodríguez</h2>
+                </div>
+                <div class="user-navbar__botones">
+                    <button>Reseña</button>
+                    <button>Seguir</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- conocenos -->
-    <section class="conocenos text-center mt-5 mb-5">
-        <div class="conocenos-text">
-            <h4>Conócenos </h4>
-            <p> Somos un grupo de jóvenes Mexicanos apasionados por el desarrollo tecnológico apoyados por la
-                programación, para brindar un servicio único en cada proyecto desarrollado y una experiencia de
-                navegación para nuestros usuarios.
-            </p>
-        </div>
-    </section>
 
+            <!--Esta sección solo incluye el menú de opciones-->
+            <nav class="user-navbar__interacciones">
+                <a class="user-navbar__link" href="followers.html">Seguidores</a>
+                <a class="user-navbar__link" href="follows.html">Seguidos</a>
+                <a class="user-navbar__link" href="followers_profile.html">Publicaciones</a>
+                <a class="user-navbar__link" href="#">Playlist</a>
+            </nav>
 
-    <!--PERFILES PAAX-->
-    <section class="perfiles-container">
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/frida-perfil.jpg" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Frida Rodríguez.</h3>
-                <p>Desarrolladora Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/FridaRodriguezPa" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
-
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
-
-                <a href="https://www.linkedin.com/in/frida-ixchel-rodriguez-paredes/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
         </div>
 
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/daniela.jpg" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Daniela Domínguez.</h3>
-                <p>Desarrolladora Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/DanielaDominguez" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
+        <div class="play mt-2 mb-2" style="margin: 160px; ">
+            <iframe src="https://open.spotify.com/embed/playlist/4K8EL7dY67fjS7VS1dVoMS?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
+            <iframe src="https://open.spotify.com/embed/playlist/0uqvdRxLapFl6omBnkkLx9?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
-                <a href="https://www.linkedin.com/in/daniela-dom%C3%ADnguez-p/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
+            <iframe src="https://open.spotify.com/embed/playlist/0EfZGNw0JHvoCkNfnMDYAU?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/3MR2rEj3Fv76ARcLWYolnm?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/0PJjo4EG8VjbkVoYgiz9iy?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/7G6BuUKLFhp7eCC7iEFzxT?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/5Iky7rQRrSqvI9qnRmqZPz?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/17Hv5qomRitwbtUR7sa1RJ?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/2OrEAUW0rDqELa9UGbjyTF?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/1SmbUChp9rIANubCtj8Zrj?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
 
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/daniel.jpg" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Ricardo Alvarez.</h3>
-                <p>Desarrollador Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/Richiexx55" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
-
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
-
-                <a href="https://www.linkedin.com/in/ricardo-daniel-alvarez-perez-69660221b/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
-        </div>
-
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/zarate.jpg" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Ricardo Zárate.</h3>
-                <p>Desarrollador Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/RicardoZar" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
-
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
-
-                <a href="https://www.linkedin.com/in/ricardozarateg/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
-        </div>
-
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/gerardo.jpg" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Gerardo Martínez.</h3>
-                <p>Desarrollador Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/gerrymtz" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
-
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
-
-                <a href="https://www.linkedin.com/in/gerardo-martinez-ro/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
-        </div>
-
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/victor.jfif" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Víctor Izquierdo.</h3>
-                <p>Desarrollador Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/VHIzq" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
-
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
-
-                <a href="https://www.linkedin.com/in/vhmi-31416/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
-        </div>
-
-        <div class="content_main ctnt">
-            <div id="content-cover">
-                <img class="cover" src="assets/img/niver.png" alt="PlayList" />
-            </div>
-            <div class="nombre-integrante">
-                <h3>Niver Martínez.</h3>
-                <p>Desarrollador Java Full Stack Jr.</p>
-            </div>
-            <div class="content-audio">
-                <audio id="audio">
-                    <source src="https://dl.dropbox.com/s/oswkgcw749xc8xs/The-Noisy-Freaks.mp3?dl=1"/>
-                    Your browser does not support the audio element
-                </audio>
-            </div>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <div class="audio-time">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            <div class="controls">
-                <a href="https://github.com/NiverMtz" target="_blank">
-                <button class="custom-btn btn-replay" id="replay">
-                    <img src="assets/img/github.png">
-                </button>
-                </a>
-
-                <button class="custom-btn btn-play" id="play">
-                    <span id="icon" class="icons fas fa-play"></span>
-                </button>
-
-                <a href="https://www.linkedin.com/in/niver-mtz/" target="_blank">
-                <button class="custom-btn btn-stop" id="stop">
-                    <img src="assets/img/linkedin.png">
-                </button>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- MISION -->
-    <section class="cont-misionYvision">
-        <div class="cont-mision card mt-5">
-            <div class="cont-mision-text card-img card-body row ">
-                <p class="card-text text-center col my-auto m-0">En PAAX definimos una plataforma musical enfocada a
-                    reseñar temas, recomendar tus tracks favoritos y crear un punto de encuentro para los amantes de la
-                    música.</p>
-            </div>
-            <div class="cont-circulo-mision card-img-overlay row">
-                <div class="cont-circulo-mision-text text-center col my-auto">
-                    <p>MISIÓN</p>
-                </div>
-            </div>
-        </div>
-        <div class="cont-vision card mt-5">
-            <div class="cont-vision-text card-img card-body row">
-                <p class="card-text text-center col my-auto">Nos proyectamos como una de las mayores referencias de
-                    plataformas que permite compartir noticias relevantes a través de imágenes y vídeos, además de
-                    ayudar a mantenernos informados en tiempo real, sobre lo que acontece a nuestro alrededor. Así
-                    mismo, permitir que las personas puedan aliarse y construir una comunidad con una fuerte identidad
-                    musical. </p>
-            </div>
-            <div class="cont-circulo-vision card-img-overlay row">
-                <div class="cont-circulo-vision-text text-center col my-auto">
-                    <p>VISIÓN</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ----------- NUESTROS VALORES ------------>
-    <h4 class="titulo-valores text-center">Nuestros Valores</h4>
-    <section class="cont-gen-circulos-val justify-content-center  mt-5 mb-5">
-        <div class="cont-circulo-val card mb-5">
-            <div class="circulo-val card-body text-center text-white ">
-                <h5 class="card-title">Libre Expresión</h5>
-                <p class="card-text">Paax permite que nuestros usuarios puedan externar gustos y preferencias.</p>
-            </div>
-        </div>
-        <div class="cont-circulo-val card mb-5">
-            <div class="circulo-val card-body text-center text-white">
-                <h5 class=" card-title">identidad</h5>
-                <p class="card-text">Paax permite a los usuarios identificarse con una comunidad para compartir gustos
-                    musicales.</p>
-            </div>
-        </div>
-        <div class="cont-circulo-val card mb-5">
-            <div class="circulo-val card-body text-center text-white ">
-                <h5 class="card-title">Respeto y Defensa</h5>
-                <p class="card-text">Es un eje rector el defender y respetar la voz de nuestra comunidad.</p>
-            </div>
-        </div>
-        <div class="cont-circulo-val card ">
-            <div class="circulo-val card-body text-center text-white">
-                <h5 class="card-title">Contribución Positiva</h5>
-                <p class="card-text">Ayudar a terceros a generar comentarios, retroalimentación y reseñas desde
-                    cualquier lugar.</p>
-            </div>
-        </div>
-    </section>
-
-
+            
             <!-- FOOTER -->
             <footer class="container-xxl w-100 overflow-hidden">
                 <div class="row mt-5">
@@ -708,17 +379,9 @@
                     </div>
                 </div>
             </footer>
+    </main>
 
-    <!-- scripts de los nuevos perfiles  -->
-    <script src="https://kit.fontawesome.com/a6eec1d329.js" crossorigin="anonymous"></script>
-    <!-- fin de scripts -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-        </script>
-</body>
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -201,6 +201,12 @@ como fotografía, nombre e iconoce de compartir*/
         position: relative;
         right: 20px;
     }
+
+    .play{
+        margin: 160px;
+        margin-top: 500px;;
+        margin-bottom: 100px;
+    }
 }
 
 

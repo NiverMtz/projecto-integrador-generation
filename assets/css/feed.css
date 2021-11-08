@@ -1,235 +1,549 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-html {
-  font-family: Arial;
-  font-size: 16px;
-  background: #5e42a6;
-}
-
-.sidebar {
-  position: fixed;
-  width: 25%;
-  height: 100vh;
-  background: #312450;
-  font-size: 0.65em;
-}
-
-.nav {
-  position: relative;
-  margin: 0 15%;
-  text-align: right;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-}
-
-.nav ul {
-  list-style: none;
-  
-  li {
-    position: relative;
-    margin: 3.2em 0;
-    
-    a {
-      line-height: 5em;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: 0.4em;
-      color: rgba(#FFF, 0.35);
-      display: block;
-      transition: all ease-out 300ms;
-    }
-    
-    &.active a {
-      color: white;
-    }
-    
-    &:not(.active)::after {
-      opacity: 0.2;
-    }
-    
-    &:not(.active):hover a {
-      color: rgba(#FFF, 0.75);
-    }
-    
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 0.2em;
-      background: black;
-      left: 0;
-      bottom: 0;
-      background-image: linear-gradient(to right, #5e42a6, #b74e91)
-    }
-  }
-}
-
-.twitter {
-  position: relative;
-  width: 75%;
-  float: right;
-  height: 100vh;
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  a {
-    position: relative;
-    
-    img {
-      width: 48px;
-      height: 48px;
-    }
-  }
-  
-  p {
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    color: #FFF;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-}
-
-//*
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
 }
 
-.container_feed {     
+/*Seccion del Feed*/
+.container__feed {     
     background: black;
-    height: 600px;
+    height: auto;
     margin: 0px;
+    width: 100%;
     padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
+    position: relative;
+    top: 65px;
 }
 
-.carousel_sliders {
-    width: 800px;
-    height: 500px;
+/*Menu de navegación lateral*/
+
+.menu__feed {
+  width: 100%;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+
+}
+
+
+
+/*Contenido del Feed*/
+
+.box__slides {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 0px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+}
+
+.slides {
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.menu_topics {
-    width: 20%;
-    height:500px;
-    display: flex;
-    position: absolute;
-}
-
-.menu_topics {
-    display: none;
-}
-
-.box_slides {
-    width: 90%;
-    height:500px;
-    display: flex;
-    position: absolute;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 5px 25 px rgba(240, 46, 170, 1);
 }
 
 .slide {
-    width: 20%;
-    transition: 2s;
-    text-align: center;
-}
-
-.slide img {
-    width: 800px;
-    height: 500px;
-}
-
-.navegacion_manu {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manu_btn {
-    border: 2px solid  purple;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manu_btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manu_btn:hover {
-    background-color: blue;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -60%
+  width: 100%;
+  height: 600px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  
 }
 
 
-.navegacion_auto {
-    position: absolute;
-    display:flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
+
+.navegacion__menu {
+  
+  margin: 30px 30px 60px;
+  user-select: none;
+  width: 100%;
+  height: 500px;
+  margin: 0px;
+  padding: 20px;
+  position: relative;   
 }
 
-.navegacion_auto div{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
+.navegacion__menu il {
+  display: inline-blockmargin 20px;
+  box-shadow: 0 5px 25px rgb(111/10%);
+}
+
+.navegacion__menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 45px;
+  text-align: center;
+}
+
+.previous-page, next-page {
+  background-color: brown;
+  width: 100px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.previous-page, .next-page {
+  background-color: white;
+  width: 80px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.previous-page:hover {
+  transform: translateX(-5px);
+}
+
+.next-page:hover{
+  transform: translateX(5px);
+}
+
+.current-page, .dots {
+  background-color: black;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.activate {
+  background-color: white;
+}
+
+.disable {
+  background-color: blueviolet;
+}
+
+
+
+
+.menu__navegacion {
+  margin: 0;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.background__one {
+  background-color: black;
+}
+
+.background__two {
+  background-color: black;
+}
+
+.background__three {
+  background-color: black;
+}
+
+.background__four   {
+  background-color: black;
+}
+
+.topics__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 20px;
 
 }
 
-.navegacion_auto div:not(:last-child) {
-    margin-right: 40px;
+a {
+  font-family: "Bungee", cursive;
+  font-size: 2.5em;
 }
 
-#radio1:checked ~ .navegacion_auto .auto_btn1 {
-    background-color: yellowgreen;
+.link-one {
+  color: #53d9d1;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  line-height: 1em;
 }
 
-#radio2:checked ~ .navegacion_auto .auto_btn2 {
-    background-color: yellowgreen;
+.link-one:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+
+  /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
 }
 
-#radio3:checked ~ .navegacion_auto .auto_btn3 {
-    background-color: yellowgreen;
+.link-one::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #53d9d1;
+
+  clip-path: circle(0% at 50% calc(50%));
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-#radio4:checked ~ .navegacion_auto .auto_btn4zz {
-    background-color: yellowgreen;
+.link-one:hover::before {
+  clip-path: circle(100% at 50% 50%);
 }
 
+.link-one::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #151515;
+
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 0%,
+    40% 0%,
+    40% 100%,
+    60% 100%,
+    60% 100%,
+    40% 100%
+  );
+
+  /*
+  Didn't look consistently awesome enough
+  across different viewing widths.
+  clip-path: polygon(
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%
+  );
+  */
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-one:hover::after {
+  /*
+  clip-path: polygon(
+    20% 45%,
+    10% 40%,
+    30% 30%,
+    40% 35%,
+    60% 35%,
+    70% 30%,
+    90% 40%,
+    80% 45%,
+    60% 35%,
+    40% 35%,
+    20% 45%,
+    20% 55%,
+    10% 60%,
+    30% 70%,
+    40% 65%,
+    60% 65%,
+    70% 70%,
+    90% 60%,
+    80% 55%,
+    60% 65%,
+    40% 65%,
+    20% 55%
+  );
+  */
+  clip-path: polygon(
+    40% 10%,
+    60% 10%,
+    60% 35%,
+    40% 35%,
+    40% 90%,
+    60% 90%,
+    60% 65%,
+    40% 65%
+  );
+}
+
+.link-two {
+  color: rgba(240, 46, 170, 1);
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.link-two:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link-two::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  clip-path: polygon(
+    0% -20%,
+    100% -30%,
+    100% -10%,
+    0% 0%,
+    0% 130%,
+    100% 120%,
+    100% 100%,
+    0% 110%
+  );
+  background-color: rgba(240, 46, 170, 1);
+
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.link-two:hover::before {
+  clip-path: polygon(
+    0% 10%,
+    100% 0%,
+    100% 20%,
+    0% 30%,
+    0% 100%,
+    100% 90%,
+    100% 70%,
+    0% 80%
+  );
+}
+
+.link-two::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 5ch;
+  height: 5ch;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg) scale(0);
+  transition: transform 1s ease;
+
+  background-color: rgba(240, 46, 170, 1) ;
+}
+
+.link-two:hover::after {
+  transform: translate(50%, -50%) rotate(135deg) scale(1);
+}
+
+
+
+.link-three {
+  color: white;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  line-height: 1em;
+}
+
+.link-three:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+
+  /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
+}
+
+.link-three::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: white;
+
+  clip-path: circle(0% at 50% calc(50%));
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-three:hover::before {
+  clip-path: circle(100% at 50% 50%);
+}
+
+.link-three::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #151515;
+
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 0%,
+    40% 0%,
+    40% 100%,
+    60% 100%,
+    60% 100%,
+    40% 100%
+  );
+
+  /*
+  Didn't look consistently awesome enough
+  across different viewing widths.
+  clip-path: polygon(
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%
+  );
+  */
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-three:hover::after {
+  /*
+  clip-path: polygon(
+    20% 45%,
+    10% 40%,
+    30% 30%,
+    40% 35%,
+    60% 35%,
+    70% 30%,
+    90% 40%,
+    80% 45%,
+    60% 35%,
+    40% 35%,
+    20% 45%,
+    20% 55%,
+    10% 60%,
+    30% 70%,
+    40% 65%,
+    60% 65%,
+    70% 70%,
+    90% 60%,
+    80% 55%,
+    60% 65%,
+    40% 65%,
+    20% 55%
+  );
+  */
+  clip-path: polygon(
+    40% 10%,
+    60% 10%,
+    60% 35%,
+    40% 35%,
+    40% 90%,
+    60% 90%,
+    60% 65%,
+    40% 65%
+  );
+}
+
+.link-four {
+  color: #eb7132;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.link-four:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link-four::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  clip-path: polygon(
+    0% -20%,
+    100% -30%,
+    100% -10%,
+    0% 0%,
+    0% 130%,
+    100% 120%,
+    100% 100%,
+    0% 110%
+  );
+  background-color: #eb7132;
+
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.link-four:hover::before {
+  clip-path: polygon(
+    0% 10%,
+    100% 0%,
+    100% 20%,
+    0% 30%,
+    0% 100%,
+    100% 90%,
+    100% 70%,
+    0% 80%
+  );
+}
+
+.link-four::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 5ch;
+  height: 5ch;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg) scale(0);
+  transition: transform 1s ease;
+
+  background-color: #eb7132;
+}
+
+.link-four:hover::after {
+  transform: translate(50%, -50%) rotate(135deg) scale(1);
+}

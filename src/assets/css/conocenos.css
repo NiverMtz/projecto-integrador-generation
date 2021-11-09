@@ -133,6 +133,10 @@
 	animation: cover 2.8s linear infinite;
 }
 
+.perfil-musica-paax {
+    cursor: pointer;
+}
+
 @-webkit-keyframes cover {
 	100% {
 		-webkit-transform: rotate(360deg);

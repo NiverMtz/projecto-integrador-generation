@@ -1,5 +1,10 @@
 @import url(./styles.css);
+<<<<<<< HEAD
 
+=======
+@import url(./followers-profile.css);
+@import url(footerbuble.css);
+>>>>>>> 6dcf7dbca1d9460188206fa97467badc58695c15
 
 * {
 	margin:0;
@@ -10,6 +15,7 @@
     border-radius: var(--borderRadius);
     padding: 4px 16px;
 }
+
 body {
     font-family: var(--textFont);
     font-size: 1.6rem;
@@ -21,29 +27,11 @@ body {
 	background-color: black;
 }
 
-/*Header*/
-.header {
-    width: 100%;
-    height: 90px;
-    padding: 0 20px;
-    font: 24px var(--textFont);
-    color: var(--white);
-    background-color: var(--rosa);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__brand-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.header__user {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.main__contacto {
+	width: 100%;
+	height: auto;
+	top: 70px;
+	position: relative;
 }
 
 .title__contacto {
@@ -51,10 +39,12 @@ body {
 	color: white;
 	width: 100%;
 	height: 50px;
-	padding: 10px;
+	padding: 20px;
+	margin: 0px;
+	top: 100px;
 }
 
-/*Carousel*/
+/*Sección 1 Carousel*/
 @-webkit-keyframes scroll__contacto {
     0% {
       transform: translateX(0);
@@ -79,9 +69,7 @@ body {
 	padding: 20px 20px;
 	margin: 0px;
 	display: flex;
-	flex-wrap: wrap;
   }
-
 
   .box__carousel__contacto {
 	width: 100%;
@@ -90,7 +78,6 @@ body {
 	background-color:black;
 	padding: 20px;
 	border-radius: 5px;
-	
   }
 
   .container__carousel__contacto::before, .container__carousel__contacto::after {
@@ -108,7 +95,7 @@ body {
     top: 0;
   }
   
-  .container__carousel__contacto .row__track__slide  {
+  .container__carousel__contacto .track__slides  {
     -webkit-animation: scroll__contacto 100s linear infinite;
             animation: scroll__contacto 100s linear infinite;
     display: flex;
@@ -118,8 +105,7 @@ body {
 #slide__contacto {
 	padding: 10px;
 	border-radius: 20px 20px;
-	width: 500;
-	height: 450;
+
 	opacity: .85;
 	transition: 1s;
 }
@@ -128,7 +114,7 @@ body {
 	transform: scale(.9);
 }
 
-/*Sección del banner*/
+/*Sección 2 Banner*/
 .container__banner {
 	background-color: rgba(240, 46, 170, 1);
 	color: black;
@@ -147,18 +133,19 @@ body {
 	text-align: center;
 }
 
-/*
-.in-flex {
-	flex: 1;
+@media (min-width: 360px) {
+	.container__banner {
+		position: relative;
+		width: 100%;
+		height: 1000px;
+		margin: 0px;
+		padding: 0px;
+		top: 0px;
+		left: 0px;
+	}
 }
-.in-flex:fist-child {
-	flex: 2;
-	padding: 20px 0px;
-}
-.in-flex div {
-	padding: 25px;
-}
-*/
+
+
 
 .title__banner {
 	background-color: rgba(240, 46, 170, 1);
@@ -260,7 +247,7 @@ body {
 		position: absolute;
 		z-index: 4;
 		height: 150px;
-		top: 250px;
+		top: 320px;
 		right: 0px;
 		left: 34px;
 		margin: 0px;
@@ -363,6 +350,19 @@ body {
 		text-align: center;
 	}
 }
+@media (min-width: 360px) {
+	.row__email {
+		background-color: black;
+		position: absolute;
+		width: 85%;
+		height: 150px;
+		margin: 0px;
+		padding: 20px;
+		top: 800px;
+		left: 30px;
+		align-items: center;
+	}
+}
 
 @media (min-width: 768px) {
 	.row__email {
@@ -409,8 +409,8 @@ body {
 		width: 100%;
 		position: absolute;
 		z-index: 4;
-		height: 600px;
-		top: 430px;
+		height: 400px;
+		top: 500px;
 		right: 0px;
 		padding: 20px;
 		margin: 0px;
@@ -446,114 +446,112 @@ body {
 .nav__seccion {
 	color: black;
 }
-/*
-@media (min-width: 360px) {
-	.nav__seccion {
-		width: 90%;
-		position: absolute;
-		height: 600px;
-		top: 350px;
-		right: 0px;
-		padding: 20px;
-		margin: 10px;
-	}
-}
 
-@media (min-width: 768px) {
-	.nav__seccion {
-		width: 90%;
-		position: absolute;
-		height: 600px;
-		top: 350px;
-		right: 0px;
-		padding: 20px;
-		margin: 10px;
-	}
-}
-
-@media (min-width: 1200px) {
-	.nav__seccion {
-		width: 90%;
-		position: absolute;
-		height: 400px;
-		top: 0px;
-		right: 0px;
-		padding: 20px;
-		margin: 10px;
-	}
-}*/
-/*Segunda sección preguntas frecuentes y feedback*/
-
-#feedback__page{
-	text-align: center;
-}
+/*Sección 3 Preguntas frecuentes y feedback*/
 
 .container__form__quiz {
 	background-color: black;
 	padding: 0;
 	margin: 0;
-	position: relative;
 	left: 0px;
+	display: flex;
 	top: 0px;
 	bottom: 0px;
 	right: 0;
+	position: relative;
 	width: 100%;
 	height: 800px;
 }
 
-/*Sección de preguntas frecuentes */
-.row__preguntas {
+@media (min-width: 360px) {
+	.container__form__quiz {
+		width: 100%;
+		position: relative;
+		height: 1400px;
+		top: 0px;
+		padding: 0px;
+		margin: 0;
+		right: 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 768px) {
+	.container__form__quiz {
+		width: 100%;
+		position: relative;
+		height: 1600px;
+		top: 0px;
+		right: 0px;
+		color: rgba(240,46, 170, 1ss);
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container__form__quiz {
+		width: 100%;
+		position: relative;
+		height: 800px;
+		top: 0px;
+		right: 0px;
+		padding: 0px;
+		margin: 0;
+	}
+}
+
+/*Sección 3.1 Preguntas frecuentes */
+.preguntas {
 	padding: 20px;
 	position: relative;
 	z-index: 1;
 	right: 0px;
-	left: 50px;
-	top: 125px;
+	left: 0px;
+	top: 0px;
 	bottom: 0px;
-	width: 50%;
-	height: 700px;
-	border-radius: 50px;
+	width: 60%;
+	height: 800px;
 	text-align: center;
 }
 
 
 @media (min-width: 360px) {
-	.row__preguntas {
+	.preguntas {
 		width: 100%;
-		position: absolute;
-		height: 850px;
+		position: relative;
+		height: 800px;
 		top: 0px;
 		right: 0px;
 		color: rgba(240,46, 170, 1ss);
-		align-items: center;
+		
 	}
 }
 
 @media (min-width: 768px) {
-	.row__preguntas {
+	.preguntas {
 		padding: 10px;
-		margin: 10px;
-		position: absolute;
+		margin: 0px;
+		position: relative;
 		color:rgba(240, 46, 170, 1);
 		width: 100%;
-		height: 70px;
-		top: 1550px;
-		left: 70px;
-		text-align: center;
-		align-items: center;
+		height: 800px;
+		top: 0px;
+		left: 0px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.row__preguntas {
+	.preguntas {
 		width: 50%;
-		height: 100px;
-		position: absolute;
+		height: 800px;
 		top: 0px;
 		margin: 0px;
 		padding: 0px;
-		left: 100px;
-		align-items: center;
+		left: 0px;
+		position: relative;
+		text-align: center;
 	}
 }
 
@@ -568,16 +566,14 @@ body {
 	height: 70px;
 	top: 0px;
 	left: 0px;
-	text-align: center;
-	align-items: center;
 }
 
 @media (min-width: 360px) {
 	.title__preguntas {
-		width: 70%;
-		position: absolute;
+		width: 100%;
+		position: relative;
 		height: 50px;
-		top: 1450px;
+		top: -70px;
 		right: 0px;
 		color: rgba(240,46, 170, 1ss);
 	}
@@ -587,9 +583,9 @@ body {
 	.title__preguntas {
 		padding: 10px;
 		margin: 10px;
-		position: absolute;
+		position: relative;
 		color:rgba(240, 46, 170, 1);
-		width: 80%;
+		width: 100%;
 		height: 100px;
 		top: 0px;
 		left: 0px;	
@@ -600,13 +596,12 @@ body {
 @media (min-width: 1200px) {
 	.title__preguntas {
 		width: 100%;
-		height: 70px;
-		position: absolute;
-		top: 1500px;
+		height: 100px;
+		position: relative;
+		top: 0px;
 		margin: 0px;
 		padding: 0px;
 		left: 0px;
-		text-align: center;
 	}
 }
 
@@ -616,34 +611,33 @@ body {
 	left: 0px;
 	top: 0px;
 	bottom: 0px;
-	width: 700px;
-	height: 700px;
+	width: 100%;
+	height: 800px;
+	position: relative;
 	border-radius: 50px;
 }
 
 @media (min-width: 360px) {
 	.box__preguntas {
 		background-color: black;
-		width: 330px;
-		position: absolute;
-		height: 850px;
-		top: 1550px;
+		width: 100%;
+		position: relative;
+		height: 600px;
+		top: 0px;
 		right: 0px;
-		align-items: center;
 	}
 }
 
 @media (min-width: 768px) {
 	.box__preguntas {
 		background-color: black;
-		position: absolute;
+		position: relative;
 		width: 100%;
-		height: 600px;
+		height: 670px;
 		margin: 0px;
-		padding: 20px;
-		top: 100px;
+		padding: 40px;
+		top: 0px;
 		left: 0px;
-		align-items: center;
 	}
 }
 
@@ -651,22 +645,23 @@ body {
 	.box__preguntas {
 		background-color: black;
 		width: 100%;
-		height: 750px;
-		position: absolute;
-		top: 1550px;
-		margin: 5px;
-		padding: 20px;
+		height: 800px;
+		position: relative;
+		top: 0px;
+		padding: 40px;
 		left: 0px;
 	}
 }
 
 .tarjetas {
-	width: 550px;
-	height: 100px;
+	width: 100%;
+	height: 150px;
 	-webkit-perspective: 800;
 	perspective: 800;
-	margin: 20px;
-	left: 50px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	align-items: center;
 }
 
 
@@ -675,13 +670,35 @@ body {
 		margin: 0px;
 		padding: 10px;
 		background-color: black;
-		width: 85%;
+		width: 100%;
 		position: relative;
 		height: 150px;
 		top: 10px;
 		left: 0px;
 		right: 0px;
-		align-items: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.tarjetas {
+		margin: 0px;
+		padding: 10px;
+		background-color: black;
+		width: 100%;
+		position: relative;
+		height: 150px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.tarjetas {
+		margin: 0px;
+		padding: 10px;
+		width: 100%;
+		height: 150px;
 	}
 }
 
@@ -726,7 +743,6 @@ body {
 
 .pregunta__frec{
 	width: 100%;
-	justify-content: center;
 	background-color: black;
 	color: white;
 	align-items: center;
@@ -735,46 +751,133 @@ body {
 	padding: 20px;
 }
 
-/*Sección para buzón*/
+/*Sección 3.2 Buzón*/
+
+.buzon {
+	width: 45%;
+	height: 800px;
+	position: relative;
+
+}
+
+@media (min-width: 360px) {
+	.buzon {
+		background-color: black;
+		width: 100%;
+		position: relative;
+		height: 500px;
+		top: 0px;
+		right: 0px;
+		}
+}
+
+@media (min-width: 768px) {
+	.buzon {
+		background-color: black;
+		width: 100%;
+		position: relative;
+		height: 800px;
+		top: 0px;
+		right: 0px;
+		}
+}
+
+@media (min-width: 1200px) {
+	.buzon {
+		background-color: black;
+		width: 50%;
+		position: relative;
+		height: 800px;
+		top: 0px;
+		right: 0px;
+	}
+}
+
+.form__buzon {
+	padding: 40px;
+	margin: 0px;
+	background-color: black;
+	position: relative;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 700px;
+	
+}
+
+@media (min-width: 360px) {
+	.form__buzon {
+		background-color: black;
+		width: 100%;
+		position: relative;
+		height: 500px;
+		top: 0px;
+		right: 0px;
+	}
+}
+
+@media (min-width: 768px) {
+	.form__buzon {
+		background-color: black;
+		position: relative;
+		width: 100%;
+		height: 800px;
+		margin: 0px;
+		padding: 40px;
+		top: 0px;
+		left: 0px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.form__buzon {
+		background-color: black;
+		width: 100%;
+		height: 800px;
+		position: relative;
+		top: 0px;
+		margin: 0px;
+		padding: 40px;
+		left: 0px;
+	}
+}
 
 .title__email {
 	padding: 20px;
-	margin: 5px;
+	margin: 0px;
 	background-color: black;
 	color: rgba(240, 46, 170, 1);
-	position: absolute;
-	z-index: 3;
-	width: 40%;
-	height: 70px;
+	position: relative;
+	width: 100%;
+	height: 100px;
 	top: 0px;
-	left: 0px;
 }
 
 @media (min-width: 360px) {
 	.title__email {
 		background-color: black;
-		width: 70%;
-		position: absolute;
+		width: 100%;
+		position: relative;
 		height: 50px;
-		top: -100px;
+		top: -70px;
 		right: 0px;
-		left: 60px;
+		left: 0px;
 		color: rgba(240,46, 170, 1ss);
-		text-align: center;
 	}
 }
 
 @media (min-width: 768px) {
 	.title__email {
-		padding: 10px;
+		padding: 0px;
 		margin: 0px;
 		background-color: black;
 		color: rgba(240, 46, 170, 1);
-		position: absolute;
-		z-index: 3;
+		position: relative;
 		width: 100%;
-		height: 70px;
-		top: 0px;
+		height: 100px;
+		top: 50px;
 		left: 0px;
 		right: 0px;
 		text-align: center;
@@ -786,89 +889,37 @@ body {
 		background-color: black;
 		width: 100%;
 		height: 100px;
-		position: absolute;
+		position: relative;
 		top: 0px;
 		margin: 0px;
-		padding: 20px;
+		padding: 0px;
 		left: 0px;
 		text-align: center;
 	}
 }
 
-.row__form__mailbox {
-	padding: 20px;
-	margin: 0px;
-	background-color: black;
-	position: relative;
-	right: 0px;
-	z-index: 1;
-	left: 0px;
-	top: 0px;
-	bottom: 0px;
-	width: 100%;
-	height: 700px;
-}
-
-@media (min-width: 360px) {
-	.row__form__mailbox {
-		background-color: black;
-		width: 100%;
-		position: absolute;
-		height: 600px;
-		top: 2350px;
-		right: 100p;
-	}
-}
-
 @media (min-width: 768px) {
-	.row__form__mailbox {
+	.mailbox {
 		background-color: black;
-		position: absolute;
-		z-index: 2;
-		width: 80%;
-		height: 600px;
-		margin: 0px;
-		padding: 20px;
-		top: 2350px;
-		left: 100px;
-	}
-}
-
-@media (min-width: 1200px) {
-	.row__form__mailbox {
-		background-color: black;
-		width: 40%;
-		height: 700px;
-		position: absolute;
-		top: 1480px;
-		margin: 0px;
-		padding: 20px;
-		left: 700px;
-	}
-}
-
-@media (min-width: 768px) {
-	.form__mailbox {
-		background-color: black;
-		position: absolute;
+		position: relative;
 		width: 100%;
-		height: 600px;
+		height: 500px;
 		margin: 0px;
 		padding: 20px;
-		top: 50px;
+		top: 0px;
 		left: 0px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.form__mailbox {
+	.mailbox {
 		background-color: black;
-		position: absolute;
+		position: relative;
 		width: 100%;
 		height: 600px;
 		margin: 0px;
-		padding: 20px;
-		top: 100px;
+		padding: 60px;
+		top: 0px;
 		left: 0px;
 	}
 }
@@ -903,7 +954,7 @@ body {
 	border: rgba(240, 46, 170, 1) solid 3px;
 }
 
-/* Secciones ---------------------------------- */
+/*Secciones interiores del Form*/
 .user__name{
 	border-radius: 20px;
 	background-color: rgb(15, 13, 13);
@@ -1047,6 +1098,9 @@ p{
   list-style: none;
   
 }
+
+
+/*Seccion Footer*/
 
 .footer {
     z-index: 1;

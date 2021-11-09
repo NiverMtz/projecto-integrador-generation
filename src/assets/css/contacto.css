@@ -1,10 +1,6 @@
 @import url(./styles.css);
-<<<<<<< HEAD
-
-=======
 @import url(./followers-profile.css);
 @import url(footerbuble.css);
->>>>>>> 6dcf7dbca1d9460188206fa97467badc58695c15
 
 * {
 	margin:0;

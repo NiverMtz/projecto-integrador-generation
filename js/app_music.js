@@ -1,91 +1,220 @@
-var btnPlay = document.getElementById("play");
-var btnStop = document.getElementById("stop");
-var btnReplay = document.getElementById("replay");
-//Image
-var cover = document.querySelector(".cover");
-//Element audio
-var audio = document.getElementById("audio");
-//Icon play and pause
-var icon = document.getElementById("icon");
-//Progress Bar
-var progressBar = document.getElementById("progress-bar");
-var progress = document.getElementById("progress");
+/* ------------------ FUNCIONES PARA EL PERFIL DE FRIDA ------------------*/
+var $perfilPaaxFrida = document.querySelector("#perfil-paax-frida")
+var $playMusicFrida = document.querySelector("#audioFrida")
+var $coverImgFrida = document.querySelector("#coverFrida")
 
-var count = 0;
+$perfilPaaxFrida.addEventListener("mouseover", () => {
+    activarCoverFrida()
+    reproducirMusicaFrida()
+})
 
-function playMusic() {
-	cover.setAttribute("class", "play");
-	icon.setAttribute("class", "fas fa-pause");
-	audio.play();
-	//Count the clicks
-	count += 1;
+$perfilPaaxFrida.addEventListener("mouseout", () => {
+    desactivarCoverFrida()
+    detenerMusicaFrida()
+})
+
+function reproducirMusicaFrida() {
+    $playMusicFrida.play()
 }
 
-//---------------- Play music
-btnPlay.addEventListener("click", () => {
-	playMusic();
-
-	//Restart the class
-	if (count % 2 == 0) {
-		//Pause music
-		cover.setAttribute("class", "cover");
-		icon.setAttribute("class", "fas fa-play");
-		audio.pause();
-	}
-});
-
-//---------------- Stop music
-btnStop.addEventListener("click", () => {
-	stopMusic();
-	count = 0;
-});
-
-//---------------- Replay music
-btnReplay.addEventListener("click", () => {
-	var time = audio.currentTime;
-	var replay_10 = time - 10;
-	audio.currentTime = replay_10;
-});
-
-//---------------- Audio
-audio.addEventListener("timeupdate", function () {
-	//Time
-	var duration = audio.duration;
-	var currentTime = audio.currentTime;
-	document.getElementById("duration").innerHTML = convertElapsedTime(duration);
-	document.getElementById("current-time").innerHTML = convertElapsedTime(
-		currentTime
-	);
-	//Progress Bar
-	progress.style.width = (currentTime / duration) * 100 + "%";
-
-	//Stop when audio ends
-	if (currentTime == duration) {
-		stopMusic();
-	}
-});
-
-//---------------- Control of the progress
-progressBar.addEventListener("mousedown", function (event) {
-	var clickedPosition = event.clientX - event.target.offsetLeft;
-	audio.currentTime =
-		(clickedPosition / event.target.offsetWidth) * audio.duration;
-});
-
-//Convert
-function convertElapsedTime(inputSeconds) {
-	var seconds = Math.floor(inputSeconds % 60);
-	if (seconds < 10) {
-		seconds = "0" + seconds;
-	}
-	var minutes = Math.floor(inputSeconds / 60);
-	return minutes + ":" + seconds;
+function detenerMusicaFrida() {
+    $playMusicFrida.pause()
 }
 
-//Function stop
-function stopMusic() {
-	audio.pause();
-	audio.currentTime = 0;
-	icon.setAttribute("class", "fas fa-play");
-	cover.setAttribute("class", "cover");
+function activarCoverFrida() {
+    $coverImgFrida.style.opacity = 0.5
+}
+
+function desactivarCoverFrida() {
+    $coverImgFrida.style.opacity = 1
+}
+
+
+/* ------------------ FUNCIONES PARA EL PERFIL DE DANIELA ------------------*/
+var $perfilPaaxDani = document.querySelector("#perfil-paax-dani")
+var $playMusicDani = document.querySelector("#audioDani")
+var $coverImgDaniela = document.querySelector("#coverDaniela")
+
+$perfilPaaxDani.addEventListener("mouseover", () => {
+    activarCoverDaniela()
+    reproducirMusicaDani()
+})
+
+$perfilPaaxDani.addEventListener("mouseout", () => {
+    desactivarCoverDaniela()
+    detenerMusicaDani()
+})
+
+function reproducirMusicaDani() {
+    $playMusicDani.play()
+}
+
+function detenerMusicaDani() {
+    $playMusicDani.pause()
+}
+
+function activarCoverDaniela() {
+    $coverImgDaniela.style.opacity = 0.5
+}
+
+function desactivarCoverDaniela() {
+    $coverImgDaniela.style.opacity = 1
+}
+
+/* ------------------ FUNCIONES PARA EL PERFIL DE DANIEL ------------------*/
+var $perfilPaaxDaniel = document.querySelector("#perfil-paax-daniel")
+var $playMusicDaniel = document.querySelector("#audioDaniel")
+var $coverImgDaniel = document.querySelector("#coverDaniel")
+
+$perfilPaaxDaniel.addEventListener("mouseover", () => {
+    activarCoverDaniel()
+    reproducirMusicaDaniel()
+})
+
+$perfilPaaxDaniel.addEventListener("mouseout", () => {
+    desactivarCoverDaniel()
+    detenerMusicaDaniel()
+})
+
+function reproducirMusicaDaniel() {
+    $playMusicDaniel.play()
+}
+
+function detenerMusicaDaniel() {
+    $playMusicDaniel.pause()
+}
+
+function activarCoverDaniel() {
+    $coverImgDaniel.style.opacity = 0.5
+}
+
+function desactivarCoverDaniel() {
+    $coverImgDaniel.style.opacity = 1
+}
+
+/* ------------------ FUNCIONES PARA EL PERFIL DE RICARDO ------------------*/
+var $perfilPaaxRicardo = document.querySelector("#perfil-paax-ricardo")
+var $playMusicRicardo = document.querySelector("#audioRicardo")
+var $coverImgRicardo = document.querySelector("#coverRicardo")
+
+$perfilPaaxRicardo.addEventListener("mouseover", () => {
+    activarCoverRicardo()
+    reproducirMusicaRicardo()
+})
+
+$perfilPaaxRicardo.addEventListener("mouseout", () => {
+    desactivarCoverRicardo()
+    detenerMusicaRicardo()
+})
+
+function reproducirMusicaRicardo() {
+    $playMusicRicardo.play()
+}
+
+function detenerMusicaRicardo() {
+    $playMusicRicardo.pause()
+}
+
+function activarCoverRicardo() {
+    $coverImgRicardo.style.opacity = 0.5
+}
+
+function desactivarCoverRicardo() {
+    $coverImgRicardo.style.opacity = 1
+}
+
+
+/* ------------------ FUNCIONES PARA EL PERFIL DE GERARDO ------------------*/
+var $perfilPaaxGerardo = document.querySelector("#perfil-paax-gerardo")
+var $playMusicGerardo = document.querySelector("#audioGerardo")
+var $coverImgGerardo = document.querySelector("#coverGerardo")
+
+$perfilPaaxGerardo.addEventListener("mouseover", () => {
+    activarCoverGerardo()
+    reproducirMusicaGerardo()
+})
+
+$perfilPaaxGerardo.addEventListener("mouseout", () => {
+    desactivarCoverGerardo()
+    detenerMusicaGerardo()
+})
+
+function reproducirMusicaGerardo() {
+    $playMusicGerardo.play()
+}
+
+function detenerMusicaGerardo() {
+    $playMusicGerardo.pause()
+}
+
+function activarCoverGerardo() {
+    $coverImgGerardo.style.opacity = 0.5
+}
+
+function desactivarCoverGerardo() {
+    $coverImgGerardo.style.opacity = 1
+}
+
+
+/* ------------------ FUNCIONES PARA EL PERFIL DE VÍCTOR ------------------*/
+var $perfilPaaxVictor = document.querySelector("#perfil-paax-victor")
+var $playMusicVictor = document.querySelector("#audioVictor")
+var $coverImgVictor = document.querySelector("#coverVictor")
+
+$perfilPaaxVictor.addEventListener("mouseover", () => {
+    activarCoverVictor()
+    reproducirMusicaVictor()
+})
+
+$perfilPaaxVictor.addEventListener("mouseout", () => {
+    desactivarCoverVictor()
+    detenerMusicaVictor()
+})
+
+function reproducirMusicaVictor() {
+    $playMusicVictor.play()
+}
+
+function detenerMusicaVictor() {
+    $playMusicVictor.pause()
+}
+
+function activarCoverVictor() {
+    $coverImgVictor.style.opacity = 0.5
+}
+
+function desactivarCoverVictor() {
+    $coverImgVictor.style.opacity = 1
+}
+
+
+/* ------------------ FUNCIONES PARA EL PERFIL DE NIVER ------------------*/
+var $perfilPaaxNiver = document.querySelector("#perfil-paax-niver")
+var $playMusicNiver = document.querySelector("#audioNiver")
+var $coverImgNiver = document.querySelector("#coverNiver")
+
+$perfilPaaxNiver.addEventListener("mouseover", () => {
+    activarCoverNiver()
+    reproducirMusicaNiver()
+})
+
+$perfilPaaxNiver.addEventListener("mouseout", () => {
+    desactivarCoverNiver()
+    detenerMusicaNiver()
+})
+
+function reproducirMusicaNiver() {
+    $playMusicNiver.play()
+}
+
+function detenerMusicaNiver() {
+    $playMusicNiver.pause()
+}
+
+function activarCoverNiver() {
+    $coverImgNiver.style.opacity = 0.5
+}
+
+function desactivarCoverNiver() {
+    $coverImgNiver.style.opacity = 1
 }

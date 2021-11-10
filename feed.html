@@ -1,225 +1,996 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/feed.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <title>Inicio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-    <!-- HEADER -->
-    <!-- Menú superior -->
-    <nav class="position-fixed navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1); z-index: 999; width: 100%;">
-        <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span> <img src="./assets/img/list.svg" alt=""> </span>
-        </button>
-      
-        <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="text-white nav-link" href="./feed.html">Feed<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="text-white nav-link" href="./followers_profile.html">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="text-white nav-link " href="./dashboard.html" tabindex="-1" aria-disabled="false">Dashboard</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
-            <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
-          </form>
-        </div>
-      </nav>    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feed</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/home.css">
+        <link rel="stylesheet" href="./assets/css/feedprueba.css">
+    </head>
 
-<!--Sección del feed, menu y coontenido-->
 
-    <main class="container__feed">
+    <body>
 
-        <!--Sección del menu de navegación lateral-->
-        <section class="menu__feed">
-
-            <div class="menu__navegacion">
-                <div class="background__one topics__menu page-item active current-page">
-                    <a class="link-one page" href="https://jhancock532.github.io/link-hover-effects/">Reseñas</a>
-                </div>
-
-                <div class="background__two topics__menu page-item active current-page">
-                    <a class="link-two page" href="https://jhancock532.github.io/link-hover-effects/">Top-ten</a>
-                </div>
-
-                <div class="background__three topics__menu page-item active current-page">
-                    <a class="link-three page" href="https://jhancock532.github.io/link-hover-effects/">Noticias</a>
-                </div>
-
-                <div class="background__four topics__menu page-item active current-page">
-                    <a class="link-four page" href="https://jhancock532.github.io/link-hover-effects/">Playlist</a>
-                </div>
-
+        <!-- Header -->
+        <nav class="position-fixed navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1); z-index: 999; width: 100%;">
+            <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span> <img src="./assets/img/list.svg" alt=""> </span>
+            </button>
+        
+            <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
+                <li class="nav-item active">
+                <a class=" feed text-white nav-link" href="./feed.html"><img src="./assets/img/hogar.png" alt=""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="feed text-white nav-link" href="./feedgeneros.html"><img src="./assets/img/headphones.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                <a class="feed text-white nav-link " href="./followers_profile.html" tabindex="-1" aria-disabled="false"><img src="./assets/img/perfil.png" alt=""></a>
+                </li>
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
+                <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
+            </form>
             </div>
+        </nav>  
 
+        
+        <!-- PRINCIPAL -->
+        <main class="contenedor-general">
+            <section class="contenedor-general__perfiles-usuario">
+                <!-- Carta Frida -->
+                <article class="card-user-main">
 
-            <!--   <div class="navegacion__menu">
-                <li class="page-item  active current-page"><a class="page">Reseñas</a></li>
-                <li class="page-item active current-page"><a class="page">Playlist</a></li>
-                <li class="page-item active current-page"><a class="page">Top-ten</a></li>
-                <li class="page-item active current-page"><a class="page">Noticias</a></li>
-            </div> -->
-        </section>
+                    <img class="card__img-back" src="assets/img/linda.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
 
-    
-        <!--Sección de contenido feed-->
-        <seccion class="box__slides">
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/linda.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">Tokischa</p>
+                                    </figure>
 
-            <div class="slides">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Linda</p>
+                                    </figure>
 
-                <div class="slide" >
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum tempora earum molestiae consequuntur asperiores libero fuga beatae at quas cumque ipsa dolorem quisquam vero, ipsam sunt dolores quo? Nostrum.</p>
-                </div>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Linda</p>
+                                    </figure>
+                                </aside>
+                            </div>
 
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
 
-                <div class="slide" >
-
-               
-                <!-- TOP ARTISTAS -->
-                <div class="row pt-5">
-                    <div class="col">
-                        <section class="carousel">
-                            <h2 class="top-ti">TOP ARTISTAS</h2>
-                            <div class="carousel__container">
-                                <div class="row d-flex justify-content-center w-100">
-                                    <div class="carousel--item">
-                                        <img class="carousel--item__img"
-                                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/billie-eilish-nuevo-disco-1619599355.jpg?crop=1.00xw:0.916xh;0,0.0843xh&resize=640:*"
-                                        alt="item" />
-                                        <div class="carousel--item__details">
-                                            <p class="carousel--item__details--title">BILLIE EILISH</p>
-                                        </div>
-                                    </div>
-                                
-                                    <!-- Segunda Imagen -->
-                                    <div class="carousel--item">
-                                        <img class="carousel--item__img"
-                                        src="https://www.eluniversal.com.mx/sites/default/files/2021/04/23/bts-lv_0.jpeg"
-                                        alt="item" />
-                                        <div class="carousel--item__details">
-                                            <p class="carousel--item__details--title">BTS</p>                                   
-                                        </div>
-                                    </div>
-    
-                                    <!-- Tercera Imagen -->
-                                    <div class="carousel--item">
-                                        <img class="carousel--item__img"
-                                        src="https://pbs.twimg.com/media/E3sWEB2WEAYW0P6.jpg"
-                                        alt="item" />
-                                        <div class="carousel--item__details">
-                                            <p class="carousel--item__details--title">DOJA CAT</p>
-                                        </div>
-                                    </div>
-    
-                                    <!-- Quinta Imagen -->
-                                    <div class="carousel--item">
-                                        <img class="carousel--item__img"
-                                        src="https://yt3.ggpht.com/gCzmAWJBMGq8oWajAUs6UVzw1V0I2WSRYOv-nTsmmW9WK384gh9nJm1BVnfAmGqRYKjDytAcTw=s900-c-k-c0x00ffffff-no-rj"
-                                        alt="item" />
-                                        <div class="carousel--item__details">
-                                            <p class="carousel--item__details--title">BAD BUNNY</p>
-                                        </div>
-                                    </div>
-                                    <!-- rosalia -->
-                                    <div class="carousel--item">
-                                        <img class="carousel--item__img"
-                                        src="https://i.pinimg.com/originals/e1/b7/69/e1b769726b6edbe2c24209c43594ec64.jpg"
-                                        alt="item" />
-                                        <div class="carousel--item__details">
-                                            <p class="carousel--item__details--title">ROSALÍA</p>
-                                        </div>
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">06/11/2021 20:00</p>
                                     </div>
                                 </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"La colaboración que no sabía que necesitaba"</h2>
+                                    <p>
+                                        El dembow es el hilo conductor de una canción de la que poco a poco fuimos conociendo los primeros acordes a modo de adelanto. Pero como viene siendo habitual en Rosalía, las raíces folclóricas, urbanas y latinas también hacen acto de presencia en la colaboración junto a la dominicana y a pesar del éxito que está teniendo en plataformas como YouTube -donde ya roza los dos millones de streams- el lanzamiento vuelve a estar rodeado de comentarios que apuntan a una posible apropiación cultural de la española. 
+                                    </p>
+                                </div>
+
                             </div>
-                        </section>
+                        </div>
+                        <!--Este bloque de código contiene los iconos de edit, delete
+                        share and Comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <!-- Carta Gerardo -->
+                <article class="card-user-main">
+                    
+                    <img class="card__img-back" src="assets/img/linda.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/linda.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">Tokischa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Linda</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Linda</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/gerardo.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Gerardo Martínez</h3>
+                                        <p class="card__date-user-post">04/10/2021 22:20</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"La rola que no me ha dejado dormir"</h2>
+                                    <p>
+                                        Esta canción la debes oír si o si, tiene ese flow que te hace pasarla increible en cualquier lugar que vaya, ademas que la calidad de audio es otro nivel. 
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene los iconos de edit, delete
+                        share and Comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <!-- carta Daniboy -->
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/savage.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
+                    sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+                    <img> como background y poder modificarla con javascript-->
+                    <section class="card__overtext">
+
+                        <!--Este bloque contiene solo los textos de contenido de reseña
+                        título de post, datos del artista e iconos.-->
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/savage.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">aespa</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Savage</p>
+                                    </figure>
+                                </aside>
+                            </div>
+
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
+
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">Ayer 19:47</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
+                                    <p>
+                                        “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
+                        el botón de comentar-->
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
+
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+                    
+                </article>
+            </section>
+
+            <!--Esta sección es para las Playlist de Spotify-->
+            <aside class="playlisttt">
+                <!-- Primera playlist -->
+                <div class="playlist-card card" style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Rodrigo_Leyva.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Rodrigo Leyva </h3>
+                                <p class="card__date-user-post">09/11/2021 17:30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/3r7ml69vZXNxw0LmsLdgBd?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                 </div>
+
+                <!-- Segunda Playlist -->
+                <div class="playlist-card card" style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Carlos_Eduardo.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Carlos Eduardo</h3>
+                                <p class="card__date-user-post">02/11/2021 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/7jqWIjjOKZ7ekJpNzqnI4S?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
                 </div>
 
-                <div class="slide">
-
-                    <h1>Tarjetas</h1>
-                
+                <!-- Tercera Playlist -->
+                <div class=" playlist-card card-playlist" style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Laura.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Laura Andrés</h3>
+                                <p class="card__date-user-post">20/10/2021 09:30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/4CXFAROvbwkec1FEmKm5yC?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
                 </div>
 
-                <div class="slide">
-                <h1>Noticias</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reprehenderit aliquid iste inventore et, necessitatibus repellendus impedit soluta sunt. Vitae ipsam exercitationem perferendis accusantium laudantium, deserunt id aperiam cumque at.    </p>
+                <!-- Cuarta Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Magali.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Magali Vega</h3>
+                                <p class="card__date-user-post">18/10/2021 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/1TNg7JCxifAjwrnQARimex?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
                 </div>
 
-            </div> 
-   
-        </seccion>
-    </main>
-    
-    <script type="text/javascript">
-    function getPageList (totalPages, page, maxLength){
-        function range(start, end){
-            return Array.from(Array(end -start +1), ( , i) => i + start);
-            }
+                <!-- Cuarta Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/daniela.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Daniela Domínguez</h3>
+                                <p class="card__date-user-post">18/10/2021 10:45</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/2Mrg5HSn44Go4VCVLP5eBL?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>  
 
-        var sideWidth= maxLength < 9 ? 1 : 2;
-        var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-        var rightWidth = (maxLength -sideWidth * 2 - 3) >> 1;
+                <!-- Quinta Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/victor.jfif">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Víctor Izquierdo</h3>
+                                <p class="card__date-user-post">17/10/2021 16:35</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/2qaSm25y7PyV2jxf16zyYx?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-            if (totalPages <= maxLength){
-                return range(1, totalPages);
-            }
+                <!-- Sexta Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/niver.png">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Niver Martínez</h3>
+                                <p class="card__date-user-post">15/10/2021 10:16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/album/0K4ZqiKFUmzWCqU8hiQ3u6?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-            if(page <= maxLength - sideWidth - 1 - rightWidth) {
-                return range(1, maxLength - sideWidth - 1). concat(0, range(totalPages - sideWidth +1, totalPages));
-            }
+                <!-- Septima Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/gerardo.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Gerardo Martínez</h3>
+                                <p class="card__date-user-post">15/10/2021 09:47</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/3q0iTL5dkxgsakxPOduIPT?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-            if(page >= totalPages - sideWidth - 1 - rightWidth){
-                return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages));
+                <!-- 8va Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Emmanuel.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Emmanuel Gomez</h3>
+                                <p class="card__date-user-post">14/10/2021 21:21</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/3BjLs4NfcIcymka19DbJqo?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-                return range(1, sideWidth).concat(0 , range(page -leftWidth, page + rightWidth), 0, range(totalPages - sideWidth));
-            }
+                <!-- 9na Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Manuel.png">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Manuel Domínguez</h3>
+                                <p class="card__date-user-post">14/10/2021 20:35</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/1XJ4iB9PkTzZoVYhq5ba4R?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-            $(function(){
-                var numberOfItems = $(".box__slides . slides").length;
-                var limitPerPage = 1;
-                var totalPages = Math.ceil(numberOfItems / limitPerPage);
-                var navegacion__menuSize = 7;
-                var currentPage;
+                <!-- 10 Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Leo.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Leonardo Guzmán</h3>
+                                <p class="card__date-user-post">14/10/2021 20:35</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/5BOwgiJkGJdencWwJPzWDk?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-                function showPage(wichPage){
-                    if (wichPage < 1 || wichPage > totalPages) return false;
+                <!-- 11 Playlist -->
+                <div class=" playlist-card card " style="width: 400px;">
+                    <div class="card-header">
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/daniel.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Ricardo Alvarez</h3>
+                                <p class="card__date-user-post">14/10/2021 20:35</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/5BOwgiJkGJdencWwJPzWDk?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
 
-                    currentPage = wichPage;
+            </aside>   
+        </main>
+        
 
-                    $(".box__slides .slides").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
-
-                    $(".navegacion__menu li").slice(1, -1).remove();
-
-                    getPageList(totalPages, currentPage, navegacion__menuSize).forEach(item => {
-                        $("<li>").addClass("slide").addClass(item ? "current-page" : botones")
-                            .toggleClass("active", item === currentPage). append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore("next-page")
-
-                    });
-
-                    $(".previous-page".toggleClass("disable", currentPage === 1);
-                    $(".navegacion__menu").append(
-                        $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void((0)"}).text(item || "...")).insertBefore(".next-page")
-                    )
-                }
-            });
-        }
-
-    </script>
-
-</body>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
 </html>

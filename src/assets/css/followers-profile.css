@@ -289,9 +289,9 @@ a[href="#"] {
 }
 
 /* MEDIA QUERIES 
-
    Apartir de aquí se agregan los media queries para volver
-   responsive la página en distintos tamaños de display */
+   responsive la página en distintos tamaños de display 
+*/
 
 
 @media screen and (max-width: 360px) {

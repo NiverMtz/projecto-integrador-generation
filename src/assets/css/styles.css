@@ -148,3 +148,9 @@ img {
     color: var(--rosaRGBA) !important;
     text-decoration: none !important;
 }
+
+/* BOTONES LOGIN Y SIGNIN RADIUS NAVBAR*/
+.card__elementos-boton{
+    border-radius: var(--borderRadius);
+    padding: 4px 16px;
+}

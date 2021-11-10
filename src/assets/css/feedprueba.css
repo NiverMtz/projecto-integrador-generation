@@ -1,0 +1,64 @@
+.feed {
+    width: 50px;
+}
+
+.contenedor-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+.contenedor-general__perfiles-usuario {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.playlisttt {
+    width: auto;
+}
+
+.card-user-main {
+    align-self: center;
+    height: 850px;
+    width: 700px;
+}
+
+.card__info {
+    height: 300px;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.playlist-card{
+    background-color:var(--bgcard);
+}
+
+
+/* MEDIA QUERIES 
+   Apartir de aquí se agregan los media queries para volver
+   responsive la página en distintos tamaños de display 
+*/
+
+@media screen and (max-width: 425px) {
+
+    .card-user-main {
+        margin: 20px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        border-radius: var(--borderRadius);
+        box-shadow: 
+        rgba(240, 46, 170, 0.4) 0px 5px, 
+        rgba(240, 46, 170, 0.3) 0px 10px, 
+        rgba(240, 46, 170, 0.2) 0px 15px, 
+        rgba(240, 46, 170, 0.1) 0px 20px, 
+        rgba(240, 46, 170, 0.05) 0px 25px;
+        display: flex;
+        position: relative;
+        height: 460px;
+    }
+}

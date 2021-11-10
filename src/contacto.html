@@ -182,7 +182,7 @@
                     </div>
                 </div>
      
-                <div class="tarjetas">
+                <!-- <div class="tarjetas">
 
                     <div class="tarjeta__flip">
                         <div class="pregunta__frec"><h4>¿Cómo cambiar tu banner?</h4></div>
@@ -190,7 +190,7 @@
                             <p>Ingresa a la sección de "Mi pérfil", ahora ingres a la sección de configuración, por ulltimo en la opción cambiar banner</p> 
                         </div>
                     </div>
-                </div>
+                </div> -->
       
                 <div class="tarjetas">
         
@@ -216,11 +216,11 @@
     
                 <div class="mailbox">
 
-                    <form class="form">
+                    <form class="form" action="https://formspree.io/f/meqvyjvw" method="POST" id="my-form">
         
                         <p class="user__name">
                             <p>Nombre de usuario</p>
-                            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input" placeholder="EjemploUsuario" id="name" />
+                            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input" placeholder="EjemploUsuario" id="name"/>
                          </p>
 
                         <p class="email">
@@ -239,9 +239,13 @@
                             <div class="ease">
                             </div>
                         </div>
+
                     </form>
 
                 </div>
+
+                <div id="status" class="error">Mensaje enviado</div>
+
             </div>
         </div>
 
@@ -532,5 +536,6 @@
             </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
   </body>
 </html> 

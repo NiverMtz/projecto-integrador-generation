@@ -1,0 +1,61 @@
+.feed {
+    width: 50px;
+}
+
+.contenedor-general {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+    
+.playlist-card {
+    background-color:var(--bgcard);
+}
+
+.playlisttt {
+    flex-grow: 1;
+}
+
+.contenedor-general__perfiles-usuario {
+    flex-grow: 1;
+}
+
+.card__img-user-post {
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenedor-general {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .contenedor-general__perfiles-usuario {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        flex-grow: 0;
+        margin-left: 120px;
+    }
+    
+    .playlisttt {
+        max-width: 350px;
+    }
+    
+    .card-user-main {
+        height: 850px;
+        width: 90%;
+        margin-left: 50px;
+    }
+    
+    .card__info {
+        height: 300px;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+}

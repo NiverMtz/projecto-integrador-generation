@@ -4,7 +4,6 @@
 /* Las dimensiones que se muestran a continuación son para
 un display por default de 425px. Después se agregarán las media queries para 
 displays más grandes */ 
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -160,6 +159,11 @@ como fotografía, nombre e iconoce de compartir*/
     cursor: pointer;
 }
 
+/*Margen para las play list*/
+.play{
+    margin: 160px;
+}
+
 /* MEDIA QUERIES 
 
    Apartir de aquí se agregan los media queries para volver
@@ -167,9 +171,8 @@ como fotografía, nombre e iconoce de compartir*/
    
 */
 
-
 @media screen and (min-width: 360px) and (max-width: 375px) {
-
+    
     .user-navbar__id h2 {
         font-size: 1.3rem;
     }
@@ -202,11 +205,7 @@ como fotografía, nombre e iconoce de compartir*/
         right: 20px;
     }
 
-    .play{
-        margin: 160px;
-        margin-top: 500px;;
-        margin-bottom: 100px;
-    }
+  
 }
 
 
@@ -320,4 +319,9 @@ como fotografía, nombre e iconoce de compartir*/
         height: 100px;
         margin-top: -60px;
     }
+}
+@media screen and (max-width: 900px){
+    .play{
+        margin: 25px; 
+    }  
 }

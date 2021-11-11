@@ -1,1263 +1,1296 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feed</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/home.css">
-  <link rel="stylesheet" href="./assets/css/feedprueba.css">
-  <link rel="stylesheet" href="./assets/css/fedgeneros.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/paax-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/feedprueba.css">
+    <link rel="stylesheet" href="./assets/css/fedgeneros.css">
 </head>
+
 <body>
 
     <!-- Header -->
-    <nav class="position-fixed navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1); z-index: 999; width: 100%;">
-        <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span> <img src="./assets/img/list.svg" alt=""> </span>
+    <nav class="position-fixed navbar navbar-expand-lg navbar-light"
+        style="background-color: rgba(240, 46, 170, 1); z-index: 999; width: 100%;">
+        <a class="navbar-brand m-0" href="./index.html">
+            <h1 class="brand--font">PAAX</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span> <img src="./assets/img/list.svg" alt=""> </span>
         </button>
-      
+
         <div class="nav--font collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class=" feed text-white nav-link" href="./feed.html"><img src="./assets/img/hogar.png" alt=""><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="feed text-white nav-link" href="./feedgeneros.html"><img src="./assets/img/headphones.png" alt=""></a>
-            </li>
-            <li class="nav-item">
-              <a class="feed text-white nav-link " href="./followers_profile.html" tabindex="-1" aria-disabled="false"><img src="./assets/img/perfil.png" alt=""></a>
-            </li>
-            
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="card__elementos-boton bg-white border border-light"><a class="text--pink" href="./login.html">Login</a></button>
-            <button class="card__elementos-boton bg-transparent border border-light mx-3"><a class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
-          </form>
+            <ul class="nav--font w-75 d-flex justify-content-sm-around navbar-nav m-auto">
+                <li class="nav-item active">
+                    <a class=" feed text-white nav-link" href="./feed.html"><img src="./assets/img/hogar.png"
+                            alt=""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="feed text-white nav-link" href="./feedgeneros.html"><img src="./assets/img/headphones.png"
+                            alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="feed text-white nav-link " href="./followers_profile.html" tabindex="-1"
+                        aria-disabled="false"><img src="./assets/img/perfil.png" alt=""></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="card__elementos-boton bg-white border border-light"><a class="text--pink"
+                        href="./login.html">Login</a></button>
+                <button class="card__elementos-boton bg-transparent border border-light mx-3"><a
+                        class="text-white text-decoration-none" href="./registro.html">Sign In</a></button>
+            </form>
         </div>
-      </nav>
+    </nav>
 
-      <!-- SecciÓn K-POP -->
-      
-     <div class="banner_genero_kpop">
-       <img class="banner_genero_img" src="./assets/img/kpop_banner.gif">
-       <div class="banner_genero_mascara">
-         <h2 class="banner_genero_titulo">K-POP</h2>
-       </div>
+    <!-- SecciÓn K-POP -->
 
-     </div>
-      
+    <div class="banner_genero_kpop">
+        <img class="banner_genero_img" src="./assets/img/kpop_banner.gif">
+        <div class="banner_genero_mascara">
+            <h2 class="banner_genero_titulo">K-POP</h2>
+        </div>
+
+    </div>
+
 
     <main class="main">
-      <article class="card-user-main">
+        <article class="card-user-main">
 
-          <img class="card__img-back" src="assets/img/savage.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+            <img class="card__img-back" src="assets/img/discobts.jpg" alt="">
+            <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+            <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/savage.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">aespa</p>
-                          </figure>
+                <div class="card__overtext-superior">
+                    <div class="card__info">
+                        <figure class="card__info-media-album">
+                            <img class="card__info-media-img" src="assets/img/discobts.jpg">
+                        </figure>
+                        <aside class="card__info-aside">
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                <p class="card_info-texto">BTS</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Savage</p>
-                          </figure>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                <p class="card_info-texto">Map of the Soul:7</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Savage</p>
-                          </figure>
-                      </aside>
-                  </div>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                <p class="card_info-texto">Make it Right</p>
+                            </figure>
+                        </aside>
+                    </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                    <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                    <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">Ayer 19:47</p>
-                          </div>
-                      </div>
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Fernanda.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Fernanda</h3>
+                                <p class="card__date-user-post">11/11/2021 19:47</p>
+                            </div>
+                        </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
-                          <p>
-                              “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
-                          </p>
-                      </div>
+                        <div class="card__content-post">
+                            <h2 class="card__post-titulo">"Gracias ARMY"</h2>
+                            <p>
+                                Una canción que resulta muy emotiva de principio a fin, en la que demuestran el
+                                agradecimiento que le tienen a alguien especial, pues los lograron sacar de una profunda
+                                tristeza en la que se encontraban, el videoclip esta lleno de referencias, vayan a
+                                verlo.
+                            </p>
+                        </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene el icono de share y
+                    </div>
+                </div>
+                <!--Este bloque de código contiene el icono de share y
               el botón de comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                <div class="card__elementos">
+                    <figure class="card__elementos-iconos">
+                        <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                        <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                    </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                    <figure class="card__elementos-boton">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                    </figure>
+                </div>
+            </section>
+
+        </article>
 
 
-      <article class="card-user-main">
+        <article class="card-user-main">
 
-          <img class="card__img-back" src="assets/img/tongue.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+            <img class="card__img-back" src="assets/img/theshow.jpg" alt="">
+            <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+            <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/tongue.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Maribou State</p>
-                          </figure>
+                <div class="card__overtext-superior">
+                    <div class="card__info">
+                        <figure class="card__info-media-album">
+                            <img class="card__info-media-img" src="assets/img/theshow.jpg">
+                        </figure>
+                        <aside class="card__info-aside">
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                <p class="card_info-texto">Black Pink</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Tongue EP</p>
-                          </figure>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                <p class="card_info-texto">The Show</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Tongue</p>
-                          </figure>
-                      </aside>
-                  </div>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                <p class="card_info-texto">How You Like That</p>
+                            </figure>
+                        </aside>
+                    </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                    <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                    <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">Ayer 15:22</p>
-                          </div>
-                      </div>
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Rodrigo_Leyva.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Rodrigo Leyva</h3>
+                                <p class="card__date-user-post">11/11/2021 15:22</p>
+                            </div>
+                        </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Sin palabras"</h2>
-                          <p>
-                              'Tongue' presenta la sublime voz de Holly Walker y es igualmente hermosa para escuchar en casa o en un club. 'Larks Rise' es una oferta considerada y de conducción suave. Forjar grabaciones de campo e instrumentación en vivo con ritmos house rotos y ondas de subgraves es donde están sus cabezas, y está produciendo algunos resultados muy agradables.
-                          </p>
-                      </div>
+                        <div class="card__content-post">
+                            <h2 class="card__post-titulo">"La música que ha dado de que hablar"</h2>
+                            <p>
+                                Como todos ya sabemos, esta rola ha sonado en todo tiktok y no es para más, pues ademas
+                                de la calidad de sonido que esta agrupación nos ha dado, es todo un hit.
+                            </p>
+                        </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
+                    </div>
+                </div>
+                <!--Este bloque de código contiene los iconos de edit, delete
               share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                <div class="card__elementos">
+                    <figure class="card__elementos-iconos">
+                        <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                        <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                    </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                    <figure class="card__elementos-boton">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                    </figure>
+                </div>
+            </section>
+
+        </article>
 
 
-      <article class="card-user-main">
+        <article class="card-user-main">
 
-          <img class="card__img-back" src="assets/img/linda.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+            <img class="card__img-back" src="assets/img/twice-pw.jpeg" alt="">
+            <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+            <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/linda.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Tokischa</p>
-                          </figure>
+                <div class="card__overtext-superior">
+                    <div class="card__info">
+                        <figure class="card__info-media-album">
+                            <img class="card__info-media-img" src="assets/img/twice-pw.jpeg">
+                        </figure>
+                        <aside class="card__info-aside">
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                <p class="card_info-texto">TWICE</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Linda</p>
-                          </figure>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                <p class="card_info-texto">Perfect World</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Linda</p>
-                          </figure>
-                      </aside>
-                  </div>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                <p class="card_info-texto">Good at Love</p>
+                            </figure>
+                        </aside>
+                    </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                    <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                    <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">06/11/2021 20:00</p>
-                          </div>
-                      </div>
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Mercedes.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Mercedes</h3>
+                                <p class="card__date-user-post">06/11/2021 20:00</p>
+                            </div>
+                        </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"La colaboración que no sabía que necesitaba"</h2>
-                          <p>
-                              El dembow es el hilo conductor de una canción de la que poco a poco fuimos conociendo los primeros acordes a modo de adelanto. Pero como viene siendo habitual en Rosalía, las raíces folclóricas, urbanas y latinas también hacen acto de presencia en la colaboración junto a la dominicana y a pesar del éxito que está teniendo en plataformas como YouTube -donde ya roza los dos millones de streams- el lanzamiento vuelve a estar rodeado de comentarios que apuntan a una posible apropiación cultural de la española. 
-                          </p>
-                      </div>
+                        <div class="card__content-post">
+                            <h2 class="card__post-titulo">"Me dejo sin aliento"</h2>
+                            <p>
+                                Ya, pero hablemos de lo variada que es la discografía de twice, un día estás escuchando
+                                candy pop y al otro te lanzan ESTO, con ellas no sabes lo que te espera porque pueden
+                                adaptarse a cualquier concepto.
+                            </p>
+                        </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
+                    </div>
+                </div>
+                <!--Este bloque de código contiene los iconos de edit, delete
               share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                <div class="card__elementos">
+                    <figure class="card__elementos-iconos">
+                        <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                        <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                    </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                    <figure class="card__elementos-boton">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                    </figure>
+                </div>
+            </section>
 
-      <article class="card-user-main">
+        </article>
 
-          <img class="card__img-back" src="assets/img/gorillaz.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+        <article class="card-user-main">
+
+            <img class="card__img-back" src="assets/img/Renaissance.jpg" alt="">
+            <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+            <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/gorillaz.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Gorillaz</p>
-                          </figure>
+                <div class="card__overtext-superior">
+                    <div class="card__info">
+                        <figure class="card__info-media-album">
+                            <img class="card__info-media-img" src="assets/img/Renaissance.jpg">
+                        </figure>
+                        <aside class="card__info-aside">
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                <p class="card_info-texto">Super Junior</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto text-center">Song Machine</p>
-                          </figure>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                <p class="card_info-texto text-center">The Renaissance</p>
+                            </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">The Pink Phantom</p>
-                          </figure>
-                      </aside>
-                  </div>
+                            <figure class="card__info-content">
+                                <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                <p class="card_info-texto">Burn the Floor</p>
+                            </figure>
+                        </aside>
+                    </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                    <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                    <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">05/11/2021 15:45</p>
-                          </div>
-                      </div>
+                        <div class="card__info-user-post">
+                            <figure class="card__figure-user-post">
+                                <img class="card__img-user-post" src="assets/img/Magali.jpg">
+                            </figure>
+                            <div class="card__data-user-post">
+                                <h3 class="card__name-user-post">Magali Vega</h3>
+                                <p class="card__date-user-post">01/11/2021 12:15</p>
+                            </div>
+                        </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Gorillaz te lleva por un tramo amplio de géneros musicales "</h2>
-                          <p>
-                              "The Pink Phantom" surgió a partir de una anécdota de Albarn cuando era niño al haberse subido a un auto de Elton John. Cabe destacar que es un track arriesgado, pero bien logrado, pues se entrecruza un estilo urbano con 6LACK y un ambiente pop agregado con Elton sin sentirse forzado.
-                          </p>
-                      </div>
+                        <div class="card__content-post">
+                            <h2 class="card__post-titulo">"Para ellos calidad y cantidad van de la mano "
+                            </h2>
+                            <p>
+                                Estos jóvenes no decepcionan jamás pues piensan no solo en la calidad auditiva de su
+                                contenido, también en la cantidad de canciones que tiene cada disco, se los recomiento
+                                mil.
+                            </p>
+                        </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
+                    </div>
+                </div>
+                <!--Este bloque de código contiene los iconos de edit, delete
               share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                <div class="card__elementos">
+                    <figure class="card__elementos-iconos">
+                        <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                        <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                    </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                    <figure class="card__elementos-boton">
+                        <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                        <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                    </figure>
+                </div>
+            </section>
+
+        </article>
 
 
         <!-- Sección Rock -->
-      
-  <div class="banner_genero">
-    <img class="banner_genero_img" src="./assets/img/rock_banner.gif">
-    <div class="banner_genero_mascara">
-      <h2 class="banner_genero_titulo">ROCK</h2>
-    </div>
-  </div>
 
-  
-  <main class="main">
-    <article class="card-user-main">
-
-        <img class="card__img-back" src="assets/img/savage.jpg" alt="">
-        <!--Esta parte es un contenedor que está en posicion absoluta
-        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-        <img> como background y poder modificarla con javascript-->
-        <section class="card__overtext">
-
-            <!--Este bloque contiene solo los textos de contenido de reseña
-            título de post, datos del artista e iconos.-->
-            <div class="card__overtext-superior">
-                <div class="card__info">
-                    <figure class="card__info-media-album">
-                        <img class="card__info-media-img" src="assets/img/savage.jpg">
-                    </figure>
-                    <aside class="card__info-aside">
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                            <p class="card_info-texto">aespa</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/album_icon.svg">
-                            <p class="card_info-texto">Savage</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/song_icon.svg">
-                            <p class="card_info-texto">Savage</p>
-                        </figure>
-                    </aside>
-                </div>
-
-                <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                <div class="card__post">
-
-                    <div class="card__info-user-post">
-                        <figure class="card__figure-user-post">
-                            <img class="card__img-user-post" src="assets/img/frida.jpg">
-                        </figure>
-                        <div class="card__data-user-post">
-                            <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                            <p class="card__date-user-post">Ayer 19:47</p>
-                        </div>
-                    </div>
-
-                    <div class="card__content-post">
-                        <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
-                        <p>
-                            “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <!--Este bloque de código contiene el icono de share y
-            el botón de comentar-->
-            <div class="card__elementos">
-                <figure class="card__elementos-iconos">
-                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                </figure>
-
-                <figure class="card__elementos-boton">
-                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                    <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                </figure>
-            </div>
-        </section>
-        
-    </article>
-
-
-    <article class="card-user-main">
-
-        <img class="card__img-back" src="assets/img/tongue.jpg" alt="">
-        <!--Esta parte es un contenedor que está en posicion absoluta
-        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-        <img> como background y poder modificarla con javascript-->
-        <section class="card__overtext">
-
-            <!--Este bloque contiene solo los textos de contenido de reseña
-            título de post, datos del artista e iconos.-->
-            <div class="card__overtext-superior">
-                <div class="card__info">
-                    <figure class="card__info-media-album">
-                        <img class="card__info-media-img" src="assets/img/tongue.jpg">
-                    </figure>
-                    <aside class="card__info-aside">
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                            <p class="card_info-texto">Maribou State</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/album_icon.svg">
-                            <p class="card_info-texto">Tongue EP</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/song_icon.svg">
-                            <p class="card_info-texto">Tongue</p>
-                        </figure>
-                    </aside>
-                </div>
-
-                <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                <div class="card__post">
-
-                    <div class="card__info-user-post">
-                        <figure class="card__figure-user-post">
-                            <img class="card__img-user-post" src="assets/img/frida.jpg">
-                        </figure>
-                        <div class="card__data-user-post">
-                            <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                            <p class="card__date-user-post">Ayer 15:22</p>
-                        </div>
-                    </div>
-
-                    <div class="card__content-post">
-                        <h2 class="card__post-titulo">"Sin palabras"</h2>
-                        <p>
-                            'Tongue' presenta la sublime voz de Holly Walker y es igualmente hermosa para escuchar en casa o en un club. 'Larks Rise' es una oferta considerada y de conducción suave. Forjar grabaciones de campo e instrumentación en vivo con ritmos house rotos y ondas de subgraves es donde están sus cabezas, y está produciendo algunos resultados muy agradables.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <!--Este bloque de código contiene los iconos de edit, delete
-            share and Comentar-->
-            <div class="card__elementos">
-                <figure class="card__elementos-iconos">
-                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                </figure>
-
-                <figure class="card__elementos-boton">
-                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                    <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                </figure>
-            </div>
-        </section>
-        
-    </article>
-
-
-    <article class="card-user-main">
-
-        <img class="card__img-back" src="assets/img/linda.jpg" alt="">
-        <!--Esta parte es un contenedor que está en posicion absoluta
-        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-        <img> como background y poder modificarla con javascript-->
-        <section class="card__overtext">
-
-            <!--Este bloque contiene solo los textos de contenido de reseña
-            título de post, datos del artista e iconos.-->
-            <div class="card__overtext-superior">
-                <div class="card__info">
-                    <figure class="card__info-media-album">
-                        <img class="card__info-media-img" src="assets/img/linda.jpg">
-                    </figure>
-                    <aside class="card__info-aside">
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                            <p class="card_info-texto">Tokischa</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/album_icon.svg">
-                            <p class="card_info-texto">Linda</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/song_icon.svg">
-                            <p class="card_info-texto">Linda</p>
-                        </figure>
-                    </aside>
-                </div>
-
-                <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                <div class="card__post">
-
-                    <div class="card__info-user-post">
-                        <figure class="card__figure-user-post">
-                            <img class="card__img-user-post" src="assets/img/frida.jpg">
-                        </figure>
-                        <div class="card__data-user-post">
-                            <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                            <p class="card__date-user-post">06/11/2021 20:00</p>
-                        </div>
-                    </div>
-
-                    <div class="card__content-post">
-                        <h2 class="card__post-titulo">"La colaboración que no sabía que necesitaba"</h2>
-                        <p>
-                            El dembow es el hilo conductor de una canción de la que poco a poco fuimos conociendo los primeros acordes a modo de adelanto. Pero como viene siendo habitual en Rosalía, las raíces folclóricas, urbanas y latinas también hacen acto de presencia en la colaboración junto a la dominicana y a pesar del éxito que está teniendo en plataformas como YouTube -donde ya roza los dos millones de streams- el lanzamiento vuelve a estar rodeado de comentarios que apuntan a una posible apropiación cultural de la española. 
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <!--Este bloque de código contiene los iconos de edit, delete
-            share and Comentar-->
-            <div class="card__elementos">
-                <figure class="card__elementos-iconos">
-                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                </figure>
-
-                <figure class="card__elementos-boton">
-                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                    <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                </figure>
-            </div>
-        </section>
-        
-    </article>
-
-    <article class="card-user-main">
-
-        <img class="card__img-back" src="assets/img/gorillaz.jpg" alt="">
-        <!--Esta parte es un contenedor que está en posicion absoluta
-        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-        <img> como background y poder modificarla con javascript-->
-        <section class="card__overtext">
-
-            <!--Este bloque contiene solo los textos de contenido de reseña
-            título de post, datos del artista e iconos.-->
-            <div class="card__overtext-superior">
-                <div class="card__info">
-                    <figure class="card__info-media-album">
-                        <img class="card__info-media-img" src="assets/img/gorillaz.jpg">
-                    </figure>
-                    <aside class="card__info-aside">
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                            <p class="card_info-texto">Gorillaz</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/album_icon.svg">
-                            <p class="card_info-texto text-center">Song Machine</p>
-                        </figure>
-
-                        <figure class="card__info-content">
-                            <img class="card__info-img" src="./assets/img/song_icon.svg">
-                            <p class="card_info-texto">The Pink Phantom</p>
-                        </figure>
-                    </aside>
-                </div>
-
-                <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                <div class="card__post">
-
-                    <div class="card__info-user-post">
-                        <figure class="card__figure-user-post">
-                            <img class="card__img-user-post" src="assets/img/frida.jpg">
-                        </figure>
-                        <div class="card__data-user-post">
-                            <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                            <p class="card__date-user-post">05/11/2021 15:45</p>
-                        </div>
-                    </div>
-
-                    <div class="card__content-post">
-                        <h2 class="card__post-titulo">"Gorillaz te lleva por un tramo amplio de géneros musicales "</h2>
-                        <p>
-                            "The Pink Phantom" surgió a partir de una anécdota de Albarn cuando era niño al haberse subido a un auto de Elton John. Cabe destacar que es un track arriesgado, pero bien logrado, pues se entrecruza un estilo urbano con 6LACK y un ambiente pop agregado con Elton sin sentirse forzado.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <!--Este bloque de código contiene los iconos de edit, delete
-            share and Comentar-->
-            <div class="card__elementos">
-                <figure class="card__elementos-iconos">
-                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                </figure>
-
-                <figure class="card__elementos-boton">
-                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                    <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                </figure>
-            </div>
-        </section>
-        
-    </article>
-
-
-       <!-- Sección Hip-Hop -->
-      
-       <div class="banner_genero">
-        <img class="banner_genero_img" src="./assets/img/rap_banner.gif">
-        <div class="banner_genero_mascara">
-          <h2 class="banner_genero_titulo">HIP-HOP</h2>
-        </div>
-      </div>
-
-      
-    <main class="main">
-      <article class="card-user-main">
-
-          <img class="card__img-back" src="assets/img/savage.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
-          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-          <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
-
-              <!--Este bloque contiene solo los textos de contenido de reseña
-              título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/savage.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">aespa</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Savage</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Savage</p>
-                          </figure>
-                      </aside>
-                  </div>
-
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
-
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">Ayer 19:47</p>
-                          </div>
-                      </div>
-
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
-                          <p>
-                              “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
-                          </p>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Este bloque de código contiene el icono de share y
-              el botón de comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
-
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
-
-
-      <article class="card-user-main">
-
-          <img class="card__img-back" src="assets/img/tongue.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
-          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-          <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
-
-              <!--Este bloque contiene solo los textos de contenido de reseña
-              título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/tongue.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Maribou State</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Tongue EP</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Tongue</p>
-                          </figure>
-                      </aside>
-                  </div>
-
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
-
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">Ayer 15:22</p>
-                          </div>
-                      </div>
-
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Sin palabras"</h2>
-                          <p>
-                              'Tongue' presenta la sublime voz de Holly Walker y es igualmente hermosa para escuchar en casa o en un club. 'Larks Rise' es una oferta considerada y de conducción suave. Forjar grabaciones de campo e instrumentación en vivo con ritmos house rotos y ondas de subgraves es donde están sus cabezas, y está produciendo algunos resultados muy agradables.
-                          </p>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
-              share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
-
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
-
-
-      <article class="card-user-main">
-
-          <img class="card__img-back" src="assets/img/linda.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
-          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-          <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
-
-              <!--Este bloque contiene solo los textos de contenido de reseña
-              título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/linda.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Tokischa</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Linda</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Linda</p>
-                          </figure>
-                      </aside>
-                  </div>
-
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
-
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">06/11/2021 20:00</p>
-                          </div>
-                      </div>
-
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"La colaboración que no sabía que necesitaba"</h2>
-                          <p>
-                              El dembow es el hilo conductor de una canción de la que poco a poco fuimos conociendo los primeros acordes a modo de adelanto. Pero como viene siendo habitual en Rosalía, las raíces folclóricas, urbanas y latinas también hacen acto de presencia en la colaboración junto a la dominicana y a pesar del éxito que está teniendo en plataformas como YouTube -donde ya roza los dos millones de streams- el lanzamiento vuelve a estar rodeado de comentarios que apuntan a una posible apropiación cultural de la española. 
-                          </p>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
-              share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
-
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
-
-      <article class="card-user-main">
-
-          <img class="card__img-back" src="assets/img/gorillaz.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
-          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
-          <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
-
-              <!--Este bloque contiene solo los textos de contenido de reseña
-              título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/gorillaz.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Gorillaz</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto text-center">Song Machine</p>
-                          </figure>
-
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">The Pink Phantom</p>
-                          </figure>
-                      </aside>
-                  </div>
-
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
-
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">05/11/2021 15:45</p>
-                          </div>
-                      </div>
-
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Gorillaz te lleva por un tramo amplio de géneros musicales "</h2>
-                          <p>
-                              "The Pink Phantom" surgió a partir de una anécdota de Albarn cuando era niño al haberse subido a un auto de Elton John. Cabe destacar que es un track arriesgado, pero bien logrado, pues se entrecruza un estilo urbano con 6LACK y un ambiente pop agregado con Elton sin sentirse forzado.
-                          </p>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
-              share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
-
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
-
-        <!-- Sección POP -->
-      
         <div class="banner_genero">
-          <img class="banner_genero_img" src="./assets/img/pop_banner.gif">
-          <div class="banner_genero_mascara">
-            <h2 class="banner_genero_titulo">POP</h2>
-          </div>
+            <img class="banner_genero_img" src="./assets/img/rock_banner.gif">
+            <div class="banner_genero_mascara">
+                <h2 class="banner_genero_titulo">ROCK</h2>
+            </div>
         </div>
 
-        
-    <main class="main">
-      <article class="card-user-main">
 
-          <img class="card__img-back" src="assets/img/savage.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+        <main class="main">
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/metallicam2.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+        <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+            título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/metallicam2.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Metallica y OS de San Francisco</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">S y M2</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Savage</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/daniela.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Daniela Domínguez</h3>
+                                    <p class="card__date-user-post">01/11/2021 02:17</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Metallica es un joya, pero con orquesta es un BOOM!"</h2>
+                                <p>
+                                    20 años después de la primera experiencia de Metallica en concierto y disco
+                                    orquestal, el grupo repite la experiencia y al igual que es 1999, nos deja el
+                                    testimonio vivo de ese segundo concienrto con la Oquesta Sinfónica de San Francisco
+                                    en forma de nuevo disco de directo.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene el icono de share y
+            el botón de comentar-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                        </figure>
+                    </div>
+                </section>
+
+            </article>
+
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/pinkfloydlive.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+        <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+            título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/pinkfloydlive.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Pink Floyd</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">Live at Knebworth 1990</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Wish You Were Here</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/Sheila.jpeg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Sheila </h3>
+                                    <p class="card__date-user-post">15/10/2021 00:42</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Knife Talk"</h2>
+                                <p>
+                                    Como olvidar esa legendaria presentación de knife talk, pues al fin pink floyd ha sacado un disco de ese inolvidable momento. ¡Simplemente maravilloso!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene los iconos de edit, delete
+            share and Comentar-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                        </figure>
+                    </div>
+                </section>
+
+            </article>
+
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/u2.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+        <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+            título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/u2.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">U2</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto">Live at the Apollo for One Night Only</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">The Electric Co</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/niver.png">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Niver Martínez</h3>
+                                    <p class="card__date-user-post">06/10/2021 10:00</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"Una banda que por años me ha encantado"</h2>
+                                <p>
+                                    Les recomiendo este single pues me ha llenado de emociones, la acústica es otro nivel, puedes identificar cada acorde.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene los iconos de edit, delete
+            share and Comentar-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                        </figure>
+                    </div>
+                </section>
+
+            </article>
+
+            <article class="card-user-main">
+
+                <img class="card__img-back" src="assets/img/muse.jpg" alt="">
+                <!--Esta parte es un contenedor que está en posicion absoluta
+        sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+        <img> como background y poder modificarla con javascript-->
+                <section class="card__overtext">
+
+                    <!--Este bloque contiene solo los textos de contenido de reseña
+            título de post, datos del artista e iconos.-->
+                    <div class="card__overtext-superior">
+                        <div class="card__info">
+                            <figure class="card__info-media-album">
+                                <img class="card__info-media-img" src="assets/img/muse.jpg">
+                            </figure>
+                            <aside class="card__info-aside">
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                    <p class="card_info-texto">Muse</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                    <p class="card_info-texto text-center">Origin of Muse</p>
+                                </figure>
+
+                                <figure class="card__info-content">
+                                    <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                    <p class="card_info-texto">Sunburn</p>
+                                </figure>
+                            </aside>
+                        </div>
+
+                        <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                        <div class="card__post">
+
+                            <div class="card__info-user-post">
+                                <figure class="card__figure-user-post">
+                                    <img class="card__img-user-post" src="assets/img/zarate.jpg">
+                                </figure>
+                                <div class="card__data-user-post">
+                                    <h3 class="card__name-user-post">Ricardo Zárate</h3>
+                                    <p class="card__date-user-post">03/10/2021 15:45</p>
+                                </div>
+                            </div>
+
+                            <div class="card__content-post">
+                                <h2 class="card__post-titulo">"No por nada es mi banda favorita"</h2>
+                                <p>
+                                    El disco es oro, pero sunburn es otra cosa, la verdad me gusto los falsetes que tiene el vocalista, pero totalmente escucharia esta canción el resto de mis días.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Este bloque de código contiene los iconos de edit, delete
+            share and Comentar-->
+                    <div class="card__elementos">
+                        <figure class="card__elementos-iconos">
+                            <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                            <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                        </figure>
+
+                        <figure class="card__elementos-boton">
+                            <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                            <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                        </figure>
+                    </div>
+                </section>
+
+            </article>
+
+
+            <!-- Sección Hip-Hop -->
+
+            <div class="banner_genero">
+                <img class="banner_genero_img" src="./assets/img/rap_banner.gif">
+                <div class="banner_genero_mascara">
+                    <h2 class="banner_genero_titulo">HIP-HOP</h2>
+                </div>
+            </div>
+
+
+            <main class="main">
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/eminem.png" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+                    <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                        <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/savage.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">aespa</p>
-                          </figure>
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/eminem.png">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">Eminem</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Savage</p>
-                          </figure>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Music to Be Murdered By</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Savage</p>
-                          </figure>
-                      </aside>
-                  </div>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">You Gon´Learn</p>
+                                    </figure>
+                                </aside>
+                            </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">Ayer 19:47</p>
-                          </div>
-                      </div>
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/daniel.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Ricardo Alvarez</h3>
+                                        <p class="card__date-user-post">18/10/2021 14:17</p>
+                                    </div>
+                                </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Cara a cara contra Black Mamba"</h2>
-                          <p>
-                              “Savage”, de aespa muestra todas las cualidades de las chicas, desde canto, rap hasta baile. Además, avanza con la historia central del SMCU y nos deja esperando por más. No olvides escuchar Savage, el primer mini-álbum de aespa que cuenta con otras cinco canciones.
-                          </p>
-                      </div>
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"los 3:55 mejores minutos del disco"</h2>
+                                    <p>
+                                        Si hay alguien que sabe del hip hop es papi Eminem, disco con disco nunca da menos a sus fans y a los que han escuchado a Eminem es una buena canción para conocer el hip hop y no llevarse una mala experiencia.
+                                    </p>
+                                </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene el icono de share y
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene el icono de share y
               el botón de comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+
+                </article>
 
 
-      <article class="card-user-main">
+                <article class="card-user-main">
 
-          <img class="card__img-back" src="assets/img/tongue.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+                    <img class="card__img-back" src="assets/img/missi.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+                    <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                        <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/tongue.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Maribou State</p>
-                          </figure>
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/missi.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">Missy Elliott</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Tongue EP</p>
-                          </figure>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Iconology</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Tongue</p>
-                          </figure>
-                      </aside>
-                  </div>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Cool Off</p>
+                                    </figure>
+                                </aside>
+                            </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">Ayer 15:22</p>
-                          </div>
-                      </div>
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/gerardo.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Gerardo Martínez</h3>
+                                        <p class="card__date-user-post">09/10/2021 05:42</p>
+                                    </div>
+                                </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Sin palabras"</h2>
-                          <p>
-                              'Tongue' presenta la sublime voz de Holly Walker y es igualmente hermosa para escuchar en casa o en un club. 'Larks Rise' es una oferta considerada y de conducción suave. Forjar grabaciones de campo e instrumentación en vivo con ritmos house rotos y ondas de subgraves es donde están sus cabezas, y está produciendo algunos resultados muy agradables.
-                          </p>
-                      </div>
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"¡yea!"</h2>
+                                    <p>
+                                        Si hay alguien que sabe hacer hip hop es Missi Elliott pues esta nena, viene con todo el flow, inigualable la forma de cantar y no se diga de la originalidad de cada tema.
+                                    </p>
+                                </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene los iconos de edit, delete
               share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+
+                </article>
 
 
-      <article class="card-user-main">
+                <article class="card-user-main">
 
-          <img class="card__img-back" src="assets/img/linda.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+                    <img class="card__img-back" src="assets/img/mala.jpg" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+                    <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                        <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/linda.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Tokischa</p>
-                          </figure>
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/mala.jpg">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">Mala Rodríguez</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto">Linda</p>
-                          </figure>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto">Mala</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">Linda</p>
-                          </figure>
-                      </aside>
-                  </div>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Like</p>
+                                    </figure>
+                                </aside>
+                            </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">06/11/2021 20:00</p>
-                          </div>
-                      </div>
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/frida.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Frida Rodríguez</h3>
+                                        <p class="card__date-user-post">02/08/2021 10:50</p>
+                                    </div>
+                                </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"La colaboración que no sabía que necesitaba"</h2>
-                          <p>
-                              El dembow es el hilo conductor de una canción de la que poco a poco fuimos conociendo los primeros acordes a modo de adelanto. Pero como viene siendo habitual en Rosalía, las raíces folclóricas, urbanas y latinas también hacen acto de presencia en la colaboración junto a la dominicana y a pesar del éxito que está teniendo en plataformas como YouTube -donde ya roza los dos millones de streams- el lanzamiento vuelve a estar rodeado de comentarios que apuntan a una posible apropiación cultural de la española. 
-                          </p>
-                      </div>
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"I like it"</h2>
+                                    <p>
+                                        Rimas de calidad es lo que tiene like, esta canción es una de las mejores que tiene el disco, en lo personal me encanta lo puedo oír todo el día.
+                                    </p>
+                                </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene los iconos de edit, delete
               share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
 
-      <article class="card-user-main">
+                </article>
 
-          <img class="card__img-back" src="assets/img/gorillaz.jpg" alt="">
-          <!--Esta parte es un contenedor que está en posicion absoluta
+                <article class="card-user-main">
+
+                    <img class="card__img-back" src="assets/img/nach.jfif" alt="">
+                    <!--Esta parte es un contenedor que está en posicion absoluta
           sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
           <img> como background y poder modificarla con javascript-->
-          <section class="card__overtext">
+                    <section class="card__overtext">
 
-              <!--Este bloque contiene solo los textos de contenido de reseña
+                        <!--Este bloque contiene solo los textos de contenido de reseña
               título de post, datos del artista e iconos.-->
-              <div class="card__overtext-superior">
-                  <div class="card__info">
-                      <figure class="card__info-media-album">
-                          <img class="card__info-media-img" src="assets/img/gorillaz.jpg">
-                      </figure>
-                      <aside class="card__info-aside">
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/artist_icon.svg">
-                              <p class="card_info-texto">Gorillaz</p>
-                          </figure>
+                        <div class="card__overtext-superior">
+                            <div class="card__info">
+                                <figure class="card__info-media-album">
+                                    <img class="card__info-media-img" src="assets/img/nach.jfif">
+                                </figure>
+                                <aside class="card__info-aside">
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                        <p class="card_info-texto">Nach</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/album_icon.svg">
-                              <p class="card_info-texto text-center">Song Machine</p>
-                          </figure>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                        <p class="card_info-texto text-center">A través de mí</p>
+                                    </figure>
 
-                          <figure class="card__info-content">
-                              <img class="card__info-img" src="./assets/img/song_icon.svg">
-                              <p class="card_info-texto">The Pink Phantom</p>
-                          </figure>
-                      </aside>
-                  </div>
+                                    <figure class="card__info-content">
+                                        <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                        <p class="card_info-texto">Adiós España</p>
+                                    </figure>
+                                </aside>
+                            </div>
 
-                  <!--Este bloque contiene el título del post y el contenido de la reseña-->
-                  <div class="card__post">
+                            <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                            <div class="card__post">
 
-                      <div class="card__info-user-post">
-                          <figure class="card__figure-user-post">
-                              <img class="card__img-user-post" src="assets/img/frida.jpg">
-                          </figure>
-                          <div class="card__data-user-post">
-                              <h3 class="card__name-user-post">Frida Rodríguez</h3>
-                              <p class="card__date-user-post">05/11/2021 15:45</p>
-                          </div>
-                      </div>
+                                <div class="card__info-user-post">
+                                    <figure class="card__figure-user-post">
+                                        <img class="card__img-user-post" src="assets/img/Giovanni.jpg">
+                                    </figure>
+                                    <div class="card__data-user-post">
+                                        <h3 class="card__name-user-post">Giovanni Calleja</h3>
+                                        <p class="card__date-user-post">01/09/2021 01:12</p>
+                                    </div>
+                                </div>
 
-                      <div class="card__content-post">
-                          <h2 class="card__post-titulo">"Gorillaz te lleva por un tramo amplio de géneros musicales "</h2>
-                          <p>
-                              "The Pink Phantom" surgió a partir de una anécdota de Albarn cuando era niño al haberse subido a un auto de Elton John. Cabe destacar que es un track arriesgado, pero bien logrado, pues se entrecruza un estilo urbano con 6LACK y un ambiente pop agregado con Elton sin sentirse forzado.
-                          </p>
-                      </div>
+                                <div class="card__content-post">
+                                    <h2 class="card__post-titulo">"Rimas sabrosas"</h2>
+                                    <p>
+                                        Este disco ha sacado mi gusto por el hip hop, jamás había escuchado este género, sin embargo ha sido una experiencia muy agradable, este género da la oprtunidad de decir muchas cosas en tan poco tiempo.
+                                    </p>
+                                </div>
 
-                  </div>
-              </div>
-              <!--Este bloque de código contiene los iconos de edit, delete
+                            </div>
+                        </div>
+                        <!--Este bloque de código contiene los iconos de edit, delete
               share and Comentar-->
-              <div class="card__elementos">
-                  <figure class="card__elementos-iconos">
-                      <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
-                      <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
-                  </figure>
+                        <div class="card__elementos">
+                            <figure class="card__elementos-iconos">
+                                <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                            </figure>
 
-                  <figure class="card__elementos-boton">
-                      <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
-                      <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
-                  </figure>
-              </div>
-          </section>
-          
-      </article>
+                            <figure class="card__elementos-boton">
+                                <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                <button class="card__elementos-btn" onclick="alert('Create Review')">Comentar</button>
+                            </figure>
+                        </div>
+                    </section>
+
+                </article>
+
+                <!-- Sección POP -->
+
+                <div class="banner_genero">
+                    <img class="banner_genero_img" src="./assets/img/pop_banner.gif">
+                    <div class="banner_genero_mascara">
+                        <h2 class="banner_genero_titulo">POP</h2>
+                    </div>
+                </div>
+
+
+                <main class="main">
+                    <article class="card-user-main">
+
+                        <img class="card__img-back" src="assets/img/katyperry.jpg" alt="">
+                        <!--Esta parte es un contenedor que está en posicion absoluta
+          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+          <img> como background y poder modificarla con javascript-->
+                        <section class="card__overtext">
+
+                            <!--Este bloque contiene solo los textos de contenido de reseña
+              título de post, datos del artista e iconos.-->
+                            <div class="card__overtext-superior">
+                                <div class="card__info">
+                                    <figure class="card__info-media-album">
+                                        <img class="card__info-media-img" src="assets/img/katyperry.jpg">
+                                    </figure>
+                                    <aside class="card__info-aside">
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                            <p class="card_info-texto">Katy Perry</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                            <p class="card_info-texto">Cosmic Energy</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                            <p class="card_info-texto">Not the End of the World</p>
+                                        </figure>
+                                    </aside>
+                                </div>
+
+                                <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                                <div class="card__post">
+
+                                    <div class="card__info-user-post">
+                                        <figure class="card__figure-user-post">
+                                            <img class="card__img-user-post" src="assets/img/daniela.jpg">
+                                        </figure>
+                                        <div class="card__data-user-post">
+                                            <h3 class="card__name-user-post">Daniela Domínguez</h3>
+                                            <p class="card__date-user-post">05/07/2020 19:47</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__content-post">
+                                        <h2 class="card__post-titulo">"Katy cat 4ever"</h2>
+                                        <p>
+                                            Katy siempre tan bella con nueva música que te llega, además de que la letra es única, súper recomendada, también recomiendo ver los videoclips pues Katy no solo sabe lo que es cantar, tiene una característica que es la originalidad visual, joyas.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Este bloque de código contiene el icono de share y
+              el botón de comentar-->
+                            <div class="card__elementos">
+                                <figure class="card__elementos-iconos">
+                                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                                </figure>
+
+                                <figure class="card__elementos-boton">
+                                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                    <button class="card__elementos-btn"
+                                        onclick="alert('Create Review')">Comentar</button>
+                                </figure>
+                            </div>
+                        </section>
+
+                    </article>
+
+
+                    <article class="card-user-main">
+
+                        <img class="card__img-back" src="assets/img/rare.jpg" alt="">
+                        <!--Esta parte es un contenedor que está en posicion absoluta
+          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+          <img> como background y poder modificarla con javascript-->
+                        <section class="card__overtext">
+
+                            <!--Este bloque contiene solo los textos de contenido de reseña
+              título de post, datos del artista e iconos.-->
+                            <div class="card__overtext-superior">
+                                <div class="card__info">
+                                    <figure class="card__info-media-album">
+                                        <img class="card__info-media-img" src="assets/img/rare.jpg">
+                                    </figure>
+                                    <aside class="card__info-aside">
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                            <p class="card_info-texto">Selena Gomez</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                            <p class="card_info-texto">Rare</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                            <p class="card_info-texto">Dance again</p>
+                                        </figure>
+                                    </aside>
+                                </div>
+
+                                <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                                <div class="card__post">
+
+                                    <div class="card__info-user-post">
+                                        <figure class="card__figure-user-post">
+                                            <img class="card__img-user-post" src="assets/img/Marina.jpg">
+                                        </figure>
+                                        <div class="card__data-user-post">
+                                            <h3 class="card__name-user-post">Marina Prado</h3>
+                                            <p class="card__date-user-post">05/08/2021 03:12</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__content-post">
+                                        <h2 class="card__post-titulo">"Me dejo sin palabras"</h2>
+                                        <p>
+                                            Como el ave fenix Sel llega con nueva música y nuevo ritmo, pues muestra que no teme a las colaboraciones.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Este bloque de código contiene los iconos de edit, delete
+              share and Comentar-->
+                            <div class="card__elementos">
+                                <figure class="card__elementos-iconos">
+                                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                                </figure>
+
+                                <figure class="card__elementos-boton">
+                                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                    <button class="card__elementos-btn"
+                                        onclick="alert('Create Review')">Comentar</button>
+                                </figure>
+                            </div>
+                        </section>
+
+                    </article>
+
+
+                    <article class="card-user-main">
+
+                        <img class="card__img-back" src="assets/img/chromatica.jpg" alt="">
+                        <!--Esta parte es un contenedor que está en posicion absoluta
+          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+          <img> como background y poder modificarla con javascript-->
+                        <section class="card__overtext">
+
+                            <!--Este bloque contiene solo los textos de contenido de reseña
+              título de post, datos del artista e iconos.-->
+                            <div class="card__overtext-superior">
+                                <div class="card__info">
+                                    <figure class="card__info-media-album">
+                                        <img class="card__info-media-img" src="assets/img/chromatica.jpg">
+                                    </figure>
+                                    <aside class="card__info-aside">
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                            <p class="card_info-texto">Lady Gaga</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                            <p class="card_info-texto">Chromatica</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                            <p class="card_info-texto">Stupid Love</p>
+                                        </figure>
+                                    </aside>
+                                </div>
+
+                                <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                                <div class="card__post">
+
+                                    <div class="card__info-user-post">
+                                        <figure class="card__figure-user-post">
+                                            <img class="card__img-user-post" src="assets/img/Emmanuel.jpg">
+                                        </figure>
+                                        <div class="card__data-user-post">
+                                            <h3 class="card__name-user-post">Emmanuel Gomez</h3>
+                                            <p class="card__date-user-post">01/07/2021 10:50</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__content-post">
+                                        <h2 class="card__post-titulo">"Promesa del pop"</h2>
+                                        <p>
+                                            La colaboración del año, pues Lady Gaga y Ariana Grande son las reinas de todas las plataformas, este disco tiene mucho que mostrar y asi como las singles, también sus videos, Lady Gaga es lo de hoy.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Este bloque de código contiene los iconos de edit, delete
+              share and Comentar-->
+                            <div class="card__elementos">
+                                <figure class="card__elementos-iconos">
+                                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                                </figure>
+
+                                <figure class="card__elementos-boton">
+                                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                    <button class="card__elementos-btn"
+                                        onclick="alert('Create Review')">Comentar</button>
+                                </figure>
+                            </div>
+                        </section>
+
+                    </article>
+
+                    <article class="card-user-main">
+
+                        <img class="card__img-back" src="assets/img/camilo.jfif" alt="">
+                        <!--Esta parte es un contenedor que está en posicion absoluta
+          sobre la imagen de fondo, se hizo esto para poder colocar una etiqueta
+          <img> como background y poder modificarla con javascript-->
+                        <section class="card__overtext">
+
+                            <!--Este bloque contiene solo los textos de contenido de reseña
+              título de post, datos del artista e iconos.-->
+                            <div class="card__overtext-superior">
+                                <div class="card__info">
+                                    <figure class="card__info-media-album">
+                                        <img class="card__info-media-img" src="assets/img/camilo.jfif">
+                                    </figure>
+                                    <aside class="card__info-aside">
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/artist_icon.svg">
+                                            <p class="card_info-texto">Camilo</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/album_icon.svg">
+                                            <p class="card_info-texto text-center">Mis manos</p>
+                                        </figure>
+
+                                        <figure class="card__info-content">
+                                            <img class="card__info-img" src="./assets/img/song_icon.svg">
+                                            <p class="card_info-texto">Machu Picchu</p>
+                                        </figure>
+                                    </aside>
+                                </div>
+
+                                <!--Este bloque contiene el título del post y el contenido de la reseña-->
+                                <div class="card__post">
+
+                                    <div class="card__info-user-post">
+                                        <figure class="card__figure-user-post">
+                                            <img class="card__img-user-post" src="assets/img/Manuel.png">
+                                        </figure>
+                                        <div class="card__data-user-post">
+                                            <h3 class="card__name-user-post">Manuel</h3>
+                                            <p class="card__date-user-post">02/05/2021 15:45</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__content-post">
+                                        <h2 class="card__post-titulo">"Hasta me dan ganas de enamorarme"</h2>
+                                        <p>
+                                            Camilo desde hace años se ha convertido en todo un poeta con sus canciones, donde además de un estilo peculiar, muestra su calidad vocal tan característico.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Este bloque de código contiene los iconos de edit, delete
+              share and Comentar-->
+                            <div class="card__elementos">
+                                <figure class="card__elementos-iconos">
+                                    <img class="card__elementos-edit" src="./assets/img/edit_icon.svg">
+                                    <img class="card__elementos-delete" src="./assets/img/delete_icon.svg">
+                                </figure>
+
+                                <figure class="card__elementos-boton">
+                                    <img class="card__elementos-share" src="./assets/img/share_icon.svg" alt="">
+                                    <button class="card__elementos-btn"
+                                        onclick="alert('Create Review')">Comentar</button>
+                                </figure>
+                            </div>
+                        </section>
+
+                    </article>
 
 
 
 
-    
 
 
-      
-      
-   
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+
+
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                        crossorigin="anonymous"></script>
 </body>
+
 </html>

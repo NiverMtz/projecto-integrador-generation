@@ -188,6 +188,7 @@ a[href="#"] {
 .card_info-texto {
     margin-top: 0;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .card__post {

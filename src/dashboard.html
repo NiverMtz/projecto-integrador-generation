@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <title>Paax - Dashboard</title>
     <!-- CDN bootstrap -->
     <link
@@ -14,6 +15,7 @@
     />
     <!-- custom properties -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/dashboard.css" />
     <link
       rel="shortcut icon"
@@ -23,6 +25,13 @@
   </head>
   <body>
     <!-- HEADER -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        
+      </div>
     <!-- Menú superior -->
     <nav class="position-fixed navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 46, 170, 1); z-index: 999; width: 100%;">
       <a class="navbar-brand m-0" href="./index.html"><h1 class="brand--font">PAAX</h1></a>
@@ -373,5 +382,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/loader.js"></script>
   </body>
 </html>

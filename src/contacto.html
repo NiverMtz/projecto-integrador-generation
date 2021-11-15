@@ -119,14 +119,14 @@
     <!--Sección 2 Banner de contacto-->
     <div class="container__banner"> 
 
-    <h1 class="title__banner">Siguenos en nuestras redes sociales</h1>
+    <h1 class="title__banner">Síguenos en nuestras redes sociales.</h1>
 
         <div class="icons__banner">
 
-            <img class="icons__net" src="./assets/img/facebook.png" alt="Facebook">
-            <img class="icons__net" src="./assets/img/instagram.png" alt="Instagram">
-            <img class="icons__net" src="./assets/img/twiter.png" alt="Twiter">
-            <img class="icons__net" src="./assets/img/mail.png" alt="mail">
+            <a href="https://instagram.com/paax.oficial?utm_medium=copy_link"><img class="icons__net" src="./assets/img/facebook.png" alt="Facebook" ></a>
+            <a href="https://instagram.com/paax.oficial?utm_medium=copy_link"><img class="icons__net" src="./assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://instagram.com/paax.oficial?utm_medium=copy_link"><img class="icons__net" src="./assets/img/twiter.png" alt="Twiter"></a>
+            <a href="mailto:paax.community@outlook.com"><img class="icons__net" src="./assets/img/mail.png" alt="mail"></a>
 
         </div>
 
@@ -136,7 +136,7 @@
 
         <div class="row__email">
             <h2 class="title__correo">Correo de contacto:</h2>
-            <h2 class="title__correo">paax.music@community.mx</h2>
+            <h2 class="title__correo">paax.community@outlook.com</h2>
         </div>
 
         <div class="row__seccion">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
      
-                <div class="tarjetas">
+                <!-- <div class="tarjetas">
 
                     <div class="tarjeta__flip">
                         <div class="pregunta__frec"><h4>¿Cómo cambiar tu banner?</h4></div>
@@ -191,7 +191,7 @@
                             <p>Ingresa a la sección de "Mi pérfil", ahora ingres a la sección de configuración, por ulltimo en la opción cambiar banner</p> 
                         </div>
                     </div>
-                </div>
+                </div> -->
       
                 <div class="tarjetas">
         
@@ -217,15 +217,15 @@
     
                 <div class="mailbox">
 
-                    <form class="form">
+                    <form class="form" action="https://formspree.io/f/meqvyjvw" method="POST" id="my-form">
         
                         <p class="user__name">
                             <p>Nombre de usuario</p>
-                            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input" placeholder="EjemploUsuario" id="name" />
+                            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback__input" placeholder="EjemploUsuario" id="name"/>
                          </p>
 
                         <p class="email">
-                            <p>Correo eléctronico</p>
+                            <p>Correo electrónico</p>
                             <input name="email" type="text" class="validate[required,custom[email]] feedback__input" id="email" placeholder="ejemplo@paax.com"/>
                          </p>
 
@@ -240,9 +240,13 @@
                             <div class="ease">
                             </div>
                         </div>
+
                     </form>
 
                 </div>
+
+                <div id="status" class="error">Mensaje enviado</div>
+
             </div>
         </div>
 
@@ -502,9 +506,9 @@
                             <div class="content">
                                 <div>
                                     <div class="pl-0 pr-0 mt-3 text-center col-md d-block"><img src="./assets/img/archivo-de-musica.png"
-                                            width="50px"><br><a href="./contacto.html" class="texto">Contactanos</a></div>
+                                            width="50px"><br><a href="./contacto.html" class="texto">Contáctanos</a></div>
                                     <div class="pl-0 pr-0 mt-3 text-center col-md d-block"><img src="./assets/img/disco.png"
-                                            width="50px"><br><a href="./conocenos.html">Quiénes Somos</a></div>
+                                            width="50px"><br><a href="./conocenos.html">¿Quiénes somos?</a></div>
                                     <div class="pl-0 pr-0 mt-3 text-center col-md d-block"><img src="./assets/img/spotify.png"
                                             width="50px"><br><a href="https://developer.spotify.com/">Developers</a></div>
                                     <!-- imagen logo -->
@@ -534,5 +538,6 @@
 
   <script src="js/main.js"></script>
   <script src="./js/loader.js"></script>
+  <script src="js/contacto.js"></script>
   </body>
 </html> 

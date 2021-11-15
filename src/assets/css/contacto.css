@@ -831,11 +831,11 @@ body {
 	.form__buzon {
 		background-color: black;
 		width: 100%;
-		height: 800px;
+		height: 700px;
 		position: relative;
 		top: 0px;
 		margin: 0px;
-		padding: 40px;
+		padding: 20px;
 		left: 0px;
 	}
 }
@@ -912,9 +912,9 @@ body {
 		background-color: black;
 		position: relative;
 		width: 100%;
-		height: 600px;
+		height: 500px;
 		margin: 0px;
-		padding: 60px;
+		padding: 20px;
 		top: 0px;
 		left: 0px;
 	}
@@ -965,6 +965,8 @@ body {
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
+
+	color: rgba(15, 15, 15, 0.856);
 }
 
 #name:focus{
@@ -1014,7 +1016,6 @@ body {
 }
 
 .gray__letter {
-
 	color: gray;
 }
 
@@ -1025,6 +1026,7 @@ input:focus, textarea:focus {
 
 #button__send{
 	padding: 5px;
+	margin: 10px;
 	font-family: 'Nunito', sans-serif;
 	float: right;
 	width: 30%;
@@ -1034,8 +1036,6 @@ input:focus, textarea:focus {
 	background-color: rgba(240, 46, 170, 1);
 	color:white;
 	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -1069,19 +1069,51 @@ input:focus, textarea:focus {
 
 .submit:hover .ease{
   	width:100%;
-
   	background-color: --rosa;
 }
 
 
 .submit {
-	padding: 5px 5px;
+	padding-top: 15px;
 	margin: 5px 5px;
 }
 
-#button__send {
-	padding: 5px 5px;
-}
+#status {
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 8px;
+  }
+  #status.success {
+	background-color: rgb(211, 250, 153);
+	animation: status 4s ease forwards;
+  }
+  #status.error {
+	background-color: rgb(250, 129, 92);
+	color: white;
+	animation: status 4s ease forwards;
+  }
+  @keyframes status {
+	0% {
+	  opacity: 1;
+	  pointer-events: all;
+	}
+	90% {
+	  opacity: 1;
+	  pointer-events: all;
+	}
+	100% {
+	  opacity: 0;
+	  pointer-events: none;
+	}
+  }
+  
+
+
+
+/*Seccion Footer*/
 
 @import url(./footerbuble.css);
 
@@ -1092,11 +1124,7 @@ input:focus, textarea:focus {
 p{
   text-decoration: none;
   list-style: none;
-  
 }
-
-
-/*Seccion Footer*/
 
 .footer {
     z-index: 1;

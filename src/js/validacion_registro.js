@@ -20,6 +20,37 @@ const $alertPassConfirm = document.querySelector("#warning_pass_confirm");
 /* el evento submit ejecuta la función */
 $forma.addEventListener("submit", e => {
   e.preventDefault();
+
+  const profileName = $profileName.value;
+  const firstName = $firstName.value;
+  const fatherName = $fatherName.value;
+  const motherName = $motherName.value;
+  const email = $email.value;
+  const pass = $pass.value;
+  
+  if(profileName != ""){
+    
+    fetch('http://localhost:8080/api/user',{
+      method: 'POST',
+      body: JSON.stringify( {
+        profileName,
+        firstName,
+        fatherName,
+        motherName,
+        email,
+        pass
+      }),
+      headers: {
+          'Content-type': 'application/json'
+      }
+    }).then(resp => {
+      alert("Registro exitoso")
+      
+    })
+      }else{
+        alert("Error al registrarse")
+      }
+
   /* strings vacios para resetear cada mensaje */
   let warningProfileName = "";
   let warningFirstName = "";
@@ -71,5 +102,8 @@ $forma.addEventListener("submit", e => {
     $alertPassConfirm.innerHTML = warningPassConfirm;
     //invalido = true;
   }
+
   
+
 });
+
